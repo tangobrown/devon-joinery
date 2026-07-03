@@ -28,4 +28,18 @@
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
+
+  /* Subtle hover lift on every 15px semibold button/CTA site-wide */
+  a[class~="font-semibold"][class*="text-[15px]"],
+  button[class~="font-semibold"][class*="text-[15px]"] {
+    transition-property: transform, filter, background-color, color,
+      box-shadow, border-color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    will-change: transform;
+  }
+  a[class~="font-semibold"][class*="text-[15px]"]:hover,
+  button[class~="font-semibold"][class*="text-[15px]"]:hover {
+    transform: translateY(-2px);
+  }
 }
