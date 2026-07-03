@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    background: #f7f4ec;
+    color: #20262e;
+    -webkit-font-smoothing: antialiased;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
