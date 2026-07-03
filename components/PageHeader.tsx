@@ -18,8 +18,8 @@ export function PageHeader({ title, intro, cta, size = "lg" }: Props) {
 
   const introClass =
     size === "lg"
-      ? "text-[15px] md:text-[17px] font-semibold text-body leading-[1.65]"
-      : "text-[15px] md:text-[16px] text-body leading-[1.6]";
+      ? "text-[16px] md:text-[18px] font-semibold text-body leading-[1.65]"
+      : "text-[16px] md:text-[17px] text-body leading-[1.6]";
 
   return (
     <section className="max-w-article mx-auto px-6 pt-12 md:pt-16 pb-8 text-center">

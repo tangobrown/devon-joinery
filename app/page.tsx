@@ -88,7 +88,7 @@ export default function HomePage() {
             <h2 className="text-[26px] md:text-[34px] font-bold leading-[1.15] text-ink mb-5">
               Passion, Precision, Family &amp; History at Devon Joinery
             </h2>
-            <p className="text-[14px] md:text-[15px] leading-[1.7] text-bodyMuted mb-7">
+            <p className="text-[15px] md:text-[16px] leading-[1.7] text-bodyMuted mb-7">
               It all began 25 years ago in a humble Exeter garage, where a
               passionate carpenter and his business partner set out with a
               simple but powerful vision: to craft beautiful, bespoke joinery
@@ -109,7 +109,7 @@ export default function HomePage() {
             <h2 className="text-[24px] md:text-[30px] font-bold leading-[1.2] text-ink mb-5">
               Meet the Family Behind Devon Joinery
             </h2>
-            <p className="text-[14px] leading-[1.75] text-bodyMuted mb-7">
+            <p className="text-[15px] leading-[1.75] text-bodyMuted mb-7">
               Rooted in Exeter and the West Country, our team combines
               traditional joinery techniques with modern precision, ensuring
               every piece of joinery is made to perfection and built to last.

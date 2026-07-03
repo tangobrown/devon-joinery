@@ -45,7 +45,7 @@ export default function ArticlePage() {
           className="mb-8"
         />
 
-        <div className="prose-body space-y-5 text-[16px] leading-[1.75] text-body">
+        <div className="prose-body space-y-5 text-[17px] leading-[1.75] text-body">
           <p>
             When it comes to choosing a balustrade for your staircase, landing
             or balcony, two materials tend to top the list: timber and glass.

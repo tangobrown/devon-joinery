@@ -35,7 +35,7 @@ export default function BlogPage() {
                 <h3 className="text-[19px] font-bold text-ink leading-[1.3] mb-3">
                   {post.title}
                 </h3>
-                <p className="text-[13.5px] leading-[1.6] text-bodyMuted mb-4">
+                <p className="text-[14.5px] leading-[1.6] text-bodyMuted mb-4">
                   {post.excerpt}
                 </p>
                 <span className="inline-flex items-center gap-2 text-maroon text-[13px] font-semibold">

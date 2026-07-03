@@ -13,7 +13,7 @@ export default function PrivacyPolicyPage() {
         intro="Last updated: December 2025"
       />
 
-      <article className="max-w-privacy mx-auto px-6 pb-16 text-body text-[14px] leading-[1.75]">
+      <article className="max-w-privacy mx-auto px-6 pb-16 text-body text-[15px] leading-[1.75]">
         <p className="mb-6">
           Devon Joinery (&quot;us&quot;, &quot;we&quot;, or &quot;our&quot;)
           operates{" "}

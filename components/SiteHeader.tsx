@@ -56,7 +56,7 @@ export function SiteHeader({ transparent = false }: Props) {
       >
         <Logo className="text-white" />
 
-        <nav className="hidden md:flex items-center gap-[30px] text-white text-[14px] font-medium">
+        <nav className="hidden md:flex items-center gap-[30px] text-white text-[15px] font-medium">
           {navLinks.map((l) => (
             <Link key={l.href} href={l.href} className="hover:opacity-80">
               {l.label}
@@ -134,7 +134,7 @@ export function SiteHeader({ transparent = false }: Props) {
 
       {mobileOpen && (
         <div className="md:hidden bg-maroon border-t border-white/10">
-          <div className="px-6 py-4 flex flex-col gap-3 text-white text-[15px] font-medium">
+          <div className="px-6 py-4 flex flex-col gap-3 text-white text-[16px] font-medium">
             {navLinks.map((l) => (
               <Link key={l.href} href={l.href} onClick={() => setMobileOpen(false)}>
                 {l.label}

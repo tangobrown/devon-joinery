@@ -26,7 +26,7 @@ export default function AboutPage() {
           <h2 className="text-[24px] md:text-[30px] font-bold leading-[1.15] text-ink mb-5">
             Where Tradition Meets Excellence
           </h2>
-          <p className="text-[14px] leading-[1.75] text-bodyMuted mb-4">
+          <p className="text-[15px] leading-[1.75] text-bodyMuted mb-4">
             At Devon Joinery, we believe that quality joinery is an investment
             in your property&apos;s future. Our team of skilled craftsmen
             brings decades of combined experience to every project, whether
@@ -36,7 +36,7 @@ export default function AboutPage() {
             modern manufacturing technology to ensure precision, durability,
             and beauty in every piece we create.
           </p>
-          <p className="text-[14px] leading-[1.75] text-bodyMuted mb-7">
+          <p className="text-[15px] leading-[1.75] text-bodyMuted mb-7">
             From initial consultation and design through to manufacture and
             installation, we&apos;re with you every step of the way. We pride
             ourselves on our attention to detail, clear communication, and
@@ -54,7 +54,7 @@ export default function AboutPage() {
           <h2 className="text-[24px] md:text-[30px] font-bold leading-[1.15] text-ink mb-5">
             Our Approach
           </h2>
-          <p className="text-[14px] leading-[1.75] text-bodyMuted mb-4">
+          <p className="text-[15px] leading-[1.75] text-bodyMuted mb-4">
             We understand that every project is unique. That&apos;s why we take
             the time to listen to your requirements, assess your space, and
             provide expert guidance on design, materials, and finishes. Whether
@@ -63,7 +63,7 @@ export default function AboutPage() {
             superior materials, and a finished product that stands the test of
             time.
           </p>
-          <p className="text-[14px] leading-[1.75] text-bodyMuted mb-7">
+          <p className="text-[15px] leading-[1.75] text-bodyMuted mb-7">
             Our workshop is equipped with state-of-the-art machinery and
             traditional hand tools, allowing us to tackle projects of any scale
             and complexity. We&apos;re proud members of leading industry bodies
