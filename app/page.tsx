@@ -59,7 +59,7 @@ export default function HomePage() {
             </Link>
             <Link
               href="/free-estimate"
-              className="bg-[rgba(20,22,26,.55)] text-white text-[15px] font-semibold px-6 py-3.5 border border-white/25"
+              className="bg-white text-maroon text-[15px] font-semibold px-6 py-3.5"
             >
               Free Estimate
             </Link>
