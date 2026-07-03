@@ -8,7 +8,11 @@ export type Service = {
 export const services: Service[] = [
   { slug: "balustrades", title: "Balustrades" },
   { slug: "gates", title: "Gates" },
-  { slug: "doors", title: "Doors" },
+  {
+    slug: "doors",
+    title: "Doors",
+    cardImage: "/images/doors/grand-timber-front-door.jpg",
+  },
   { slug: "receptions", title: "Receptions" },
   { slug: "windows", title: "Windows" },
   {

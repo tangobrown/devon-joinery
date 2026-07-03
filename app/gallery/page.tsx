@@ -34,6 +34,10 @@ const CATEGORY_IMAGES: Partial<Record<Exclude<Category, "All">, string[]>> = {
     "/images/media-units/wooden-tv-cabinet.jpg",
     "/images/media-units/green-media-unit.jpg",
   ],
+  Doors: [
+    "/images/doors/black-front-door.jpg",
+    "/images/doors/white-stable-door.jpg",
+  ],
 };
 
 const ITEMS: Item[] = CATEGORIES.filter((c) => c !== "All").flatMap((cat) => {

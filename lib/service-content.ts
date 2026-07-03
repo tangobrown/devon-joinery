@@ -107,11 +107,17 @@ export const serviceContent: Record<string, ServiceContent> = {
     intro:
       "From elegant front entrance doors to spacious bifolding and sliding doors, Devon Joinery designs and manufactures every door in our family-run workshop to your exact requirements.",
     showHeaderCta: true,
+    topGalleryImages: [
+      "/images/doors/timber-front-door.jpg",
+      "/images/doors/white-french-doors-in-brick-building.jpg",
+      "/images/doors/timber-bi-folding-doors.jpg",
+    ],
     panels: [
       {
         heading: "Our approach to creating bespoke doors",
         imagePosition: "left",
         imageLabel: "Front door photo",
+        imageSrc: "/images/doors/black-front-door-in-stone-building.jpg",
         boldLead:
           "At Devon Joinery, our bespoke doors are made the traditional way: jointed, finished, and built to last, not just cut from standard profiles.",
         paragraphs: [
@@ -155,6 +161,7 @@ export const serviceContent: Record<string, ServiceContent> = {
         heading: "Why choose bespoke doors?",
         imagePosition: "right",
         imageLabel: "Interior door photo",
+        imageSrc: "/images/doors/interior-doors.jpg",
         paragraphs: [
           "Choosing bespoke doors with Devon Joinery means your doors are designed for your property, not the other way around. Proportions, glazing, mouldings, and hardware can all be tailored to suit your space and style, which is especially important for character homes and new builds.",
         ],
@@ -169,6 +176,7 @@ export const serviceContent: Record<string, ServiceContent> = {
         heading: "Timbers & Materials We Work With",
         imagePosition: "right",
         imageLabel: "Timber samples photo",
+        imageSrc: "/images/doors/timber-stained-french-doors.jpg",
         paragraphs: [
           "The timber you choose affects the look, lifespan, and performance of your doors. At Devon Joinery, we carefully select materials to suit each project, whether it's a period cottage, a coastal property, or a contemporary new build.",
           "**Hardwoods** such as European oak, sapele, and iroko are prized for their natural beauty, strength, and longevity. Oak is particularly popular for entrance doors and heritage properties, offering a rich grain that can be left natural or stained to suit your style.",
