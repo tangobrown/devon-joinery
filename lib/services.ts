@@ -7,7 +7,11 @@ export type Service = {
 
 export const services: Service[] = [
   { slug: "balustrades", title: "Balustrades" },
-  { slug: "gates", title: "Gates" },
+  {
+    slug: "gates",
+    title: "Gates",
+    cardImage: "/images/gates/driveway-gates-full.jpg",
+  },
   {
     slug: "doors",
     title: "Doors",

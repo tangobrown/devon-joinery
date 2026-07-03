@@ -71,11 +71,17 @@ export const serviceContent: Record<string, ServiceContent> = {
     h1: "Bespoke Gates",
     intro:
       "Bespoke gates are custom-designed solutions tailored to meet your specific requirements, aesthetic preferences, and project needs. Unlike standard gates, bespoke gates are crafted to reflect your vision, ensuring a unique and personalized entrance for your home or business.",
+    topGalleryImages: [
+      "/images/gates/bespoke-gates-for-driveway.jpg",
+      "/images/gates/entry-exit-gates.jpg",
+      "/images/gates/driveway-gates.jpg",
+    ],
     panels: [
       {
         heading: "Our approach to creating bespoke gates",
         imagePosition: "left",
         imageLabel: "Driveway gate photo",
+        imageSrc: "/images/gates/external-storage-gates.jpg",
         paragraphs: [
           "Our bespoke gates are available in a range of materials, including hardwoods like Oak, Iroko, and Sapele for a traditional look, as well as wrought iron, steel, and aluminium for contemporary styles. We can also incorporate custom features such as automation, decorative elements, and enhanced security options to suit your needs. This flexibility allows you to create a gate that not only looks stunning but also provides optimal protection for your premises.",
           "To inspire your design, you can browse our gallery of completed bespoke gates, which showcases a variety of styles and finishes. From elegant wooden driveway gates to sleek aluminium entrance gates, our portfolio highlights the craftsmanship and creativity that goes into each project.",
@@ -92,6 +98,7 @@ export const serviceContent: Record<string, ServiceContent> = {
         heading: "Why go for bespoke gates?",
         imagePosition: "right",
         imageLabel: "Gate detail photo",
+        imageSrc: "/images/gates/bespoke-gates-for-driveway.jpg",
         bullets: [
           "**Customisation:** Every gate is made to measure, allowing you to choose materials, styles, and features that suit your property.",
           "**Enhanced Security:** Bespoke gates offer superior security and durability, providing peace of mind for your premises.",
