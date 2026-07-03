@@ -2,16 +2,20 @@ import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 
 type Props = {
   serviceTitle: string;
+  images?: string[];
 };
 
-export function ServiceGallery({ serviceTitle }: Props) {
+export function ServiceGallery({ serviceTitle, images }: Props) {
+  const slots = [0, 1, 2];
   return (
     <section className="max-w-content mx-auto px-6 pt-2 pb-8">
       <div className="grid grid-cols-3 gap-3 md:gap-4">
-        {[1, 2, 3].map((n) => (
+        {slots.map((i) => (
           <ImagePlaceholder
-            key={n}
-            label={`${serviceTitle} photo ${n}`}
+            key={i}
+            label={`${serviceTitle} photo ${i + 1}`}
+            src={images?.[i]}
+            alt={`${serviceTitle} ${i + 1}`}
             ratio="1 / 1"
           />
         ))}

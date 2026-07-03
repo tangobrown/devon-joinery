@@ -6,6 +6,7 @@ type Props = {
   heading: string;
   imagePosition?: "left" | "right";
   imageLabel?: string;
+  imageSrc?: string;
   cta?: { label: string; href: string };
   children: ReactNode;
   imageRatio?: string;
@@ -15,12 +16,18 @@ export function MaroonPanel({
   heading,
   imagePosition = "left",
   imageLabel = "Photo",
+  imageSrc,
   cta,
   children,
   imageRatio = "1 / 1",
 }: Props) {
   const image = (
-    <ImagePlaceholder label={imageLabel} ratio={imageRatio} />
+    <ImagePlaceholder
+      label={imageLabel}
+      ratio={imageRatio}
+      src={imageSrc}
+      alt={imageLabel}
+    />
   );
 
   const card = (

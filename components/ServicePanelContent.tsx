@@ -15,6 +15,7 @@ export function ServicePanelSection({
       heading={panel.heading}
       imagePosition={panel.imagePosition}
       imageLabel={panel.imageLabel}
+      imageSrc={panel.imageSrc}
       cta={cta}
     >
       {panel.boldLead && (

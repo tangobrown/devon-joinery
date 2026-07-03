@@ -22,15 +22,30 @@ const CATEGORIES = [
 
 type Category = (typeof CATEGORIES)[number];
 
-type Item = { id: string; cat: Exclude<Category, "All">; placeholder: string };
+type Item = {
+  id: string;
+  cat: Exclude<Category, "All">;
+  placeholder: string;
+  src?: string;
+};
 
-const ITEMS: Item[] = CATEGORIES.filter((c) => c !== "All").flatMap((cat) =>
-  [1, 2].map((n) => ({
+const CATEGORY_IMAGES: Partial<Record<Exclude<Category, "All">, string[]>> = {
+  "Media Units": [
+    "/images/media-units/wooden-tv-cabinet.jpg",
+    "/images/media-units/green-media-unit.jpg",
+  ],
+};
+
+const ITEMS: Item[] = CATEGORIES.filter((c) => c !== "All").flatMap((cat) => {
+  const catKey = cat as Exclude<Category, "All">;
+  const images = CATEGORY_IMAGES[catKey];
+  return [1, 2].map((n) => ({
     id: `${cat.toLowerCase().replace(/[^a-z]+/g, "-")}-${n}`,
-    cat: cat as Exclude<Category, "All">,
+    cat: catKey,
     placeholder: `${cat} photo ${n}`,
-  })),
-);
+    src: images?.[n - 1],
+  }));
+});
 
 export default function GalleryPage() {
   const [filter, setFilter] = useState<Category>("All");
@@ -76,7 +91,12 @@ export default function GalleryPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3.5">
             {visible.map((item) => (
               <div key={item.id} className="relative">
-                <ImagePlaceholder ratio="1 / 1" label={item.placeholder} />
+                <ImagePlaceholder
+                  ratio="1 / 1"
+                  label={item.placeholder}
+                  src={item.src}
+                  alt={item.placeholder}
+                />
                 <span className="absolute left-2.5 bottom-2.5 bg-maroon/[.92] text-white text-[10px] md:text-[11px] font-semibold px-2.5 py-1.5">
                   {item.cat}
                 </span>

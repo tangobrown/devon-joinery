@@ -2,6 +2,7 @@ export type Service = {
   slug: string;
   title: string;
   navLabel?: string;
+  cardImage?: string;
 };
 
 export const services: Service[] = [
@@ -15,7 +16,11 @@ export const services: Service[] = [
     title: "Wardrobes & Storage",
     navLabel: "Wardrobes & Storage",
   },
-  { slug: "media-units", title: "Media Units" },
+  {
+    slug: "media-units",
+    title: "Media Units",
+    cardImage: "/images/media-units/media-unit-in-a-home.jpg",
+  },
   { slug: "staircases", title: "Staircases" },
 ];
 

@@ -6,6 +6,7 @@ export type MaroonPanelContent = {
   heading: string;
   imagePosition: "left" | "right";
   imageLabel: string;
+  imageSrc?: string;
   paragraphs?: Paragraph[];
   boldLead?: string;
   bullets?: string[];
@@ -16,6 +17,7 @@ export type ServiceContent = {
   h1: string;
   intro: string;
   showHeaderCta?: boolean;
+  topGalleryImages?: string[];
   panels: MaroonPanelContent[];
   faq?: {
     heading: string;
@@ -243,11 +245,17 @@ export const serviceContent: Record<string, ServiceContent> = {
     h1: "Bespoke Media Units",
     intro:
       "Transform your living space with our stylish and functional media units, designed to organize your entertainment essentials while adding a touch of elegance to your home.",
+    topGalleryImages: [
+      "/images/media-units/media-unit-in-a-home.jpg",
+      "/images/media-units/green-media-unit.jpg",
+      "/images/media-units/black-tv-cabinet.jpg",
+    ],
     panels: [
       {
         heading: "Our approach to creating bespoke media units",
         imagePosition: "left",
         imageLabel: "Media unit photo",
+        imageSrc: "/images/media-units/large-media-unit.jpg",
         paragraphs: [
           "Each media unit is crafted with customizable layouts, allowing you to choose adjustable shelves, closed cabinets, and open display spaces that best fit your needs. Durable finishes in wood, gloss, glass, and matt options are available in a wide range of colors, ensuring your unit complements your décor perfectly.",
           "Integrated cable management and discreet storage for remotes and accessories help keep your space tidy and clutter-free, while options for built-in or freestanding units ensure there's a solution for every room size and layout.",
@@ -264,6 +272,7 @@ export const serviceContent: Record<string, ServiceContent> = {
         heading: "A unique look & feel",
         imagePosition: "right",
         imageLabel: "Media wall photo",
+        imageSrc: "/images/media-units/wall-to-wall-media-unit.jpg",
         paragraphs: [
           "For those seeking a truly unique look, bespoke media walls can be tailored to your room's dimensions, combining style and practicality in a way that's entirely your own. Our multi-functional units go beyond just media storage, offering additional features like office space, seating, or extra shelving for a versatile addition to your home.",
           "Styling your media unit is simple — open shelves provide a perfect spot for family photos, books, and collectibles, while closed cabinets keep electronics and remotes out of sight. Adding ambient lighting or decorative back panels can further enhance the unit's visual appeal, and regular reorganization ensures it remains both functional and fresh.",

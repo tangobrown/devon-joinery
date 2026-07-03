@@ -6,7 +6,12 @@ import { serviceHref, type Service } from "@/lib/services";
 export function ServiceCard({ service }: { service: Service }) {
   return (
     <div className="relative overflow-hidden shadow-card group" style={{ aspectRatio: "1 / 1.28" }}>
-      <ImagePlaceholder fill label={`${service.title} photo`} />
+      <ImagePlaceholder
+        fill
+        label={`${service.title} photo`}
+        src={service.cardImage}
+        alt={`${service.title} — Devon Joinery`}
+      />
       <div
         className="absolute inset-0"
         style={{

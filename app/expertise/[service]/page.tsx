@@ -38,7 +38,10 @@ export default function ServicePage({ params }: { params: Params }) {
         }
       />
 
-      <ServiceGallery serviceTitle={content.h1.replace(/^Bespoke\s+/i, "")} />
+      <ServiceGallery
+        serviceTitle={content.h1.replace(/^Bespoke\s+/i, "")}
+        images={content.topGalleryImages}
+      />
 
       {content.panels.map((p, i) => (
         <ServicePanelSection key={i} panel={p} />
