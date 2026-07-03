@@ -60,7 +60,7 @@ export default function ArticlePage() {
             how to work out which is right for your home.
           </p>
 
-          <h2 className="text-[22px] md:text-[25px] font-bold text-ink pt-4">
+          <h2 className="text-[26px] md:text-[30px] font-bold text-ink pt-4">
             First, what they have in common
           </h2>
           <p>
@@ -75,7 +75,7 @@ export default function ArticlePage() {
             quality or safety.
           </p>
 
-          <h2 className="text-[22px] md:text-[25px] font-bold text-ink pt-4">
+          <h2 className="text-[26px] md:text-[30px] font-bold text-ink pt-4">
             The case for wooden balustrades
           </h2>
           <p>
@@ -112,7 +112,7 @@ export default function ArticlePage() {
             ))}
           </div>
 
-          <h2 className="text-[22px] md:text-[25px] font-bold text-ink pt-4">
+          <h2 className="text-[26px] md:text-[30px] font-bold text-ink pt-4">
             The case for glass balustrades
           </h2>
           <p>
@@ -148,7 +148,7 @@ export default function ArticlePage() {
             ))}
           </div>
 
-          <h2 className="text-[22px] md:text-[25px] font-bold text-ink pt-4">
+          <h2 className="text-[26px] md:text-[30px] font-bold text-ink pt-4">
             Maintenance: an honest comparison
           </h2>
           <p>
@@ -165,7 +165,7 @@ export default function ArticlePage() {
             that low-key upkeep part of the appeal of a natural material.
           </p>
 
-          <h2 className="text-[22px] md:text-[25px] font-bold text-ink pt-4">
+          <h2 className="text-[26px] md:text-[30px] font-bold text-ink pt-4">
             What about cost?
           </h2>
           <p>
@@ -179,7 +179,7 @@ export default function ArticlePage() {
             something we&apos;re always happy to provide.
           </p>
 
-          <h2 className="text-[22px] md:text-[25px] font-bold text-ink pt-4">
+          <h2 className="text-[26px] md:text-[30px] font-bold text-ink pt-4">
             Why not have both?
           </h2>
           <p>
@@ -193,7 +193,7 @@ export default function ArticlePage() {
             bespoke, the mix is entirely up to you.
           </p>
 
-          <h2 className="text-[22px] md:text-[25px] font-bold text-ink pt-4">
+          <h2 className="text-[26px] md:text-[30px] font-bold text-ink pt-4">
             How to decide
           </h2>
           <p>As a rough rule of thumb:</p>
@@ -219,7 +219,7 @@ export default function ArticlePage() {
             that&apos;s right for your home, your style and how you live.
           </p>
 
-          <h2 className="text-[22px] md:text-[25px] font-bold text-ink pt-4">
+          <h2 className="text-[26px] md:text-[30px] font-bold text-ink pt-4">
             Talk it through with us
           </h2>
           <p>

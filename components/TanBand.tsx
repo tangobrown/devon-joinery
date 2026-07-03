@@ -18,7 +18,7 @@ export function TanBand({
     <section className="bg-tan px-6 py-14">
       {variant === "card" ? (
         <div className="max-w-band mx-auto bg-white text-center px-6 md:px-10 py-11">
-          <h2 className="text-[26px] md:text-[34px] font-bold text-ink mb-4">
+          <h2 className="text-[30px] md:text-[40px] font-bold text-ink mb-4">
             {heading}
           </h2>
           {children && (

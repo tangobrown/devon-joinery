@@ -7,7 +7,7 @@ export function EstimateCTA() {
         <div className="mb-[22px] flex justify-center">
           <ReviewBadge size="sm" variant="dark" />
         </div>
-        <h2 className="text-[30px] md:text-[34px] font-bold mb-3.5">
+        <h2 className="text-[32px] md:text-[40px] font-bold mb-3.5">
           Get Your Free Estimate
         </h2>
         <p className="max-w-[520px] mx-auto text-[15px] leading-[1.6] text-white/90">

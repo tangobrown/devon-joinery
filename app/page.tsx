@@ -90,7 +90,7 @@ export default function HomePage() {
             alt="Staircase being crafted in the Devon Joinery workshop"
           />
           <div>
-            <h2 className="text-[26px] md:text-[34px] font-bold leading-[1.15] text-ink mb-5">
+            <h2 className="text-[30px] md:text-[40px] font-bold leading-[1.15] text-ink mb-5">
               Passion, Precision, Family &amp; History at Devon Joinery
             </h2>
             <p className="text-[15px] md:text-[16px] leading-[1.7] text-bodyMuted mb-7">
@@ -111,7 +111,7 @@ export default function HomePage() {
 
         <section className="max-w-content mx-auto px-6 pb-20 grid md:grid-cols-2 gap-10 md:gap-14 items-center">
           <div className="order-2 md:order-1">
-            <h2 className="text-[24px] md:text-[30px] font-bold leading-[1.2] text-ink mb-5">
+            <h2 className="text-[28px] md:text-[36px] font-bold leading-[1.2] text-ink mb-5">
               Meet the Family Behind Devon Joinery
             </h2>
             <p className="text-[15px] leading-[1.75] text-bodyMuted mb-7">

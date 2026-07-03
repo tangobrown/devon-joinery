@@ -81,7 +81,7 @@ export default function ContactPage() {
           </div>
 
           <div>
-            <h2 className="text-[24px] md:text-[30px] font-bold text-ink mb-6">
+            <h2 className="text-[28px] md:text-[36px] font-bold text-ink mb-6">
               Send Message
             </h2>
             {sent ? (

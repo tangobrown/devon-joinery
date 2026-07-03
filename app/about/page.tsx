@@ -23,7 +23,7 @@ export default function AboutPage() {
 
       <section className="max-w-content mx-auto px-6 pt-14 pb-6 grid md:grid-cols-2 gap-10 md:gap-14">
         <div>
-          <h2 className="text-[24px] md:text-[30px] font-bold leading-[1.15] text-ink mb-5">
+          <h2 className="text-[28px] md:text-[36px] font-bold leading-[1.15] text-ink mb-5">
             Where Tradition Meets Excellence
           </h2>
           <p className="text-[15px] leading-[1.75] text-bodyMuted mb-4">
@@ -51,7 +51,7 @@ export default function AboutPage() {
           </Link>
         </div>
         <div>
-          <h2 className="text-[24px] md:text-[30px] font-bold leading-[1.15] text-ink mb-5">
+          <h2 className="text-[28px] md:text-[36px] font-bold leading-[1.15] text-ink mb-5">
             Our Approach
           </h2>
           <p className="text-[15px] leading-[1.75] text-bodyMuted mb-4">

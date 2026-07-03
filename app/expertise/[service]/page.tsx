@@ -55,7 +55,7 @@ export default function ServicePage({ params }: { params: Params }) {
                 <ReviewBadge />
               </div>
             )}
-            <h2 className="text-[24px] md:text-[30px] font-bold text-ink">
+            <h2 className="text-[28px] md:text-[36px] font-bold text-ink">
               {content.faq.heading}
             </h2>
           </div>

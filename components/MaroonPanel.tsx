@@ -32,7 +32,7 @@ export function MaroonPanel({
 
   const card = (
     <div className="bg-maroon text-white px-8 md:px-11 pt-11 pb-10 flex flex-col justify-center">
-      <h2 className="text-[26px] md:text-[34px] font-bold mb-5 leading-tight">
+      <h2 className="text-[30px] md:text-[40px] font-bold mb-5 leading-tight">
         {heading}
       </h2>
       <div className="text-[14.5px] md:text-[15px] leading-[1.7] text-white/90 space-y-4">
