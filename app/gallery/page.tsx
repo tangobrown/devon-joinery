@@ -30,17 +30,37 @@ type Item = {
 };
 
 const CATEGORY_IMAGES: Partial<Record<Exclude<Category, "All">, string[]>> = {
-  "Media Units": [
-    "/images/media-units/wooden-tv-cabinet.jpg",
-    "/images/media-units/green-media-unit.jpg",
+  Balustrades: [
+    "/images/balustrades/external-ballustrades.jpg",
+    "/images/balustrades/wooden-staircase-with-steel-ballustrades.jpg",
+  ],
+  Gates: [
+    "/images/gates/entry-exit-gates.jpg",
+    "/images/gates/external-storage-gates.jpg",
   ],
   Doors: [
     "/images/doors/black-front-door.jpg",
     "/images/doors/white-stable-door.jpg",
   ],
-  Gates: [
-    "/images/gates/entry-exit-gates.jpg",
-    "/images/gates/external-storage-gates.jpg",
+  Receptions: [
+    "/images/receptions/reception-counter-for-millies.jpg",
+    "/images/receptions/reception-front-counter.jpg",
+  ],
+  Windows: [
+    "/images/windows/secondary-glazing.jpg",
+    "/images/windows/white-casement-windows-in-home.jpg",
+  ],
+  "Wardrobes & Storage": [
+    "/images/wardrobes-and-storage/bespoke-storage-unit.jpg",
+    "/images/wardrobes-and-storage/wardrobe-for-homes-2.jpg",
+  ],
+  "Media Units": [
+    "/images/media-units/wooden-tv-cabinet.jpg",
+    "/images/media-units/green-media-unit.jpg",
+  ],
+  Staircases: [
+    "/images/staircases/wooden-staircase-with-steel-ballustrades.jpg",
+    "/images/staircases/wooden-staircase-with-wooden-ballustrades.jpg",
   ],
 };
 

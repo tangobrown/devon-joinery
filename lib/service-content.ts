@@ -38,11 +38,17 @@ export const serviceContent: Record<string, ServiceContent> = {
     h1: "Bespoke Balustrades",
     intro:
       "Balustrades are where safety meets style. The finishing touch that turns a staircase, landing or balcony into a feature. At Devon Joinery, we design and handcraft bespoke wooden and glass balustrades for homes across Exeter and Devon, each one made to fit your space exactly.",
+    topGalleryImages: [
+      "/images/balustrades/wooden-staircase-with-wooden-ballustrades.jpg",
+      "/images/balustrades/wooden-staircase-with-steel-ballustrades.jpg",
+      "/images/balustrades/external-ballustrades.jpg",
+    ],
     panels: [
       {
         heading: "Our approach to creating bespoke balustrades",
         imagePosition: "left",
         imageLabel: "Balustrade photo",
+        imageSrc: "/images/balustrades/new-home-staircase.jpg",
         paragraphs: [
           "Every balustrade we make is crafted to order in our workshop in Exeter. Whether you love the timeless warmth of solid timber or the light, contemporary feel of frameless glass panels, we'll create a design that complements the character of your home.",
           "We work primarily in wood and glass, the two finishes Devon homeowners ask for most. Our wooden balustrades are made from premium hardwoods such as oak, ash and walnut, and can be paired with toughened glass where you want to keep a room feeling open and full of light. Every balustrade is built to last and made to comply with UK building regulations, so it's as safe as it is beautiful.",
@@ -59,6 +65,7 @@ export const serviceContent: Record<string, ServiceContent> = {
         heading: "Why go for bespoke balustrades?",
         imagePosition: "right",
         imageLabel: "Balustrade detail photo",
+        imageSrc: "/images/balustrades/black-external-ballustrades.jpg",
         paragraphs: [
           "Choosing a bespoke balustrade means it's made for your home and nobody else's. Unlike off-the-shelf kits, ours are measured, designed and finished for your need. The right baluster spacing, the handrail profile you want, and a seamless fit you simply can't get from standard parts.",
           "Bespoke also means freedom of design. Want hand-turned timber spindles to suit a period property in Exmouth or Sidmouth, or sleek glass to modernise a new build near Exeter? We'll bring your vision to life, balancing how it looks with how it has to perform underfoot for years to come.",
@@ -197,11 +204,17 @@ export const serviceContent: Record<string, ServiceContent> = {
     h1: "Bespoke Windows",
     intro:
       "From classic sash replacements in period properties to contemporary casement windows for modern extensions, Devon Joinery designs and manufactures each frame to order in our family-run Exeter workshop.",
+    topGalleryImages: [
+      "/images/windows/home-windows---white-casement.jpg",
+      "/images/windows/listed-property-windows.jpg",
+      "/images/windows/sliding-windows.jpg",
+    ],
     panels: [
       {
         heading: "Bespoke timber windows",
         imagePosition: "left",
         imageLabel: "Sash window photo",
+        imageSrc: "/images/windows/modern-style-windows.jpg",
         paragraphs: [
           "At Devon Joinery, bespoke windows are made the traditional way: carefully jointed, fully finished and built to last, rather than cut from standard off-the-shelf profiles.",
           "Working in quality softwoods, hardwoods and modern modified timbers such as Accoya, the team produces new and replacement windows for homes, renovations and commercial projects across Devon and the South West.",
@@ -243,6 +256,7 @@ export const serviceContent: Record<string, ServiceContent> = {
         heading: "Why choose bespoke windows?",
         imagePosition: "right",
         imageLabel: "Window detail photo",
+        imageSrc: "/images/windows/single-hung-window.jpg",
         paragraphs: [
           "Proportions, glazing bars, mouldings and opening configurations can all be matched to existing details or tailored to a new design, which is especially important for character homes and conservation areas.",
         ],
@@ -301,11 +315,17 @@ export const serviceContent: Record<string, ServiceContent> = {
     h1: "Bespoke Receptions",
     intro:
       "From welcoming hotel foyers to bespoke commercial reception desks, Devon Joinery designs and manufactures reception joinery that makes an impression from the moment your visitors walk in.",
+    topGalleryImages: [
+      "/images/receptions/reception-for-dvcc.jpg",
+      "/images/receptions/reception-front-counters-for-library.jpg",
+      "/images/receptions/reception-retail-counters.jpg",
+    ],
     panels: [
       {
         heading: "Our approach to bespoke reception joinery",
         imagePosition: "left",
         imageLabel: "Reception desk photo",
+        imageSrc: "/images/receptions/reception---counter-for-food.jpg",
         paragraphs: [
           "Every reception we build is designed around the space, the brand and the way you work. We combine premium timbers, veneers and modern materials with expert cabinetry to create desks and welcome areas that look considered and hard-wearing.",
           "From initial sketches through to on-site installation, our workshop team handles the project end-to-end so you get a reception area that fits perfectly and lasts.",
@@ -322,6 +342,7 @@ export const serviceContent: Record<string, ServiceContent> = {
         heading: "Why go for a bespoke reception?",
         imagePosition: "right",
         imageLabel: "Reception detail photo",
+        imageSrc: "/images/receptions/reception--counter-for-yoshe.jpg",
         paragraphs: [
           "A bespoke reception lets you shape the arrival experience for your customers. Sizes, materials, storage and branded details are all yours to specify — so nothing has to be a compromise.",
         ],
@@ -333,11 +354,17 @@ export const serviceContent: Record<string, ServiceContent> = {
     h1: "Bespoke Staircases",
     intro:
       "A staircase is often the most striking feature of a home. Devon Joinery designs and hand-builds bespoke staircases in a range of styles and timbers, made to fit your space exactly.",
+    topGalleryImages: [
+      "/images/staircases/wooden-staircase.jpg",
+      "/images/staircases/new-home-staircase.jpg",
+      "/images/staircases/wooden-staircase-with-handrail.jpg",
+    ],
     panels: [
       {
         heading: "Our approach to bespoke staircases",
         imagePosition: "left",
         imageLabel: "Staircase photo",
+        imageSrc: "/images/staircases/staircase-in-the-process-of-manufacturing.jpg",
         paragraphs: [
           "From traditional oak and painted staircases to contemporary open-tread and cantilevered designs, every staircase we make is drawn, engineered and built to order in our Exeter workshop.",
           "We work closely with homeowners, architects and builders to make sure the finished staircase is beautiful, safe and structurally sound — from the first sketch through to fitting.",
@@ -354,6 +381,7 @@ export const serviceContent: Record<string, ServiceContent> = {
         heading: "Why go for a bespoke staircase?",
         imagePosition: "right",
         imageLabel: "Staircase detail photo",
+        imageSrc: "/images/staircases/staircase-with-wooden-ballustrades.jpg",
         paragraphs: [
           "A made-to-measure staircase means everything — treads, risers, handrails, balustrade — is designed for your home. That gives you complete control over the look, the feel underfoot and how it works alongside the rest of the property.",
         ],
@@ -365,11 +393,17 @@ export const serviceContent: Record<string, ServiceContent> = {
     h1: "Bespoke Wardrobes & Storage",
     intro:
       "Fitted wardrobes, dressing rooms and clever storage solutions, designed and built by Devon Joinery to make the most of every corner of your home.",
+    topGalleryImages: [
+      "/images/wardrobes-and-storage/bespoke-wardrobes.jpg",
+      "/images/wardrobes-and-storage/bespoke-storage-for-homes.jpg",
+      "/images/wardrobes-and-storage/bespoke-cabinets.jpg",
+    ],
     panels: [
       {
         heading: "Our approach to fitted wardrobes and storage",
         imagePosition: "left",
         imageLabel: "Fitted wardrobe photo",
+        imageSrc: "/images/wardrobes-and-storage/wardrobe-for-homes.jpg",
         paragraphs: [
           "We start with the space — awkward eaves, sloping ceilings, chimney breasts, anything a standard flat-pack can't handle — and design storage that fits perfectly. Doors, drawers, hanging rails and interiors are all specified around what you actually own and how you use the room.",
           "Everything is manufactured in our Exeter workshop in quality materials and installed by our own team, so the finish is consistent from top to bottom.",
@@ -386,6 +420,7 @@ export const serviceContent: Record<string, ServiceContent> = {
         heading: "Why go for bespoke storage?",
         imagePosition: "right",
         imageLabel: "Wardrobe interior photo",
+        imageSrc: "/images/wardrobes-and-storage/wood-and-glass-storage.jpg",
         paragraphs: [
           "Off-the-shelf furniture rarely uses a room's full height or depth. Bespoke storage does — giving you more space, a cleaner look, and interiors laid out to suit the way you live.",
         ],
