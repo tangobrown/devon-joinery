@@ -1,16 +1,27 @@
+import Image from "next/image";
 import Link from "next/link";
 
-export function Logo({ className = "text-white" }: { className?: string }) {
+type Props = {
+  className?: string;
+  height?: number;
+};
+
+export function Logo({ className = "", height = 46 }: Props) {
+  const width = Math.round(height * (652 / 319));
   return (
-    <Link href="/" className={`inline-flex items-center gap-2.5 ${className}`}>
-      <span className="text-[30px] font-extrabold tracking-[-1px] leading-none">
-        dj
-      </span>
-      <span className="text-[13px] font-semibold leading-[1.05] tracking-[0.5px]">
-        devon
-        <br />
-        joinery
-      </span>
+    <Link
+      href="/"
+      className={`inline-flex items-center ${className}`}
+      aria-label="Devon Joinery — home"
+    >
+      <Image
+        src="/images/logo.png"
+        alt="Devon Joinery"
+        width={width}
+        height={height}
+        priority
+        className="h-[46px] w-auto block"
+      />
     </Link>
   );
 }
