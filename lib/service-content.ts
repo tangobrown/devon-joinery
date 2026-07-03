@@ -42,6 +42,9 @@ export const serviceContent: Record<string, ServiceContent> = {
       "/images/balustrades/wooden-staircase-with-wooden-ballustrades.jpg",
       "/images/balustrades/wooden-staircase-with-steel-ballustrades.jpg",
       "/images/balustrades/external-ballustrades.jpg",
+      "/images/balustrades/staircase-with-wooden-ballustrades.jpg",
+      "/images/balustrades/black-external-ballustrades.jpg",
+      "/images/balustrades/new-home-staircase.jpg",
     ],
     panels: [
       {
@@ -82,6 +85,8 @@ export const serviceContent: Record<string, ServiceContent> = {
       "/images/gates/bespoke-gates-for-driveway.jpg",
       "/images/gates/entry-exit-gates.jpg",
       "/images/gates/driveway-gates.jpg",
+      "/images/gates/driveway-gates-full.jpg",
+      "/images/gates/external-storage-gates.jpg",
     ],
     panels: [
       {
@@ -125,6 +130,9 @@ export const serviceContent: Record<string, ServiceContent> = {
       "/images/doors/timber-front-door.jpg",
       "/images/doors/white-french-doors-in-brick-building.jpg",
       "/images/doors/timber-bi-folding-doors.jpg",
+      "/images/doors/sliding-doors.jpg",
+      "/images/doors/timber-external-door.jpg",
+      "/images/doors/white-bi-fold-doors.jpg",
     ],
     panels: [
       {
@@ -208,6 +216,9 @@ export const serviceContent: Record<string, ServiceContent> = {
       "/images/windows/home-windows---white-casement.jpg",
       "/images/windows/listed-property-windows.jpg",
       "/images/windows/sliding-windows.jpg",
+      "/images/windows/modern-style-windows.jpg",
+      "/images/windows/white-casement-windows-in-home.jpg",
+      "/images/windows/windows-for-bathrooms.jpg",
     ],
     panels: [
       {
@@ -278,6 +289,9 @@ export const serviceContent: Record<string, ServiceContent> = {
       "/images/media-units/media-unit-in-a-home.jpg",
       "/images/media-units/green-media-unit.jpg",
       "/images/media-units/black-tv-cabinet.jpg",
+      "/images/media-units/wooden-tv-cabinet.jpg",
+      "/images/media-units/wall-to-wall-media-unit.jpg",
+      "/images/media-units/large-media-unit.jpg",
     ],
     panels: [
       {
@@ -319,6 +333,9 @@ export const serviceContent: Record<string, ServiceContent> = {
       "/images/receptions/reception-for-dvcc.jpg",
       "/images/receptions/reception-front-counters-for-library.jpg",
       "/images/receptions/reception-retail-counters.jpg",
+      "/images/receptions/reception-front-counter.jpg",
+      "/images/receptions/reception-counter-for-millies.jpg",
+      "/images/receptions/reception---counter-for-food.jpg",
     ],
     panels: [
       {
@@ -358,6 +375,9 @@ export const serviceContent: Record<string, ServiceContent> = {
       "/images/staircases/wooden-staircase.jpg",
       "/images/staircases/new-home-staircase.jpg",
       "/images/staircases/wooden-staircase-with-handrail.jpg",
+      "/images/staircases/winding-staircase.jpg",
+      "/images/staircases/wooden-staircase-with-wooden-ballustrades.jpg",
+      "/images/staircases/wooden-staircase-with-steel-ballustrades.jpg",
     ],
     panels: [
       {
@@ -397,6 +417,9 @@ export const serviceContent: Record<string, ServiceContent> = {
       "/images/wardrobes-and-storage/bespoke-wardrobes.jpg",
       "/images/wardrobes-and-storage/bespoke-storage-for-homes.jpg",
       "/images/wardrobes-and-storage/bespoke-cabinets.jpg",
+      "/images/wardrobes-and-storage/bespoke-storage.jpg",
+      "/images/wardrobes-and-storage/bespoke-storage-unit.jpg",
+      "/images/wardrobes-and-storage/fitted-wardrobes.jpg",
     ],
     panels: [
       {
