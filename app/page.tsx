@@ -130,7 +130,12 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="order-1 md:order-2">
-            <ImagePlaceholder label="Staircase photo" ratio="1 / 0.92" />
+            <ImagePlaceholder
+              label="Bespoke storage unit"
+              ratio="1 / 0.92"
+              src="/images/wardrobes-and-storage/bespoke-storage-unit.jpg"
+              alt="Bespoke storage unit by Devon Joinery"
+            />
           </div>
         </section>
 
