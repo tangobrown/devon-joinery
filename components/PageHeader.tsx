@@ -22,7 +22,7 @@ export function PageHeader({ title, intro, cta, size = "lg" }: Props) {
       : "text-[16px] md:text-[17px] text-body leading-[1.6]";
 
   return (
-    <section className="max-w-article mx-auto px-6 pt-12 md:pt-16 pb-8 text-center">
+    <section className="max-w-article mx-auto px-6 pt-12 md:pt-16 pb-10 text-center">
       <h1
         className={`${titleSize} font-bold tracking-[-1px] text-ink mb-3.5 leading-[1.1]`}
       >

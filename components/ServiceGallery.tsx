@@ -108,7 +108,7 @@ export function ServiceGallery({ serviceTitle, images }: Props) {
   const slideWidth = `calc((100% - ${(perPage - 1) * GAP_PX}px) / ${perPage})`;
 
   return (
-    <section className="max-w-content mx-auto px-6 pt-2 pb-8">
+    <section className="max-w-content mx-auto px-6 pt-4 pb-10 md:pb-12">
       <div
         ref={scrollRef}
         className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar cursor-grab select-none [&_img]:pointer-events-none [&_img]:select-none [&_img]:!bg-transparent"

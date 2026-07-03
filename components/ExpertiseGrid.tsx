@@ -21,7 +21,7 @@ export function ExpertiseGrid({ withIntro = false, id }: Props) {
       )}
       <section
         id={id}
-        className="max-w-content mx-auto px-6 pt-10 md:pt-12 pb-5"
+        className="max-w-content mx-auto px-6 py-10 md:py-12"
       >
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3.5 md:gap-[18px]">
           {services.map((s) => (
