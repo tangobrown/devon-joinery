@@ -45,7 +45,7 @@ export default function AboutPage() {
           </p>
           <Link
             href="/free-estimate"
-            className="inline-block bg-maroon-button text-white text-[15px] font-semibold px-6 py-3"
+            className="inline-block bg-maroon-button text-white text-[15px] font-semibold btn-lift px-6 py-3"
           >
             Get In Touch
           </Link>
@@ -72,7 +72,7 @@ export default function AboutPage() {
           </p>
           <Link
             href="/free-estimate"
-            className="inline-block bg-maroon-button text-white text-[15px] font-semibold px-6 py-3"
+            className="inline-block bg-maroon-button text-white text-[15px] font-semibold btn-lift px-6 py-3"
           >
             Get In Touch
           </Link>

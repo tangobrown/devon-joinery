@@ -30,7 +30,7 @@ export function TanBand({
             <div className="mt-7">
               <Link
                 href={cta.href}
-                className="inline-block bg-maroon-button text-white text-[15px] font-semibold px-6 py-3"
+                className="inline-block bg-maroon-button text-white text-[15px] font-semibold btn-lift px-6 py-3"
               >
                 {cta.label}
               </Link>

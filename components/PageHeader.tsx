@@ -35,7 +35,7 @@ export function PageHeader({ title, intro, cta, size = "lg" }: Props) {
         <div className="mt-6">
           <Link
             href={cta.href}
-            className="inline-block bg-maroon-button text-white text-[15px] font-semibold px-6 py-3"
+            className="inline-block bg-maroon-button text-white text-[15px] font-semibold btn-lift px-6 py-3"
           >
             {cta.label}
           </Link>

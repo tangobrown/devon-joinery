@@ -53,13 +53,13 @@ export default function HomePage() {
           <div className="flex flex-wrap justify-center gap-3.5">
             <Link
               href="#expertise"
-              className="bg-maroon-button text-white text-[15px] font-semibold px-6 py-3.5"
+              className="bg-maroon-button text-white text-[15px] font-semibold btn-lift px-6 py-3.5"
             >
               Our Expertise
             </Link>
             <Link
               href="/free-estimate"
-              className="bg-white text-maroon text-[15px] font-semibold px-6 py-3.5"
+              className="bg-white text-maroon text-[15px] font-semibold btn-lift px-6 py-3.5"
             >
               Free Estimate
             </Link>
@@ -102,7 +102,7 @@ export default function HomePage() {
             </p>
             <Link
               href="/about"
-              className="inline-block bg-maroon-button text-white text-[15px] font-semibold px-6 py-3"
+              className="inline-block bg-maroon-button text-white text-[15px] font-semibold btn-lift px-6 py-3"
             >
               More About Us
             </Link>
@@ -124,7 +124,7 @@ export default function HomePage() {
             </p>
             <Link
               href="/about"
-              className="inline-block bg-maroon-button text-white text-[15px] font-semibold px-6 py-3"
+              className="inline-block bg-maroon-button text-white text-[15px] font-semibold btn-lift px-6 py-3"
             >
               More About Us
             </Link>

@@ -41,7 +41,7 @@ export function MaroonPanel({
       {cta && (
         <Link
           href={cta.href}
-          className="inline-block bg-white text-maroon text-[15px] font-semibold px-6 py-3 mt-7 w-fit"
+          className="inline-block bg-white text-maroon text-[15px] font-semibold btn-lift px-6 py-3 mt-7 w-fit"
         >
           {cta.label}
         </Link>

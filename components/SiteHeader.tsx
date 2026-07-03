@@ -98,14 +98,14 @@ export function SiteHeader({ transparent = false }: Props) {
           {isOverlaying ? (
             <Link
               href="/free-estimate"
-              className="bg-maroon-button text-white text-[15px] font-semibold px-[22px] py-[11px]"
+              className="bg-maroon-button text-white text-[15px] font-semibold btn-lift px-[22px] py-[11px]"
             >
               Free Estimate
             </Link>
           ) : (
             <Link
               href="/free-estimate"
-              className="bg-white text-maroon text-[15px] font-semibold px-[22px] py-[11px] border border-white/50"
+              className="bg-white text-maroon text-[15px] font-semibold btn-lift px-[22px] py-[11px] border border-white/50"
             >
               Free Estimate
             </Link>
@@ -165,7 +165,7 @@ export function SiteHeader({ transparent = false }: Props) {
             <Link
               href="/free-estimate"
               onClick={() => setMobileOpen(false)}
-              className="bg-white text-maroon text-[15px] font-semibold px-[22px] py-[11px] inline-block w-fit mt-2"
+              className="bg-white text-maroon text-[15px] font-semibold btn-lift px-[22px] py-[11px] inline-block w-fit mt-2"
             >
               Free Estimate
             </Link>
