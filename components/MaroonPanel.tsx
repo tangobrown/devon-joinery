@@ -44,7 +44,7 @@ export function MaroonPanel({
 
   return (
     <section className="max-w-content mx-auto px-6 py-8 md:pb-12">
-      <div className="grid md:grid-cols-2 gap-6 md:gap-10 items-stretch">
+      <div className="grid md:grid-cols-2 items-stretch">
         {imagePosition === "left" ? (
           <>
             {image}
