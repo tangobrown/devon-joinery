@@ -11,7 +11,7 @@ export function ExpertiseGrid({ withIntro = false, id }: Props) {
     <>
       {withIntro && (
         <section className="max-w-article mx-auto px-6 pt-14 md:pt-16 pb-2 text-center">
-          <p className="text-[18px] md:text-[20px] font-medium leading-[1.55] text-[#2b333c]">
+          <p className="text-[19px] md:text-[21px] font-semibold leading-[1.55] text-[#2b333c]">
             Devon Joinery crafts bespoke kitchens, fitted wardrobes, windows,
             doors, and architectural joinery. Discover how we can transform
             your entire space with the same dedication to quality and

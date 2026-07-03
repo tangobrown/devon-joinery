@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
+import { ArrowUpRightIcon } from "@/components/Icons";
 import { serviceHref, type Service } from "@/lib/services";
 
 export function ServiceCard({ service }: { service: Service }) {
@@ -14,14 +15,14 @@ export function ServiceCard({ service }: { service: Service }) {
         }}
       />
       <div className="absolute inset-x-0 bottom-0 p-3.5 flex flex-col items-center gap-2.5">
-        <div className="text-white font-semibold text-[15px] md:text-[18px] text-center leading-[1.2]">
+        <div className="text-white font-semibold text-[20px] text-center leading-[1.2]">
           {service.title}
         </div>
         <Link
           href={serviceHref(service.slug)}
-          className="flex items-center justify-center gap-1.5 w-full bg-maroon-button text-white text-[11px] md:text-[13px] font-semibold py-2 hover:brightness-110"
+          className="flex items-center justify-center gap-2 w-full bg-maroon-button text-white text-[14px] md:text-[15px] font-semibold py-2 hover:brightness-110"
         >
-          More Details <span className="text-[9px]">›</span>
+          More Details <ArrowUpRightIcon className="w-4 h-4" />
         </Link>
       </div>
     </div>
