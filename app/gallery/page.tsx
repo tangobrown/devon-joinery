@@ -102,7 +102,7 @@ export default function GalleryPage() {
                   key={cat}
                   onClick={() => setFilter(cat)}
                   className={
-                    "px-[18px] py-[9px] text-[13px] font-semibold border transition-colors " +
+                    "px-[18px] py-[9px] text-[15px] font-semibold border transition-colors " +
                     (active
                       ? "bg-maroon text-white border-maroon"
                       : "bg-white text-body border-[#d8d3c4] hover:border-maroon hover:text-maroon")

@@ -25,7 +25,7 @@ export function ServiceCard({ service }: { service: Service }) {
         </div>
         <Link
           href={serviceHref(service.slug)}
-          className="flex items-center justify-center gap-2 w-full bg-maroon-button text-white text-[14px] md:text-[15px] font-semibold py-2 hover:brightness-110"
+          className="flex items-center justify-center gap-2 w-full bg-maroon-button text-white text-[15px] font-semibold py-2 hover:brightness-110"
         >
           More Details <ArrowUpRightIcon className="w-4 h-4" />
         </Link>

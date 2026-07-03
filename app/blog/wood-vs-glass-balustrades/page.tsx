@@ -250,7 +250,7 @@ export default function ArticlePage() {
           <div className="pt-6">
             <Link
               href="/free-estimate"
-              className="inline-flex items-center gap-2 bg-maroon-button text-white text-[13px] font-semibold px-6 py-3"
+              className="inline-flex items-center gap-2 bg-maroon-button text-white text-[15px] font-semibold px-6 py-3"
             >
               Request a Free Estimate <ArrowRightIcon className="w-3.5 h-3.5" />
             </Link>

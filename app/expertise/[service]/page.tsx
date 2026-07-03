@@ -63,7 +63,7 @@ export default function ServicePage({ params }: { params: Params }) {
           <div className="text-center mt-8">
             <Link
               href="/free-estimate"
-              className="inline-block bg-maroon-button text-white text-[13px] font-semibold px-6 py-3"
+              className="inline-block bg-maroon-button text-white text-[15px] font-semibold px-6 py-3"
             >
               Free Estimate
             </Link>

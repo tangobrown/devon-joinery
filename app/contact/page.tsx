@@ -120,7 +120,7 @@ export default function ContactPage() {
                 />
                 <button
                   type="submit"
-                  className="bg-maroon-button text-white text-[13px] font-semibold px-6 py-3"
+                  className="bg-maroon-button text-white text-[15px] font-semibold px-6 py-3"
                 >
                   Send Enquiry
                 </button>
