@@ -86,8 +86,8 @@ export default function HomePage() {
           <ImagePlaceholder
             label="Workshop / cabinetry photo"
             ratio="1 / 1"
-            src="/images/staircases/staircase-in-the-process-of-manufacturing.jpg"
-            alt="Staircase being crafted in the Devon Joinery workshop"
+            src="/images/staircases/new-home-staircase.jpg"
+            alt="Bespoke staircase in a new home by Devon Joinery"
           />
           <div>
             <h2 className="text-[30px] md:text-[40px] font-bold leading-[1.15] text-ink mb-5">
