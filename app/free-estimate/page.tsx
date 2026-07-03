@@ -45,7 +45,7 @@ export default function FreeEstimatePage() {
   return (
     <>
       <SiteHeader />
-      <main className="bg-cream">
+      <main className="bg-creamHome">
         <PageHeader
           title="Free Estimate"
           size="md"

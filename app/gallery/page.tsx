@@ -43,7 +43,7 @@ export default function GalleryPage() {
   return (
     <>
       <SiteHeader />
-      <main className="bg-cream">
+      <main className="bg-creamHome">
         <PageHeader
           title="Work Gallery"
           size="md"

@@ -21,7 +21,7 @@ export default function ContactPage() {
   return (
     <>
       <SiteHeader />
-      <main className="bg-cream">
+      <main className="bg-creamHome">
         <PageHeader
           title="Contact Us"
           size="md"

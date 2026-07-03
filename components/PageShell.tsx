@@ -13,7 +13,7 @@ export function PageShell({ children, header = "solid" }: Props) {
   return (
     <>
       {header === "solid" && <SiteHeader />}
-      <main className="bg-cream">{children}</main>
+      <main className="bg-creamHome">{children}</main>
       <EstimateCTA />
       <ContactStrip />
       <SiteFooter />
