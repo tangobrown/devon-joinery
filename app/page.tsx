@@ -7,12 +7,22 @@ import { ExpertiseGrid } from "@/components/ExpertiseGrid";
 import { AccreditationsGrid } from "@/components/AccreditationsGrid";
 import { ReviewBadge } from "@/components/ReviewBadge";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
+import { HeroSlideshow } from "@/components/HeroSlideshow";
+
+const HERO_SLIDES = [
+  "/images/hero/slide---reception-unit.jpg",
+  "/images/hero/slide---stairs.jpg",
+  "/images/hero/slide---storage-unit.jpg",
+  "/images/hero/slide-storage.jpg",
+  "/images/hero/slide-windows.jpg",
+  "/images/hero/windows-and-stairs.jpg",
+];
 
 export default function HomePage() {
   return (
     <>
       <section className="relative w-full min-h-[660px] flex flex-col overflow-hidden">
-        <ImagePlaceholder fill label="Hero: workshop / bespoke kitchen photo" />
+        <HeroSlideshow images={HERO_SLIDES} />
         <div
           className="absolute inset-0"
           style={{
