@@ -55,11 +55,6 @@ export function ReviewBadge({ size = "md", variant = "light" }: Props) {
         >
           Top Rated Service
         </div>
-        <div
-          className={`text-[#8a8a8a] ${isSm ? "text-[9px]" : "text-[10px]"}`}
-        >
-          verified by Trustindex
-        </div>
       </div>
     </div>
   );
