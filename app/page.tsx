@@ -41,7 +41,7 @@ export default function HomePage() {
             </span>
             <span className="w-[34px] h-px bg-white/70" />
           </div>
-          <h1 className="text-[44px] sm:text-[56px] md:text-[72px] font-extrabold leading-[1.02] tracking-[-1.5px] mb-5">
+          <h1 className="text-[50px] sm:text-[64px] md:text-[82px] font-semibold leading-[1.02] tracking-[-1.5px] mb-5">
             Timeless Techniques,
             <br />
             Flawless Finishes.
