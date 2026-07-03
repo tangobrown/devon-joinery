@@ -83,7 +83,12 @@ export default function HomePage() {
         <ExpertiseGrid id="expertise" />
 
         <section className="max-w-content mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 md:gap-14 items-center">
-          <ImagePlaceholder label="Workshop / cabinetry photo" ratio="1 / 1" />
+          <ImagePlaceholder
+            label="Workshop / cabinetry photo"
+            ratio="1 / 1"
+            src="/images/staircases/staircase-in-the-process-of-manufacturing.jpg"
+            alt="Staircase being crafted in the Devon Joinery workshop"
+          />
           <div>
             <h2 className="text-[26px] md:text-[34px] font-bold leading-[1.15] text-ink mb-5">
               Passion, Precision, Family &amp; History at Devon Joinery
