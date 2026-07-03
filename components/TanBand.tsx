@@ -15,7 +15,13 @@ export function TanBand({
   variant = "card",
 }: Props) {
   return (
-    <section className="bg-tan px-6 py-14">
+    <section
+      className="bg-tan px-6 py-14"
+      style={{
+        backgroundImage:
+          "repeating-linear-gradient(90deg,transparent 0,transparent 18px,rgba(60,42,22,.08) 18px,rgba(60,42,22,.08) 19px,transparent 19px,transparent 20px,rgba(255,255,255,.28) 20px,rgba(255,255,255,.28) 21px)",
+      }}
+    >
       {variant === "card" ? (
         <div className="max-w-band mx-auto bg-white text-center px-6 md:px-10 py-11">
           <h2 className="text-[30px] md:text-[40px] font-bold text-ink mb-4">
