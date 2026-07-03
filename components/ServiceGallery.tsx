@@ -48,6 +48,9 @@ export function ServiceGallery({ serviceTitle, images }: Props) {
       startX = e.clientX;
       startScroll = el.scrollLeft;
       el.style.cursor = "grabbing";
+      // Turn off scroll-snap while dragging so the strip moves 1:1
+      // with the pointer instead of jumping between snap points.
+      el.style.scrollSnapType = "none";
     };
 
     const onMouseMove = (e: MouseEvent) => {
@@ -66,6 +69,8 @@ export function ServiceGallery({ serviceTitle, images }: Props) {
       isDown = false;
       dragged = false;
       el.style.cursor = "grab";
+      // Restore scroll-snap so release lands cleanly on a page edge.
+      el.style.scrollSnapType = "";
       if (wasDrag) {
         const suppress = (ev: MouseEvent) => {
           ev.preventDefault();
