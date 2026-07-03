@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { services, serviceHref } from "@/lib/services";
 import { ChevronDownIcon } from "@/components/Icons";
 import { Logo } from "@/components/Logo";
@@ -27,17 +27,34 @@ type Props = {
 
 export function SiteHeader({ transparent = false }: Props) {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  const bg = transparent ? "bg-transparent" : "bg-maroon";
-  const linkColor = "text-white";
-  const paddingY = transparent ? "py-[22px]" : "py-4";
+  useEffect(() => {
+    if (!transparent) return;
+    const onScroll = () => setScrolled(window.scrollY > 120);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [transparent]);
+
+  const isOverlaying = transparent && !scrolled;
+
+  const positionClasses = transparent
+    ? "fixed top-0 left-0 right-0"
+    : "sticky top-0";
+  const bgClasses = isOverlaying
+    ? "bg-transparent"
+    : "bg-maroon shadow-[0_2px_10px_rgba(0,0,0,.15)]";
+  const paddingY = isOverlaying ? "py-[18px]" : "py-3";
 
   return (
-    <header className={`w-full ${bg} ${transparent ? "relative z-30" : ""}`}>
+    <header
+      className={`w-full ${positionClasses} z-40 ${bgClasses} transition-colors duration-300`}
+    >
       <div
-        className={`mx-auto flex max-w-nav items-center justify-between px-6 md:px-[46px] ${paddingY}`}
+        className={`mx-auto flex max-w-nav items-center justify-between px-6 md:px-[46px] ${paddingY} transition-[padding] duration-300`}
       >
-        <Logo className={linkColor} />
+        <Logo className="text-white" />
 
         <nav className="hidden md:flex items-center gap-[30px] text-white text-[14px] font-medium">
           {navLinks.map((l) => (
@@ -78,7 +95,7 @@ export function SiteHeader({ transparent = false }: Props) {
         </nav>
 
         <div className="hidden md:block">
-          {transparent ? (
+          {isOverlaying ? (
             <Link
               href="/free-estimate"
               className="bg-maroon-button text-white text-[13px] font-semibold px-[22px] py-[11px]"

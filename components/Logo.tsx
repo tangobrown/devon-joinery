@@ -3,11 +3,9 @@ import Link from "next/link";
 
 type Props = {
   className?: string;
-  height?: number;
 };
 
-export function Logo({ className = "", height = 46 }: Props) {
-  const width = Math.round(height * (652 / 319));
+export function Logo({ className = "" }: Props) {
   return (
     <Link
       href="/"
@@ -17,10 +15,11 @@ export function Logo({ className = "", height = 46 }: Props) {
       <Image
         src="/images/logo.png"
         alt="Devon Joinery"
-        width={width}
-        height={height}
+        width={652}
+        height={319}
         priority
-        className="h-[46px] w-auto block"
+        sizes="(max-width: 768px) 140px, 180px"
+        className="h-[54px] md:h-[58px] w-auto block"
       />
     </Link>
   );
