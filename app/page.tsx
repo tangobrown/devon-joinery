@@ -27,7 +27,7 @@ export default function HomePage() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(180deg,rgba(15,17,20,0.62) 0%,rgba(15,17,20,0.35) 40%,rgba(15,17,20,0.62) 100%)",
+              "linear-gradient(180deg,rgba(15,17,20,0.78) 0%,rgba(15,17,20,0.55) 40%,rgba(15,17,20,0.78) 100%)",
           }}
         />
 
