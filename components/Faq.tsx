@@ -18,7 +18,7 @@ export function Faq({ items }: Props) {
             <span>{item.q}</span>
             <ChevronDownIcon className="w-4 h-4 text-maroon transition-transform duration-200 group-open:rotate-180 flex-shrink-0" />
           </summary>
-          <div className="px-5 pb-[18px] text-[13.5px] leading-[1.7] text-bodyMuted">
+          <div className="px-5 pb-[18px] text-[14.5px] leading-[1.7] text-bodyMuted">
             {item.a}
           </div>
         </details>

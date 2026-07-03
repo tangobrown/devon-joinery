@@ -22,7 +22,7 @@ export function TanBand({
             {heading}
           </h2>
           {children && (
-            <div className="text-[14px] md:text-[15px] leading-[1.7] text-bodyMuted max-w-[560px] mx-auto">
+            <div className="text-[15px] md:text-[16px] leading-[1.7] text-bodyMuted max-w-[560px] mx-auto">
               {children}
             </div>
           )}

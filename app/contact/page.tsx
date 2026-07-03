@@ -59,7 +59,7 @@ export default function ContactPage() {
                 icon={<MapPinIcon className="w-5 h-5" />}
                 label="Address"
                 value={
-                  <div className="text-body text-[14px] leading-[1.6]">
+                  <div className="text-body text-[15px] leading-[1.6]">
                     Clyst Court, Blackmore Rd, Hill Barton Business Park
                     <br />
                     Clyst St. Mary, Exeter, Devon EX5 1SA
