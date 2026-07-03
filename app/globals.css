@@ -9,6 +9,11 @@
     color: #20262e;
     -webkit-font-smoothing: antialiased;
   }
+  body {
+    /* Global 10% scale-up: matches the prototype's intended reading size
+       across fonts, spacing and layouts. */
+    zoom: 1.1;
+  }
   a {
     color: inherit;
     text-decoration: none;
