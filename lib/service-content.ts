@@ -44,7 +44,9 @@ export const serviceContent: Record<string, ServiceContent> = {
     intro:
       "Balustrades are where safety meets style. The finishing touch that turns a staircase, landing or balcony into a feature. At Devon Joinery, we design and handcraft bespoke wooden and glass balustrades for homes across Exeter and Devon, each one made to fit your space exactly.",
     topGalleryImages: [
+      "/images/balustrades/glass-balustrades-on-staircase.jpg",
       "/images/balustrades/wooden-staircase-with-wooden-ballustrades.jpg",
+      "/images/balustrades/wooden-staircase-with-glass-balustrades.jpg",
       "/images/balustrades/wooden-staircase-with-steel-ballustrades.jpg",
       "/images/balustrades/external-ballustrades.jpg",
       "/images/balustrades/staircase-with-wooden-ballustrades.jpg",

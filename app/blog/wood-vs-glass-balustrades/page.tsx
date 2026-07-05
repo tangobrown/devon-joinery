@@ -161,12 +161,12 @@ export default function ArticlePage() {
           <div className="grid grid-cols-2 gap-3 py-3">
             {[
               {
-                src: "/images/balustrades/external-ballustrades.jpg",
-                alt: "External balustrade in a contemporary Devon home",
+                src: "/images/balustrades/glass-balustrades-on-staircase.jpg",
+                alt: "Frameless glass balustrades on a staircase",
               },
               {
-                src: "/images/balustrades/black-external-ballustrades.jpg",
-                alt: "Slim black-framed external balustrade",
+                src: "/images/balustrades/wooden-staircase-with-glass-balustrades.jpg",
+                alt: "Wooden staircase paired with glass balustrade panels",
               },
             ].map((img, i) => (
               <ImagePlaceholder

@@ -28,6 +28,8 @@ type Item = { src: string; cat: Cat };
 
 const ITEMS: Item[] = [
   // Balustrades
+  { cat: "Balustrades", src: "/images/balustrades/glass-balustrades-on-staircase.jpg" },
+  { cat: "Balustrades", src: "/images/balustrades/wooden-staircase-with-glass-balustrades.jpg" },
   { cat: "Balustrades", src: "/images/balustrades/black-external-ballustrades.jpg" },
   { cat: "Balustrades", src: "/images/balustrades/external-ballustrades.jpg" },
   { cat: "Balustrades", src: "/images/balustrades/new-home-staircase.jpg" },
