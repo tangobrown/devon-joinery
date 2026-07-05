@@ -7,7 +7,7 @@ import { ExpertiseGrid } from "@/components/ExpertiseGrid";
 import { TanBand } from "@/components/TanBand";
 
 export const metadata = {
-  title: "About Us",
+  title: "About Us | Family-Run Joinery Workshop in Exeter",
   description:
     "Meet the family behind Devon Joinery. Over 25 years crafting bespoke doors, windows, staircases, cabinetry and more in our Exeter workshop. BWF, Accoya and SSIP accredited.",
   alternates: { canonical: "/about" },

@@ -3,7 +3,7 @@ import { PageHeader } from "@/components/PageHeader";
 import { ExpertiseGrid } from "@/components/ExpertiseGrid";
 
 export const metadata = {
-  title: "Our Expertise — Bespoke Joinery Services",
+  title: "Our Expertise | Bespoke Joinery Services in Exeter",
   description:
     "Explore Devon Joinery's eight specialisms: balustrades, gates, doors, receptions, windows, wardrobes & storage, media units and staircases — all handcrafted in Exeter.",
   alternates: { canonical: "/expertise" },

@@ -11,7 +11,10 @@ import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { HeroSlideshow } from "@/components/HeroSlideshow";
 
 export const metadata: Metadata = {
-  title: "Devon Joinery — Bespoke Joinery in Exeter, Devon",
+  title: {
+    absolute:
+      "Devon Joinery | Bespoke Doors, Windows & Staircases in Exeter",
+  },
   description:
     "Family-run bespoke joinery workshop in Exeter. Over 25 years crafting doors, windows, staircases, balustrades, gates, wardrobes, media units and reception counters across Devon.",
   alternates: { canonical: "/" },
