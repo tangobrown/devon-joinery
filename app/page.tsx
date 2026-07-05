@@ -44,13 +44,11 @@ export default function HomePage() {
 
         <SiteHeader transparent />
 
-        <div className="relative z-10 flex-1 flex flex-col items-center justify-center text-center px-5 py-16 md:py-20 text-white">
-          <div className="flex items-center gap-3.5 mb-5">
-            <span className="w-[34px] h-px bg-white/70" />
+        <div className="relative z-10 flex-1 flex flex-col items-center justify-start text-center px-5 pt-36 md:pt-52 pb-16 md:pb-20 text-white">
+          <div className="mb-5">
             <span className="text-[13px] md:text-[14px] font-medium tracking-[1px] uppercase">
               Carpentry &amp; Bespoke Joinery in Devon
             </span>
-            <span className="w-[34px] h-px bg-white/70" />
           </div>
           <h1 className="text-[50px] sm:text-[64px] md:text-[82px] font-semibold leading-[1.02] tracking-[-1.5px] mb-5">
             Timeless Techniques,
