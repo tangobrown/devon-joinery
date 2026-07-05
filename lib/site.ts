@@ -14,7 +14,7 @@ export const site = {
     ],
   },
   mapEmbedSrc:
-    "https://www.google.com/maps?q=Clyst+Court,+Hill+Barton+Business+Park,+Clyst+St.+Mary,+Exeter+EX5+1SA&output=embed",
+    "https://www.google.com/maps?q=Devon+Joinery,+Clyst+Court,+Hill+Barton+Business+Park,+Exeter+EX5+1SA&z=13&output=embed",
   formspreeEndpoint: "https://formspree.io/f/mqevnpjb",
 };
 
