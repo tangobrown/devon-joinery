@@ -23,14 +23,15 @@ export default function AboutPage() {
       />
 
       <section className="max-w-content mx-auto px-6">
-        <div className="relative w-full h-[240px] md:h-[380px] overflow-hidden">
+        <div className="relative w-full max-w-[1000px] mx-auto h-[240px] md:h-[360px] overflow-hidden">
           <Image
             src="/images/receptions/reception-front-counters-for-library.jpg"
             alt="Bespoke reception counter for a library by Devon Joinery"
             fill
-            sizes="(max-width: 768px) 100vw, 1100px"
+            sizes="(max-width: 1000px) 100vw, 1000px"
             className="object-cover"
             priority
+            quality={90}
           />
         </div>
       </section>
@@ -96,14 +97,15 @@ export default function AboutPage() {
       <AccreditationsGrid />
 
       <TanBand heading="Meet the Devon Joinery team..." variant="plain">
-        <div className="max-w-[560px] mx-auto">
-          <div className="relative w-full aspect-[1.55/1] overflow-hidden">
+        <div className="max-w-[500px] mx-auto">
+          <div className="relative w-full aspect-[1024/462] overflow-hidden">
             <Image
               src="/images/about/team.jpg"
               alt="The Devon Joinery team"
               fill
-              sizes="(max-width: 768px) 100vw, 560px"
+              sizes="(max-width: 500px) 100vw, 500px"
               className="object-cover"
+              quality={90}
             />
           </div>
         </div>
