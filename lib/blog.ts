@@ -6,6 +6,8 @@ export type BlogPost = {
   readTime: string;
   categories: string[];
   excerpt: string;
+  coverImage?: string;
+  coverAlt?: string;
 };
 
 export const posts: BlogPost[] = [
@@ -18,6 +20,8 @@ export const posts: BlogPost[] = [
     categories: ["Balustrades", "Comparisons"],
     excerpt:
       "When it comes to choosing a balustrade for your staircase, landing or balcony, two materials tend to top the list…",
+    coverImage: "/images/balustrades/glass-balustrades-on-staircase.jpg",
+    coverAlt: "Frameless glass balustrades on a bespoke staircase by Devon Joinery",
   },
 ];
 

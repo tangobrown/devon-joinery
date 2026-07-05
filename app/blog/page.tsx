@@ -32,6 +32,8 @@ export default function BlogPage() {
               <ImagePlaceholder
                 label={`${post.title} — hero image`}
                 ratio="1.8 / 1"
+                src={post.coverImage}
+                alt={post.coverAlt ?? post.title}
               />
               <div className="p-5">
                 <div className="text-maroon text-[12px] font-semibold mb-2">
