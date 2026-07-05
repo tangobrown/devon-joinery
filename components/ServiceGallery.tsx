@@ -60,6 +60,9 @@ export function ServiceGallery({ serviceTitle, images }: Props) {
     el.scrollTo({ left: page * el.clientWidth, behavior: "smooth" });
   };
 
+  const goNext = () => goToPage((activePage + 1) % totalPages);
+  const goPrev = () => goToPage((activePage - 1 + totalPages) % totalPages);
+
   const slideWidth = `calc((100% - ${(perPage - 1) * GAP_PX}px) / ${perPage})`;
 
   const realImages = slots.filter((s): s is string => Boolean(s));
@@ -67,44 +70,54 @@ export function ServiceGallery({ serviceTitle, images }: Props) {
   return (
     <>
       <section className="max-w-content mx-auto px-6 pt-4 pb-10 md:pb-12">
-        <div
-          ref={scrollRef}
-          className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar"
-          style={{ gap: `${GAP_PX}px` }}
-        >
-          {slots.map((src, i) => {
-            const clickable = Boolean(src);
-            const imageIndex = clickable ? realImages.indexOf(src!) : -1;
-            return (
-              <div
-                key={i}
-                className="flex-none snap-start"
-                style={{ width: slideWidth }}
-              >
-                {clickable ? (
-                  <button
-                    type="button"
-                    onClick={() => setLightboxIndex(imageIndex)}
-                    className="block w-full cursor-zoom-in focus:outline-none focus-visible:ring-2 focus-visible:ring-maroon"
-                    aria-label={`Open ${serviceTitle} image ${i + 1}`}
-                  >
+        <div className="relative">
+          <div
+            ref={scrollRef}
+            className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar"
+            style={{ gap: `${GAP_PX}px` }}
+          >
+            {slots.map((src, i) => {
+              const clickable = Boolean(src);
+              const imageIndex = clickable ? realImages.indexOf(src!) : -1;
+              return (
+                <div
+                  key={i}
+                  className="flex-none snap-start"
+                  style={{ width: slideWidth }}
+                >
+                  {clickable ? (
+                    <button
+                      type="button"
+                      onClick={() => setLightboxIndex(imageIndex)}
+                      className="block w-full cursor-pointer transition-opacity duration-200 hover:opacity-85 focus:outline-none focus-visible:ring-2 focus-visible:ring-maroon"
+                      aria-label={`Open ${serviceTitle} image ${i + 1}`}
+                    >
+                      <ImagePlaceholder
+                        label={`${serviceTitle} photo ${i + 1}`}
+                        src={src ?? undefined}
+                        alt={`${serviceTitle} ${i + 1}`}
+                        ratio="1 / 1"
+                      />
+                    </button>
+                  ) : (
                     <ImagePlaceholder
                       label={`${serviceTitle} photo ${i + 1}`}
-                      src={src ?? undefined}
-                      alt={`${serviceTitle} ${i + 1}`}
                       ratio="1 / 1"
                     />
-                  </button>
-                ) : (
-                  <ImagePlaceholder
-                    label={`${serviceTitle} photo ${i + 1}`}
-                    ratio="1 / 1"
-                  />
-                )}
-              </div>
-            );
-          })}
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+          {totalPages > 1 && (
+            <>
+              <CarouselArrow direction="prev" onClick={goPrev} />
+              <CarouselArrow direction="next" onClick={goNext} />
+            </>
+          )}
         </div>
+
         {totalPages > 1 && (
           <div className="flex items-center justify-center gap-2 mt-5">
             {Array.from({ length: totalPages }).map((_, i) => (
@@ -135,5 +148,43 @@ export function ServiceGallery({ serviceTitle, images }: Props) {
         />
       )}
     </>
+  );
+}
+
+function CarouselArrow({
+  direction,
+  onClick,
+}: {
+  direction: "prev" | "next";
+  onClick: () => void;
+}) {
+  const isPrev = direction === "prev";
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      aria-label={isPrev ? "Previous images" : "Next images"}
+      className={`absolute top-1/2 -translate-y-1/2 ${
+        isPrev ? "left-2 md:-left-3" : "right-2 md:-right-3"
+      } w-10 h-10 md:w-11 md:h-11 flex items-center justify-center bg-white/85 hover:bg-white text-ink shadow-card transition-all rounded-full z-10`}
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="w-5 h-5"
+        aria-hidden="true"
+      >
+        {isPrev ? (
+          <polyline points="15 18 9 12 15 6" />
+        ) : (
+          <polyline points="9 18 15 12 9 6" />
+        )}
+      </svg>
+    </button>
   );
 }
