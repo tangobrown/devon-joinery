@@ -13,12 +13,12 @@ export function AccreditationsGrid() {
             key={a.id}
             className="bg-white border border-[#ececec] p-5 flex flex-col items-center gap-3 shadow-[0_2px_10px_rgba(0,0,0,.04)]"
           >
-            <div className="relative w-[96px] h-[96px]">
+            <div className="relative w-[150px] h-[150px]">
               <Image
                 src={a.logo}
                 alt={a.label}
                 fill
-                sizes="96px"
+                sizes="150px"
                 className="object-contain"
               />
             </div>
