@@ -95,21 +95,12 @@ export function SiteHeader({ transparent = false }: Props) {
         </nav>
 
         <div className="hidden md:block">
-          {isOverlaying ? (
-            <Link
-              href="/free-estimate"
-              className="bg-maroon-button text-white text-[15px] font-semibold btn-lift px-[22px] py-[11px]"
-            >
-              Free Estimate
-            </Link>
-          ) : (
-            <Link
-              href="/free-estimate"
-              className="bg-white text-maroon text-[15px] font-semibold btn-lift px-[22px] py-[11px] border border-white/50"
-            >
-              Free Estimate
-            </Link>
-          )}
+          <Link
+            href="/free-estimate"
+            className="bg-transparent text-white border border-white hover:bg-white hover:text-maroon text-[15px] font-semibold btn-lift px-[22px] py-[11px]"
+          >
+            Free Estimate
+          </Link>
         </div>
 
         <button
@@ -165,7 +156,7 @@ export function SiteHeader({ transparent = false }: Props) {
             <Link
               href="/free-estimate"
               onClick={() => setMobileOpen(false)}
-              className="bg-white text-maroon text-[15px] font-semibold btn-lift px-[22px] py-[11px] inline-block w-fit mt-2"
+              className="bg-transparent text-white border border-white hover:bg-white hover:text-maroon text-[15px] font-semibold btn-lift px-[22px] py-[11px] inline-block w-fit mt-2"
             >
               Free Estimate
             </Link>
