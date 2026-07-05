@@ -97,13 +97,13 @@ export default function AboutPage() {
       <AccreditationsGrid />
 
       <TanBand heading="Meet the Devon Joinery team..." variant="plain">
-        <div className="max-w-[500px] mx-auto">
+        <div className="max-w-[620px] mx-auto">
           <div className="relative w-full aspect-[1024/462] overflow-hidden">
             <Image
               src="/images/about/team.jpg"
               alt="The Devon Joinery team"
               fill
-              sizes="(max-width: 500px) 100vw, 500px"
+              sizes="(max-width: 620px) 100vw, 620px"
               className="object-cover"
               quality={90}
             />

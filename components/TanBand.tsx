@@ -38,7 +38,14 @@ export function TanBand({
           )}
         </div>
       ) : (
-        <div className="max-w-band mx-auto text-center">{children}</div>
+        <div className="max-w-band mx-auto text-center">
+          {heading && (
+            <h2 className="text-[30px] md:text-[40px] font-bold text-ink mb-8">
+              {heading}
+            </h2>
+          )}
+          {children}
+        </div>
       )}
     </section>
   );
