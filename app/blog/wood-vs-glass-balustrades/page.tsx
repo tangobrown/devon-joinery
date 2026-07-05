@@ -46,6 +46,8 @@ export default function ArticlePage() {
           label="Balustrade — hero image"
           ratio="1.7 / 1"
           className="mb-8"
+          src="/images/balustrades/staircase-with-wooden-ballustrades.jpg"
+          alt="Bespoke wooden balustrade on a staircase by Devon Joinery"
         />
 
         <div className="prose-body space-y-5 text-[17px] leading-[1.75] text-body">
@@ -106,11 +108,26 @@ export default function ArticlePage() {
           </p>
 
           <div className="grid grid-cols-3 gap-3 py-3">
-            {[1, 2, 3].map((n) => (
+            {[
+              {
+                src: "/images/balustrades/wooden-staircase-with-wooden-ballustrades.jpg",
+                alt: "Wooden staircase with hand-turned wooden balustrades",
+              },
+              {
+                src: "/images/balustrades/new-home-staircase.jpg",
+                alt: "New-home staircase with timber balustrade",
+              },
+              {
+                src: "/images/staircases/wooden-staircase-with-handrail.jpg",
+                alt: "Wooden staircase with a shaped timber handrail",
+              },
+            ].map((img, i) => (
               <ImagePlaceholder
-                key={n}
-                label={`Wooden balustrade ${n}`}
+                key={i}
+                label={`Wooden balustrade ${i + 1}`}
                 ratio="1 / 1"
+                src={img.src}
+                alt={img.alt}
               />
             ))}
           </div>
@@ -142,11 +159,22 @@ export default function ArticlePage() {
           </p>
 
           <div className="grid grid-cols-2 gap-3 py-3">
-            {[1, 2].map((n) => (
+            {[
+              {
+                src: "/images/balustrades/external-ballustrades.jpg",
+                alt: "External balustrade in a contemporary Devon home",
+              },
+              {
+                src: "/images/balustrades/black-external-ballustrades.jpg",
+                alt: "Slim black-framed external balustrade",
+              },
+            ].map((img, i) => (
               <ImagePlaceholder
-                key={n}
-                label={`Glass balustrade ${n}`}
+                key={i}
+                label={`Glass balustrade ${i + 1}`}
                 ratio="1.4 / 1"
+                src={img.src}
+                alt={img.alt}
               />
             ))}
           </div>
