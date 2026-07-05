@@ -16,6 +16,8 @@ export type ServiceContent = {
   slug: string;
   h1: string;
   intro: string;
+  metaTitle?: string;
+  metaDescription?: string;
   showHeaderCta?: boolean;
   topGalleryImages?: string[];
   panels: MaroonPanelContent[];
@@ -36,6 +38,9 @@ export const serviceContent: Record<string, ServiceContent> = {
   balustrades: {
     slug: "balustrades",
     h1: "Bespoke Balustrades",
+    metaTitle: "Bespoke Wooden & Glass Balustrades in Exeter, Devon",
+    metaDescription:
+      "Handcrafted wooden and glass balustrades made to measure in our Exeter workshop. Traditional turned timber or contemporary frameless glass — get a free estimate.",
     intro:
       "Balustrades are where safety meets style. The finishing touch that turns a staircase, landing or balcony into a feature. At Devon Joinery, we design and handcraft bespoke wooden and glass balustrades for homes across Exeter and Devon, each one made to fit your space exactly.",
     topGalleryImages: [
@@ -79,6 +84,9 @@ export const serviceContent: Record<string, ServiceContent> = {
   gates: {
     slug: "gates",
     h1: "Bespoke Gates",
+    metaTitle: "Bespoke Wooden & Metal Gates in Exeter, Devon",
+    metaDescription:
+      "Custom driveway, garden and entrance gates crafted in hardwood, iron, steel or aluminium. Designed for your property, made in our Devon workshop.",
     intro:
       "Bespoke gates are custom-designed solutions tailored to meet your specific requirements, aesthetic preferences, and project needs. Unlike standard gates, bespoke gates are crafted to reflect your vision, ensuring a unique and personalized entrance for your home or business.",
     topGalleryImages: [
@@ -123,6 +131,9 @@ export const serviceContent: Record<string, ServiceContent> = {
   doors: {
     slug: "doors",
     h1: "Bespoke Doors in Devon",
+    metaTitle: "Bespoke Doors in Exeter, Devon — Front, French, Bifold",
+    metaDescription:
+      "Front doors, French doors, bifolds, sliders and internal doors — all handcrafted in our Exeter workshop from oak, sapele, Accoya and other premium timbers.",
     intro:
       "From elegant front entrance doors to spacious bifolding and sliding doors, Devon Joinery designs and manufactures every door in our family-run workshop to your exact requirements.",
     showHeaderCta: true,
@@ -210,6 +221,9 @@ export const serviceContent: Record<string, ServiceContent> = {
   windows: {
     slug: "windows",
     h1: "Bespoke Windows",
+    metaTitle: "Bespoke Timber Windows in Exeter, Devon — Sash & Casement",
+    metaDescription:
+      "Sash, casement, stormproof, pivot and sliding timber windows made to order in Exeter. Ideal for period, listed and conservation properties across Devon.",
     intro:
       "From classic sash replacements in period properties to contemporary casement windows for modern extensions, Devon Joinery designs and manufactures each frame to order in our family-run Exeter workshop.",
     topGalleryImages: [
@@ -283,6 +297,9 @@ export const serviceContent: Record<string, ServiceContent> = {
   "media-units": {
     slug: "media-units",
     h1: "Bespoke Media Units",
+    metaTitle: "Bespoke Media Units & TV Walls in Exeter, Devon",
+    metaDescription:
+      "Bespoke media units, TV cabinets and full media walls designed to fit your room. Wood, gloss, glass and matt finishes, handcrafted in Exeter.",
     intro:
       "Transform your living space with our stylish and functional media units, designed to organize your entertainment essentials while adding a touch of elegance to your home.",
     topGalleryImages: [
@@ -327,6 +344,9 @@ export const serviceContent: Record<string, ServiceContent> = {
   receptions: {
     slug: "receptions",
     h1: "Bespoke Receptions",
+    metaTitle: "Bespoke Reception Counters & Desks in Exeter, Devon",
+    metaDescription:
+      "Bespoke reception counters and welcome desks for hotels, retailers, offices and libraries. Designed and built in our Exeter workshop for lasting impact.",
     intro:
       "From welcoming hotel foyers to bespoke commercial reception desks, Devon Joinery designs and manufactures reception joinery that makes an impression from the moment your visitors walk in.",
     topGalleryImages: [
@@ -369,6 +389,9 @@ export const serviceContent: Record<string, ServiceContent> = {
   staircases: {
     slug: "staircases",
     h1: "Bespoke Staircases",
+    metaTitle: "Bespoke Timber Staircases in Exeter, Devon",
+    metaDescription:
+      "Bespoke oak, painted, and contemporary staircases hand-built in Exeter. Traditional to modern designs, engineered to suit your home. Free estimate.",
     intro:
       "A staircase is often the most striking feature of a home. Devon Joinery designs and hand-builds bespoke staircases in a range of styles and timbers, made to fit your space exactly.",
     topGalleryImages: [
@@ -411,6 +434,9 @@ export const serviceContent: Record<string, ServiceContent> = {
   "wardrobes-and-storage": {
     slug: "wardrobes-and-storage",
     h1: "Bespoke Wardrobes & Storage",
+    metaTitle: "Fitted Wardrobes & Bespoke Storage in Exeter, Devon",
+    metaDescription:
+      "Fitted wardrobes, dressing rooms and made-to-measure storage for awkward eaves, chimneys and sloping ceilings. Handmade in our Exeter workshop.",
     intro:
       "Fitted wardrobes, dressing rooms and clever storage solutions, designed and built by Devon Joinery to make the most of every corner of your home.",
     topGalleryImages: [

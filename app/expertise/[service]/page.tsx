@@ -19,7 +19,17 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: Params }) {
   const c = serviceContent[params.service];
   if (!c) return {};
-  return { title: c.h1 };
+  return {
+    title: c.metaTitle ?? c.h1,
+    description: c.metaDescription,
+    alternates: { canonical: `/expertise/${c.slug}` },
+    openGraph: {
+      title: c.metaTitle ?? c.h1,
+      description: c.metaDescription,
+      url: `/expertise/${c.slug}`,
+      type: "website",
+    },
+  };
 }
 
 export default function ServicePage({ params }: { params: Params }) {

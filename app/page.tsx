@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -8,6 +9,13 @@ import { AccreditationsGrid } from "@/components/AccreditationsGrid";
 import { ReviewBadge } from "@/components/ReviewBadge";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { HeroSlideshow } from "@/components/HeroSlideshow";
+
+export const metadata: Metadata = {
+  title: "Devon Joinery — Bespoke Joinery in Exeter, Devon",
+  description:
+    "Family-run bespoke joinery workshop in Exeter. Over 25 years crafting doors, windows, staircases, balustrades, gates, wardrobes, media units and reception counters across Devon.",
+  alternates: { canonical: "/" },
+};
 
 const HERO_SLIDES = [
   "/images/hero/slide---reception-unit.jpg",

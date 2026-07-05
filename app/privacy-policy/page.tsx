@@ -2,7 +2,13 @@ import Link from "next/link";
 import { PageShell } from "@/components/PageShell";
 import { PageHeader } from "@/components/PageHeader";
 
-export const metadata = { title: "Privacy Policy" };
+export const metadata = {
+  title: "Privacy Policy",
+  description:
+    "Devon Joinery's privacy policy — how we collect, use and protect personal information when you visit our site or submit an enquiry.",
+  alternates: { canonical: "/privacy-policy" },
+  robots: { index: false, follow: true },
+};
 
 export default function PrivacyPolicyPage() {
   return (
