@@ -51,7 +51,7 @@ export function Lightbox({ images, initialIndex, alt, onClose }: Props) {
           e.stopPropagation();
           onClose();
         }}
-        className="absolute top-3 right-3 md:top-6 md:right-6 text-white/80 hover:text-white p-2"
+        className="absolute top-3 right-3 md:top-6 md:right-6 text-white/80 hover:text-white p-2 z-20"
         aria-label="Close"
       >
         <svg
@@ -72,7 +72,7 @@ export function Lightbox({ images, initialIndex, alt, onClose }: Props) {
               e.stopPropagation();
               prev();
             }}
-            className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 text-white/80 hover:text-white p-2 md:p-3"
+            className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 text-white/80 hover:text-white p-2 md:p-3 z-20"
             aria-label="Previous image"
           >
             <svg
@@ -90,7 +90,7 @@ export function Lightbox({ images, initialIndex, alt, onClose }: Props) {
               e.stopPropagation();
               next();
             }}
-            className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 text-white/80 hover:text-white p-2 md:p-3"
+            className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 text-white/80 hover:text-white p-2 md:p-3 z-20"
             aria-label="Next image"
           >
             <svg
@@ -106,8 +106,7 @@ export function Lightbox({ images, initialIndex, alt, onClose }: Props) {
       )}
 
       <div
-        className="relative w-full h-full max-w-6xl max-h-[85vh]"
-        onClick={(e) => e.stopPropagation()}
+        className="relative w-full h-full max-w-6xl max-h-[85vh] pointer-events-none"
       >
         <Image
           src={images[i]}
