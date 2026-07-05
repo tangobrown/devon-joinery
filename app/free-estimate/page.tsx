@@ -6,6 +6,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { EstimateCTA } from "@/components/EstimateCTA";
 import { ContactStrip } from "@/components/ContactStrip";
 import { PageHeader } from "@/components/PageHeader";
+import { site } from "@/lib/site";
 
 const SERVICE_OPTIONS = [
   "Ballustrades",
@@ -28,7 +29,10 @@ export default function FreeEstimatePage() {
     services: new Set<string>(),
     requirements: "",
   });
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
+    "idle",
+  );
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   const toggleService = (s: string) => {
     const next = new Set(form.services);
@@ -37,10 +41,44 @@ export default function FreeEstimatePage() {
     setForm({ ...form, services: next });
   };
 
-  const onSubmit = (e: React.FormEvent) => {
+  const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSent(true);
+    setStatus("sending");
+    setErrorMsg(null);
+    try {
+      const res = await fetch(site.formspreeEndpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          _subject: `Free estimate request from ${form.name || "the website"}`,
+          form: "Free Estimate",
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          address: form.address,
+          services: Array.from(form.services).join(", "),
+          requirements: form.requirements,
+        }),
+      });
+      if (!res.ok) {
+        const data = await res.json().catch(() => null);
+        throw new Error(
+          (data && Array.isArray(data.errors) && data.errors[0]?.message) ||
+            "Something went wrong sending your request.",
+        );
+      }
+      setStatus("sent");
+    } catch (err) {
+      setStatus("error");
+      setErrorMsg(err instanceof Error ? err.message : "Something went wrong.");
+    }
   };
+
+  const sent = status === "sent";
+  const sending = status === "sending";
 
   return (
     <>
@@ -139,10 +177,16 @@ export default function FreeEstimatePage() {
 
               <button
                 type="submit"
-                className="bg-maroon-button text-white text-[15px] font-semibold btn-lift px-6 py-3"
+                disabled={sending}
+                className="bg-maroon-button text-white text-[15px] font-semibold btn-lift px-6 py-3 disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                Send Enquiry
+                {sending ? "Sending..." : "Send Enquiry"}
               </button>
+              {status === "error" && (
+                <p className="text-maroon text-[14px] mt-2">
+                  {errorMsg ?? "Something went wrong. Please try again or email us directly."}
+                </p>
+              )}
             </form>
           )}
         </section>
