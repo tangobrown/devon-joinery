@@ -1,5 +1,5 @@
+import Image from "next/image";
 import { accreditations } from "@/lib/site";
-import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 
 export function AccreditationsGrid() {
   return (
@@ -13,7 +13,15 @@ export function AccreditationsGrid() {
             key={a.id}
             className="bg-white border border-[#ececec] p-5 flex flex-col items-center gap-3 shadow-[0_2px_10px_rgba(0,0,0,.04)]"
           >
-            <ImagePlaceholder label="Logo" className="w-[96px] h-[96px]" />
+            <div className="relative w-[96px] h-[96px]">
+              <Image
+                src={a.logo}
+                alt={a.label}
+                fill
+                sizes="96px"
+                className="object-contain"
+              />
+            </div>
             <div className="text-[11px] text-[#6a727c] leading-[1.3]">
               {a.label}
             </div>

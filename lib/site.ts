@@ -35,8 +35,24 @@ export const footerMoreLinks = [
 ];
 
 export const accreditations = [
-  { id: "accoya", label: "Trained User of Accoya" },
-  { id: "bwf", label: "British Woodworking Federation" },
-  { id: "ssip", label: "SSIP" },
-  { id: "citb", label: "Construction Industry Training Board" },
+  {
+    id: "accoya",
+    label: "Trained User of Accoya",
+    logo: "/images/accreditations/accoya.png",
+  },
+  {
+    id: "bwf",
+    label: "British Woodworking Federation",
+    logo: "/images/accreditations/bwf.png",
+  },
+  {
+    id: "ssip",
+    label: "SSIP",
+    logo: "/images/accreditations/ssip.png",
+  },
+  {
+    id: "citb",
+    label: "Construction Industry Training Board",
+    logo: "/images/accreditations/citb.png",
+  },
 ];
