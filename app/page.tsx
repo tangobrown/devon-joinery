@@ -36,7 +36,7 @@ export default function HomePage() {
         <div className="relative z-10 flex-1 flex flex-col items-center justify-center text-center px-5 py-16 md:py-20 text-white">
           <div className="flex items-center gap-3.5 mb-5">
             <span className="w-[34px] h-px bg-white/70" />
-            <span className="text-[13px] md:text-[14px] font-medium tracking-[1px]">
+            <span className="text-[13px] md:text-[14px] font-medium tracking-[1px] uppercase">
               Carpentry &amp; Bespoke Joinery in Devon
             </span>
             <span className="w-[34px] h-px bg-white/70" />

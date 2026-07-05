@@ -1,9 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 import { PageShell } from "@/components/PageShell";
 import { PageHeader } from "@/components/PageHeader";
 import { AccreditationsGrid } from "@/components/AccreditationsGrid";
 import { ExpertiseGrid } from "@/components/ExpertiseGrid";
-import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { TanBand } from "@/components/TanBand";
 
 export const metadata = { title: "About Us" };
@@ -18,7 +18,16 @@ export default function AboutPage() {
       />
 
       <section className="max-w-content mx-auto px-6">
-        <ImagePlaceholder label="Reception / cabinetry photo" ratio="1.55 / 1" />
+        <div className="relative w-full h-[240px] md:h-[380px] overflow-hidden">
+          <Image
+            src="/images/receptions/reception-front-counters-for-library.jpg"
+            alt="Bespoke reception counter for a library by Devon Joinery"
+            fill
+            sizes="(max-width: 768px) 100vw, 1100px"
+            className="object-cover"
+            priority
+          />
+        </div>
       </section>
 
       <section className="max-w-content mx-auto px-6 pt-14 pb-6 grid md:grid-cols-2 gap-10 md:gap-14">
@@ -83,7 +92,15 @@ export default function AboutPage() {
 
       <TanBand heading="Meet the Devon Joinery team..." variant="plain">
         <div className="max-w-[560px] mx-auto">
-          <ImagePlaceholder label="Team photo" ratio="1.55 / 1" />
+          <div className="relative w-full aspect-[1.55/1] overflow-hidden">
+            <Image
+              src="/images/about/team.jpg"
+              alt="The Devon Joinery team"
+              fill
+              sizes="(max-width: 768px) 100vw, 560px"
+              className="object-cover"
+            />
+          </div>
         </div>
       </TanBand>
 

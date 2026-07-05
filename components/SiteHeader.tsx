@@ -74,7 +74,7 @@ export function SiteHeader({ transparent = false }: Props) {
                   <Link
                     key={s.slug}
                     href={serviceHref(s.slug)}
-                    className={`block px-[18px] py-[11px] text-[13px] font-medium text-ink whitespace-nowrap hover:bg-[#f4efe2] hover:text-maroon ${
+                    className={`block px-[18px] py-[11px] text-[15px] font-medium text-ink whitespace-nowrap hover:bg-[#f4efe2] hover:text-maroon ${
                       i < sortedServices.length - 1
                         ? "border-b border-borderCream2"
                         : ""
