@@ -61,7 +61,7 @@ export function SiteFooter() {
       </div>
 
       <div className="mx-auto max-w-content mt-11 pt-[22px] border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-2 text-[12px] text-footerLegal">
-        <span>© Copyright 2025 – Devon Joinery Ltd</span>
+        <span>© Copyright {new Date().getFullYear()} – Devon Joinery Ltd</span>
         <span>
           Crafted by{" "}
           <a
