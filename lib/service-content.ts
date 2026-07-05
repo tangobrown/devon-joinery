@@ -75,7 +75,7 @@ export const serviceContent: Record<string, ServiceContent> = {
         heading: "Why go for bespoke balustrades?",
         imagePosition: "right",
         imageLabel: "Balustrade detail photo",
-        imageSrc: "/images/balustrades/black-external-ballustrades.jpg",
+        imageSrc: "/images/balustrades/wooden-staircase-with-glass-balustrades.jpg",
         paragraphs: [
           "Choosing a bespoke balustrade means it's made for your home and nobody else's. Unlike off-the-shelf kits, ours are measured, designed and finished for your need. The right baluster spacing, the handrail profile you want, and a seamless fit you simply can't get from standard parts.",
           "Bespoke also means freedom of design. Want hand-turned timber spindles to suit a period property in Exmouth or Sidmouth, or sleek glass to modernise a new build near Exeter? We'll bring your vision to life, balancing how it looks with how it has to perform underfoot for years to come.",
