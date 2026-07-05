@@ -10,7 +10,13 @@ import { EmailIcon, MapPinIcon, PhoneIcon } from "@/components/Icons";
 import { site } from "@/lib/site";
 
 export default function ContactPage() {
-  const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+    _gotcha: "",
+  });
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
     "idle",
   );
@@ -29,6 +35,7 @@ export default function ContactPage() {
         },
         body: JSON.stringify({
           _subject: `New contact enquiry from ${form.name || "the website"}`,
+          _gotcha: form._gotcha,
           form: "Contact",
           name: form.name,
           email: form.email,
@@ -126,6 +133,18 @@ export default function ContactPage() {
               </p>
             ) : (
               <form onSubmit={onSubmit} className="space-y-4">
+                <input
+                  type="text"
+                  name="_gotcha"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  value={form._gotcha}
+                  onChange={(e) =>
+                    setForm({ ...form, _gotcha: e.target.value })
+                  }
+                  className="absolute -left-[10000px] w-px h-px opacity-0"
+                />
                 <FormInput
                   label="Name"
                   value={form.name}

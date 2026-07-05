@@ -28,6 +28,7 @@ export default function FreeEstimatePage() {
     address: "",
     services: new Set<string>(),
     requirements: "",
+    _gotcha: "",
   });
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
     "idle",
@@ -54,6 +55,7 @@ export default function FreeEstimatePage() {
         },
         body: JSON.stringify({
           _subject: `Free estimate request from ${form.name || "the website"}`,
+          _gotcha: form._gotcha,
           form: "Free Estimate",
           name: form.name,
           email: form.email,
@@ -98,6 +100,18 @@ export default function FreeEstimatePage() {
             </p>
           ) : (
             <form onSubmit={onSubmit} className="space-y-5">
+              <input
+                type="text"
+                name="_gotcha"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                value={form._gotcha}
+                onChange={(e) =>
+                  setForm({ ...form, _gotcha: e.target.value })
+                }
+                className="absolute -left-[10000px] w-px h-px opacity-0"
+              />
               <div className="grid md:grid-cols-2 gap-5">
                 <Field label="Name" required>
                   <input
