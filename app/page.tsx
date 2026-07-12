@@ -46,7 +46,7 @@ export default function HomePage() {
 
         <div className="relative z-10 flex-1 flex flex-col items-center justify-start text-center px-5 pt-36 md:pt-52 pb-16 md:pb-20 text-white">
           <div className="mb-5">
-            <span className="inline-block px-[12px] py-[5px] text-[13px] md:text-[14px] font-medium tracking-[1px] uppercase backdrop-blur-sm bg-black/15">
+            <span className="inline-block px-[12px] py-[5px] text-[13px] md:text-[14px] font-medium tracking-[1px] uppercase text-white/75">
               Carpentry &amp; Bespoke Joinery in Devon
             </span>
           </div>
