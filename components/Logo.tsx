@@ -19,7 +19,7 @@ export function Logo({ className = "" }: Props) {
         height={319}
         priority
         sizes="(max-width: 768px) 140px, 180px"
-        className="h-[54px] md:h-[58px] w-auto block"
+        className="h-[42px] md:h-[58px] w-auto block"
       />
     </Link>
   );
