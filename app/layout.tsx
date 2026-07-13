@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Public_Sans } from "next/font/google";
+import Script from "next/script";
 import { site } from "@/lib/site";
 import "./globals.css";
+
+const GA_ID = "G-MR4STG9MCN";
 
 const publicSans = Public_Sans({
   subsets: ["latin"],
@@ -131,6 +134,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={publicSans.variable}>
+      <head>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}');
+          `}
+        </Script>
+      </head>
       <body className="font-sans bg-creamHome text-ink antialiased">
         {children}
         <script
