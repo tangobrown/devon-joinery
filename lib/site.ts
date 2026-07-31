@@ -1,3 +1,5 @@
+export const SITE_URL = "https://devonjoinery.co.uk";
+
 export const site = {
   name: "Devon Joinery",
   phone: "01395 239 049",

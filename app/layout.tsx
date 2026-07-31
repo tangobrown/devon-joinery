@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Public_Sans } from "next/font/google";
 import Script from "next/script";
-import { site } from "@/lib/site";
+import { site, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const GA_ID = "G-MR4STG9MCN";
@@ -12,8 +12,6 @@ const publicSans = Public_Sans({
   variable: "--font-public-sans",
   display: "swap",
 });
-
-const SITE_URL = "https://devonjoinery.co.uk";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

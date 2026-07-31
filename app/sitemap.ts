@@ -1,8 +1,7 @@
 import type { MetadataRoute } from "next";
 import { services } from "@/lib/services";
 import { posts } from "@/lib/blog";
-
-const SITE_URL = "https://devonjoinery.co.uk";
+import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
