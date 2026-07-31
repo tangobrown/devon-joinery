@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Work Gallery | Bespoke Joinery Portfolio in Exeter, Devon",
+  title: "Bespoke Joinery Portfolio in Exeter",
   description:
-    "A gallery of bespoke joinery handcrafted by Devon Joinery — balustrades, gates, doors, windows, staircases, wardrobes, media units and reception counters. Filter by service.",
+    "Browse bespoke joinery handcrafted in our Exeter workshop — balustrades, gates, doors, windows, staircases, wardrobes and media units. Filter by service.",
   alternates: { canonical: "/gallery" },
 };
 
