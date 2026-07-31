@@ -16,7 +16,7 @@ export const metadata: Metadata = {
       "Devon Joinery | Bespoke Doors, Windows & Staircases in Exeter",
   },
   description:
-    "Family-run bespoke joinery workshop in Exeter. Over 25 years crafting doors, windows, staircases, balustrades, gates, wardrobes, media units and reception counters across Devon.",
+    "Family-run bespoke joinery workshop in Exeter. Over 25 years crafting doors, windows, staircases, balustrades, gates and wardrobes across Devon.",
   alternates: { canonical: "/" },
 };
 
