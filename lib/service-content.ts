@@ -223,7 +223,7 @@ export const serviceContent: Record<string, ServiceContent> = {
   windows: {
     slug: "windows",
     h1: "Bespoke Windows",
-    metaTitle: "Bespoke Timber Windows in Exeter, Devon — Sash & Casement",
+    metaTitle: "Bespoke Sash & Casement Windows in Exeter",
     metaDescription:
       "Sash, casement, stormproof, pivot and sliding timber windows made to order in Exeter. Ideal for period, listed and conservation properties across Devon.",
     intro:
