@@ -19,6 +19,7 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: Params }) {
   const c = serviceContent[params.service];
   if (!c) return {};
+  const ogImage = c.topGalleryImages?.[0];
   return {
     title: c.metaTitle ?? c.h1,
     description: c.metaDescription,
@@ -28,6 +29,20 @@ export function generateMetadata({ params }: { params: Params }) {
       description: c.metaDescription,
       url: `/expertise/${c.slug}`,
       type: "website",
+      siteName: "Devon Joinery",
+      locale: "en_GB",
+      ...(ogImage
+        ? {
+            images: [
+              {
+                url: ogImage,
+                width: 1200,
+                height: 630,
+                alt: c.h1,
+              },
+            ],
+          }
+        : {}),
     },
   };
 }
