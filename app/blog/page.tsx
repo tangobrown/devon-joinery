@@ -6,7 +6,7 @@ import { posts } from "@/lib/blog";
 import { ArrowRightIcon } from "@/components/Icons";
 
 export const metadata = {
-  title: "Joinery Blog | Tips & Guides from Devon Joinery, Exeter",
+  title: "Joinery Tips & Guides from Exeter",
   description:
     "Thoughts, tips and guides from the Devon Joinery team on bespoke joinery, timber choices, staircases, balustrades and more, all crafted in our Exeter workshop.",
   alternates: { canonical: "/blog" },

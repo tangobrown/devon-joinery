@@ -5,7 +5,7 @@ import { getPost } from "@/lib/blog";
 import { ArrowRightIcon } from "@/components/Icons";
 
 export const metadata = {
-  title: "Wood vs Glass Balustrades: Which Is Right for Your Home?",
+  title: "Wood vs Glass Balustrades: Which Suits Your Home?",
   description:
     "Wooden vs glass balustrades — an honest side-by-side guide from Devon Joinery. Compare look, cost, maintenance, and how to pick the right one for your home.",
   alternates: { canonical: "/blog/wood-vs-glass-balustrades" },
