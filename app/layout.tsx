@@ -100,11 +100,6 @@ const localBusinessJsonLd = {
     { "@type": "City", name: "Sidmouth" },
   ],
   priceRange: "££",
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "1",
-  },
   sameAs: [],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
