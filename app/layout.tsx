@@ -100,7 +100,10 @@ const localBusinessJsonLd = {
     { "@type": "City", name: "Sidmouth" },
   ],
   priceRange: "££",
-  sameAs: [],
+  sameAs: [
+    "https://www.facebook.com/Devonjoinery/",
+    "https://maps.google.com/?cid=1596363630682939649",
+  ],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Bespoke joinery services",
