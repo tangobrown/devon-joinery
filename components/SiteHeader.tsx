@@ -64,10 +64,13 @@ export function SiteHeader({ transparent = false }: Props) {
           ))}
 
           <div className="group relative">
-            <button className="flex items-center gap-[5px] cursor-pointer hover:opacity-80">
+            <Link
+              href="/expertise"
+              className="flex items-center gap-[5px] cursor-pointer hover:opacity-80"
+            >
               Expertise
               <ChevronDownIcon className="w-[14px] h-[14px] transition-transform duration-200 group-hover:rotate-180" />
-            </button>
+            </Link>
             <div className="absolute top-full left-1/2 -translate-x-1/2 pt-[14px] z-50 hidden group-hover:block">
               <div className="bg-white min-w-[210px] shadow-menu border border-borderCream py-1">
                 {sortedServices.map((s, i) => (
@@ -145,6 +148,13 @@ export function SiteHeader({ transparent = false }: Props) {
                 <ChevronDownIcon className="w-4 h-4 transition-transform group-open:rotate-180" />
               </summary>
               <div className="pl-3 pt-2 flex flex-col gap-2 text-white/85">
+                <Link
+                  href="/expertise"
+                  onClick={() => setMobileOpen(false)}
+                  className="font-semibold text-white"
+                >
+                  All Expertise
+                </Link>
                 {sortedServices.map((s) => (
                   <Link
                     key={s.slug}

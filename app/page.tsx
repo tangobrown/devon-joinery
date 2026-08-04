@@ -61,7 +61,7 @@ export default function HomePage() {
           </p>
           <div className="flex flex-wrap justify-center gap-3.5">
             <Link
-              href="#expertise"
+              href="/expertise"
               className="bg-maroon-button text-white text-[15px] font-semibold btn-lift px-6 py-3.5"
             >
               Our Expertise

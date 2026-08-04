@@ -20,15 +20,6 @@ export const site = {
   formspreeEndpoint: "https://formspree.io/f/mqevnpjb",
 };
 
-export const primaryNav = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Expertise", href: "/expertise" },
-  { label: "Gallery", href: "/gallery" },
-  { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "/contact" },
-];
-
 export const footerMoreLinks = [
   { label: "About Us", href: "/about" },
   { label: "Work Gallery", href: "/gallery" },
