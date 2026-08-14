@@ -62,7 +62,7 @@ export default function ArticlePage() {
             It is not that simple. Plenty of period Devon homes were built with
             casements and always had them. Getting this right matters, because
             windows are one of the few decisions that changes both how a house
-            looks from the street and how it feels to live in — and they are
+            looks from the street and how it feels to live in, and they are
             expensive to get wrong.
           </p>
 
@@ -81,7 +81,7 @@ export default function ArticlePage() {
             fastener.
           </p>
           <p>
-            That single mechanical difference drives everything else — how they
+            That single mechanical difference drives everything else: how they
             seal, what they cost, how they are maintained, and where they look
             right.
           </p>
@@ -101,8 +101,8 @@ export default function ArticlePage() {
             But Devon&apos;s building stock runs far older and far more varied.
             Thatched cottages, farmhouses, converted barns and anything
             predating the eighteenth century were built with casements, because
-            that is what existed. On those buildings a sash window looks imported
-            — too tall, too formal, wrong for the wall.
+            that is what existed. On those buildings a sash window looks
+            imported: too tall, too formal, wrong for the wall.
           </p>
           <p>
             There is also a middle case worth naming: twentieth-century houses
@@ -111,7 +111,7 @@ export default function ArticlePage() {
             question is genuinely open.
           </p>
           <p>
-            The test is simple. Look at the neighbours — specifically the ones
+            The test is simple. Look at the neighbours, specifically the ones
             that have not been altered. Look at any original windows left in less
             visible elevations. Look at old photographs if the house has them.
             The building will usually tell you.
@@ -142,7 +142,7 @@ export default function ArticlePage() {
           </p>
           <p>
             Where casements do have a genuine edge is the seal. A casement
-            compresses against its frame when you close it — one continuous seal,
+            compresses against its frame when you close it: one continuous seal,
             pulled tight by the fastener. A sash slides, so it relies on brushes
             and pile seals along the sliding faces. Both work. The casement&apos;s
             is inherently simpler and stays effective longer with no attention.
@@ -198,7 +198,7 @@ export default function ArticlePage() {
             you order, not after.
           </p>
           <p>
-            Conservation area rules are looser — they usually bite on elevations
+            Conservation area rules are looser: they usually bite on elevations
             facing a public road, and permitted development rights may have been
             withdrawn by an Article 4 direction. Devon has a lot of conservation
             area coverage, and the rules vary between authorities.
@@ -224,8 +224,8 @@ export default function ArticlePage() {
               unless there is a strong reason not to.
             </li>
             <li>
-              <strong>If the house genuinely does not care</strong> — a later
-              property, or one already altered beyond recognition — then choose
+              <strong>If the house genuinely does not care</strong> (a later
+              property, or one already altered beyond recognition), then choose
               on performance and budget. Casements are cheaper, seal slightly
               better and ask less of you.
             </li>
@@ -240,7 +240,7 @@ export default function ArticlePage() {
             <Link href="/about" className="text-maroon font-semibold underline">
               our workshop near Exeter
             </Link>
-            , to suit the building rather than a catalogue —{" "}
+            , to suit the building rather than a catalogue:{" "}
             <Link
               href="/expertise/windows"
               className="text-maroon font-semibold underline"

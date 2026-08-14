@@ -63,7 +63,7 @@ export const subServiceContent: Record<
           h2: "Why sash windows are worth doing properly",
           paragraphs: [
             [
-              "A sliding sash window is one of the few pieces of joinery in a house that people notice when it is wrong. The proportions of the boxes, the width of the glazing bars, the depth of the horns on the meeting rail — get any of those slightly off and a Georgian or Victorian facade stops looking right, even to someone who could not tell you why. It is the clearest case there is for ",
+              "A sliding sash window is one of the few pieces of joinery in a house that people notice when it is wrong. The proportions of the boxes, the width of the glazing bars, the depth of the horns on the meeting rail: get any of those slightly off and a Georgian or Victorian facade stops looking right, even to someone who could not tell you why. It is the clearest case there is for ",
               { text: "bespoke windows", href: "/expertise/windows" },
               " made to the opening rather than bought to a standard size.",
             ],
@@ -79,10 +79,10 @@ export const subServiceContent: Record<
               "Most of the sash work we do in Devon is replacement rather than new-build, and most of it is in houses built between about 1780 and 1910. The details that matter vary by period and often by street.",
             ],
             [
-              "We take a record of the existing window before it comes out — glazing bar width, sash horn profile, box depth, sill projection, the number and arrangement of panes — and reproduce it in the new frames. Where the original windows have already been replaced badly at some point, which is common, we can work from a neighbouring property or from photographs of the terrace as it was.",
+              "We take a record of the existing window before it comes out (glazing bar width, sash horn profile, box depth, sill projection, the number and arrangement of panes) and reproduce it in the new frames. Where the original windows have already been replaced badly at some point, which is common, we can work from a neighbouring property or from photographs of the terrace as it was.",
             ],
             [
-              "Timber choice matters more here than people expect. Coastal Devon is hard on external joinery: salt, driving rain and long damp winters. Accoya is our usual recommendation for exposed positions — it is modified softwood, dimensionally very stable, and carries a long warranty against rot. Inland, or on a sheltered elevation, a good European redwood or a hardwood such as sapele is often the more sensible spend.",
+              "Timber choice matters more here than people expect. Coastal Devon is hard on external joinery: salt, driving rain and long damp winters. Accoya is our usual recommendation for exposed positions: it is modified softwood, dimensionally very stable, and carries a long warranty against rot. Inland, or on a sheltered elevation, a good European redwood or a hardwood such as sapele is often the more sensible spend.",
             ],
             [
               "You can ",
@@ -102,7 +102,7 @@ export const subServiceContent: Record<
               "The two common complaints about original sash windows are that they rattle and that they are cold. Both are solvable without changing how the window looks.",
             ],
             [
-              "Discreet brush or compression seals sit in the rebates and stop the rattle and the draught. Slim-profile double glazing units — typically around 11 to 14mm overall, against 24mm for a standard modern unit — will fit into a traditional sash section with the correct putty line and glazing bar width retained. From the pavement, a well-executed slim-glazed sash is very hard to distinguish from single glazing.",
+              "Discreet brush or compression seals sit in the rebates and stop the rattle and the draught. Slim-profile double glazing units (typically around 11 to 14mm overall, against 24mm for a standard modern unit) will fit into a traditional sash section with the correct putty line and glazing bar width retained. From the pavement, a well-executed slim-glazed sash is very hard to distinguish from single glazing.",
             ],
             [
               "You will not get the U-value of a modern casement, and we would rather say so than oversell it. What you get is a substantial improvement in comfort and noise with the character of the building intact.",
@@ -117,7 +117,7 @@ export const subServiceContent: Record<
           h2: "Conservation areas and listed buildings",
           paragraphs: [
             [
-              "A large share of the sash work we do sits in a conservation area, and some of it is listed. Rules vary between authorities — Exeter, East Devon and Teignbridge all take slightly different positions on slim double glazing in particular — so the honest answer to “will this be approved?” is usually “it depends on your officer”.",
+              "A large share of the sash work we do sits in a conservation area, and some of it is listed. Rules vary between authorities (Exeter, East Devon and Teignbridge all take slightly different positions on slim double glazing in particular), so the honest answer to “will this be approved?” is usually “it depends on your officer”.",
             ],
             [
               "What we can do is make a window that gives the application the best chance: correct profiles, correct materials, single glazing where that is the condition, and drawings suitable for submission. We are used to the process and are happy to talk to a conservation officer directly.",
@@ -133,7 +133,7 @@ export const subServiceContent: Record<
               "Not every tired sash window needs replacing. Sash cords, weights, pulleys, individual sills and the bottom rails of the sashes can all be renewed, and a box frame that is sound in the main is usually worth keeping. Replacement makes sense when the boxes themselves have gone, when previous repairs have destroyed the profiles, or when a whole elevation needs to match.",
             ],
             [
-              "If you are not sure which side of that line you are on, we will tell you honestly — including when the answer is that the windows are fine and need painting.",
+              "If you are not sure which side of that line you are on, we will tell you honestly, including when the answer is that the windows are fine and need painting.",
             ],
           ],
         },
