@@ -167,7 +167,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       items: [
         {
           q: "Front Entrance Doors",
-          a: "Make a lasting first impression with a handcrafted front door built to your design, glazing, and hardware — combining kerb appeal with security and weather performance.",
+          a: "Make a lasting first impression with a handcrafted front door built to your design, glazing, and hardware, combining kerb appeal with security and weather performance.",
         },
         {
           q: "French Doors",
@@ -254,7 +254,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       items: [
         {
           q: "Sliding Sash Windows",
-          a: "Traditional vertically-sliding sash windows, made to match period proportions and glazing bars — with the option of modern draught seals and slim double glazing for comfort.",
+          a: "Traditional vertically-sliding sash windows, made to match period proportions and glazing bars, with the option of modern draught seals and slim double glazing for comfort.",
           href: "/expertise/windows/sash-windows",
         },
         {
@@ -271,7 +271,7 @@ export const serviceContent: Record<string, ServiceContent> = {
         },
         {
           q: "Sliding Windows",
-          a: "Horizontally-sliding frames that open without projecting outward — practical where space outside the window is limited.",
+          a: "Horizontally-sliding frames that open without projecting outward, practical where space outside the window is limited.",
         },
         {
           q: "Secondary Glazing",
@@ -346,7 +346,7 @@ export const serviceContent: Record<string, ServiceContent> = {
         imageSrc: "/images/media-units/wall-to-wall-media-unit.jpg",
         paragraphs: [
           "For those seeking a truly unique look, bespoke media walls can be tailored to your room's dimensions, combining style and practicality in a way that's entirely your own. Our multi-functional units go beyond just media storage, offering additional features like office space, seating, or extra shelving for a versatile addition to your home.",
-          "Styling your media unit is simple — open shelves provide a perfect spot for family photos, books, and collectibles, while closed cabinets keep electronics and remotes out of sight. Adding ambient lighting or decorative back panels can further enhance the unit's visual appeal, and regular reorganization ensures it remains both functional and fresh.",
+          "Styling your media unit is simple: open shelves provide a perfect spot for family photos, books, and collectibles, while closed cabinets keep electronics and remotes out of sight. Adding ambient lighting or decorative back panels can further enhance the unit's visual appeal, and regular reorganization ensures it remains both functional and fresh.",
           "This approach creates a warm, inviting focal point in your living room while keeping your entertainment essentials neatly organized and easily accessible.",
         ],
       },
@@ -392,7 +392,7 @@ export const serviceContent: Record<string, ServiceContent> = {
         imageLabel: "Reception detail photo",
         imageSrc: "/images/receptions/reception--counter-for-yoshe.jpg",
         paragraphs: [
-          "A bespoke reception lets you shape the arrival experience for your customers. Sizes, materials, storage and branded details are all yours to specify — so nothing has to be a compromise.",
+          "A bespoke reception lets you shape the arrival experience for your customers. Sizes, materials, storage and branded details are all yours to specify, so nothing has to be a compromise.",
         ],
       },
     ],
@@ -421,7 +421,7 @@ export const serviceContent: Record<string, ServiceContent> = {
         imageSrc: "/images/staircases/staircase-in-the-process-of-manufacturing.jpg",
         paragraphs: [
           "From traditional oak and painted staircases to contemporary open-tread and cantilevered designs, every staircase we make is drawn, engineered and built to order in our Exeter workshop.",
-          "We work closely with homeowners, architects and builders to make sure the finished staircase is beautiful, safe and structurally sound — from the first sketch through to fitting.",
+          "We work closely with homeowners, architects and builders to make sure the finished staircase is beautiful, safe and structurally sound, from the first sketch through to fitting.",
         ],
       },
     ],
@@ -437,7 +437,7 @@ export const serviceContent: Record<string, ServiceContent> = {
         imageLabel: "Staircase detail photo",
         imageSrc: "/images/staircases/staircase-with-wooden-ballustrades.jpg",
         paragraphs: [
-          "A made-to-measure staircase means everything — treads, risers, handrails, balustrade — is designed for your home. That gives you complete control over the look, the feel underfoot and how it works alongside the rest of the property.",
+          "A made-to-measure staircase means everything (treads, risers, handrails, balustrade) is designed for your home. That gives you complete control over the look, the feel underfoot and how it works alongside the rest of the property.",
         ],
       },
     ],
@@ -465,7 +465,7 @@ export const serviceContent: Record<string, ServiceContent> = {
         imageLabel: "Fitted wardrobe photo",
         imageSrc: "/images/wardrobes-and-storage/wardrobe-for-homes.jpg",
         paragraphs: [
-          "We start with the space — awkward eaves, sloping ceilings, chimney breasts, anything a standard flat-pack can't handle — and design storage that fits perfectly. Doors, drawers, hanging rails and interiors are all specified around what you actually own and how you use the room.",
+          "We start with the space (awkward eaves, sloping ceilings, chimney breasts, anything a standard flat-pack can't handle) and design storage that fits perfectly. Doors, drawers, hanging rails and interiors are all specified around what you actually own and how you use the room.",
           "Everything is manufactured in our Exeter workshop in quality materials and installed by our own team, so the finish is consistent from top to bottom.",
         ],
       },
@@ -482,7 +482,7 @@ export const serviceContent: Record<string, ServiceContent> = {
         imageLabel: "Wardrobe interior photo",
         imageSrc: "/images/wardrobes-and-storage/wood-and-glass-storage.jpg",
         paragraphs: [
-          "Off-the-shelf furniture rarely uses a room's full height or depth. Bespoke storage does — giving you more space, a cleaner look, and interiors laid out to suit the way you live.",
+          "Off-the-shelf furniture rarely uses a room's full height or depth. Bespoke storage does, giving you more space, a cleaner look, and interiors laid out to suit the way you live.",
         ],
       },
     ],

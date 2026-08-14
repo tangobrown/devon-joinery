@@ -15,7 +15,7 @@ export default function ExpertiseIndexPage() {
       <PageHeader
         title="Our Expertise"
         size="md"
-        intro="Devon Joinery crafts bespoke joinery across eight core specialisms — explore each below."
+        intro="Devon Joinery crafts bespoke joinery across eight core specialisms. Explore each below."
       />
       <ExpertiseGrid />
     </PageShell>

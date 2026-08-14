@@ -128,7 +128,7 @@ export default function ContactPage() {
             </h2>
             {sent ? (
               <p className="text-successGreen font-semibold">
-                Thanks — your enquiry has been noted. We&apos;ll be in touch
+                Thanks, your enquiry has been noted. We&apos;ll be in touch
                 shortly.
               </p>
             ) : (

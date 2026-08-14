@@ -95,7 +95,7 @@ export default function FreeEstimatePage() {
         <section className="max-w-form mx-auto px-6 pb-16">
           {sent ? (
             <p className="text-successGreen font-semibold text-center">
-              Thanks — your request has been noted. We&apos;ll be in touch with
+              Thanks, your request has been noted. We&apos;ll be in touch with
               your free estimate shortly.
             </p>
           ) : (

@@ -46,7 +46,7 @@ export default function PrivacyPolicyPage() {
             address.
           </p>
           <p>
-            <strong>Log Data</strong> — Like many site operators, we collect
+            <strong>Log Data</strong>: like many site operators, we collect
             information that your browser sends whenever you visit our Site
             (&quot;Log Data&quot;). This Log Data may include information such
             as your computer&apos;s Internet Protocol (&quot;IP&quot;) address,
