@@ -278,6 +278,14 @@ export const serviceContent: Record<string, ServiceContent> = {
         },
       ],
     },
+    tanBand: {
+      heading: "Sash or casement for a period home?",
+      body: "Not sure which style suits your property? Our guide compares looks, cost, draughts, maintenance and conservation rules to help you decide before you specify replacements.",
+      cta: {
+        label: "Read: Sash vs Casement Windows",
+        href: "/blog/sash-vs-casement-windows-period-devon-homes",
+      },
+    },
     extraPanels: [
       {
         heading: "Why choose bespoke windows?",

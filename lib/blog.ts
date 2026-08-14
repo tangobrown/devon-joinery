@@ -12,6 +12,18 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    slug: "sash-vs-casement-windows-period-devon-homes",
+    title: "Sash vs Casement Windows: Which Suits a Period Devon Home?",
+    date: "14/08/2026",
+    author: "Tim",
+    readTime: "7 min read",
+    categories: ["Windows", "Comparisons"],
+    excerpt:
+      "Ask most people to picture an old English house and they will picture sash windows. But plenty of period Devon homes were built with casements — here's how to choose…",
+    coverImage: "/images/windows/listed-property-windows.jpg",
+    coverAlt: "Timber sash window in a period Devon home, made by Devon Joinery",
+  },
+  {
     slug: "wood-vs-glass-balustrades",
     title: "Wood vs Glass Balustrades: Which Is Right for Your Home?",
     date: "13/06/2026",
