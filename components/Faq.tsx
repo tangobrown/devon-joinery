@@ -2,13 +2,39 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ChevronDownIcon, ArrowRightIcon } from "@/components/Icons";
+import { ChevronDownIcon } from "@/components/Icons";
 
-export type FaqItem = { q: string; a: string; href?: string };
+export type FaqItem = {
+  q: string;
+  a: string;
+  /** If set with `linkText`, that phrase in the answer becomes a link to here. */
+  href?: string;
+  /** The exact phrase within `a` to turn into the link. */
+  linkText?: string;
+};
 
 type Props = {
   items: FaqItem[];
 };
+
+function Answer({ item }: { item: FaqItem }) {
+  if (item.href && item.linkText && item.a.includes(item.linkText)) {
+    const idx = item.a.indexOf(item.linkText);
+    return (
+      <>
+        {item.a.slice(0, idx)}
+        <Link
+          href={item.href}
+          className="text-maroon font-semibold underline"
+        >
+          {item.linkText}
+        </Link>
+        {item.a.slice(idx + item.linkText.length)}
+      </>
+    );
+  }
+  return <>{item.a}</>;
+}
 
 export function Faq({ items }: Props) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -44,15 +70,7 @@ export function Faq({ items }: Props) {
             >
               <div className="overflow-hidden">
                 <div className="px-5 pb-[18px] text-[14.5px] leading-[1.7] text-bodyMuted">
-                  {item.a}
-                  {item.href && (
-                    <Link
-                      href={item.href}
-                      className="mt-3 inline-flex items-center gap-1.5 text-maroon text-[13px] font-semibold hover:underline"
-                    >
-                      Read more <ArrowRightIcon className="w-3 h-3" />
-                    </Link>
-                  )}
+                  <Answer item={item} />
                 </div>
               </div>
             </div>
