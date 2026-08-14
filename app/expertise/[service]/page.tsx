@@ -7,6 +7,7 @@ import { ServiceGallery } from "@/components/ServiceGallery";
 import { ServicePanelSection } from "@/components/ServicePanelContent";
 import { TanBand } from "@/components/TanBand";
 import { Faq } from "@/components/Faq";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ReviewBadge } from "@/components/ReviewBadge";
 import { listServiceSlugs, serviceContent } from "@/lib/service-content";
 
@@ -51,8 +52,18 @@ export default function ServicePage({ params }: { params: Params }) {
   const content = serviceContent[params.service];
   if (!content) notFound();
 
+  const breadcrumbs = [
+    { name: "Home", href: "/" },
+    { name: "Expertise", href: "/expertise" },
+    {
+      name: content.h1.replace(/^Bespoke\s+/i, ""),
+      href: `/expertise/${content.slug}`,
+    },
+  ];
+
   return (
     <PageShell>
+      <Breadcrumbs items={breadcrumbs} />
       <PageHeader
         title={content.h1}
         intro={content.intro}

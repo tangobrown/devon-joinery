@@ -4,6 +4,7 @@ import { PageShell } from "@/components/PageShell";
 import { PageHeader } from "@/components/PageHeader";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { ExpertiseGrid } from "@/components/ExpertiseGrid";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ArrowRightIcon } from "@/components/Icons";
 import {
   getSubService,
@@ -69,14 +70,19 @@ export default function SubServicePage({ params }: { params: Params }) {
   const content = getSubService(params.service, params.subservice);
   if (!content) notFound();
 
-  // TODO(TAN-22): add BreadcrumbList JSON-LD here
-  // (Home › Expertise › Windows › Sliding Sash Windows) once SITE_URL is
-  // confirmed as the canonical www host (TAN-21). Deferred for now to avoid
-  // emitting structured data that points at a redirecting host — the same
-  // reason TAN-22 is on hold.
+  const breadcrumbs = [
+    { name: "Home", href: "/" },
+    { name: "Expertise", href: "/expertise" },
+    { name: content.parentLabel, href: `/expertise/${content.parentSlug}` },
+    {
+      name: content.h1,
+      href: `/expertise/${content.parentSlug}/${content.slug}`,
+    },
+  ];
 
   return (
     <PageShell>
+      <Breadcrumbs items={breadcrumbs} />
       <PageHeader
         title={content.h1}
         intro={content.intro}
