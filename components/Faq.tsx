@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDownIcon } from "@/components/Icons";
+import Link from "next/link";
+import { ChevronDownIcon, ArrowRightIcon } from "@/components/Icons";
 
-export type FaqItem = { q: string; a: string };
+export type FaqItem = { q: string; a: string; href?: string };
 
 type Props = {
   items: FaqItem[];
@@ -44,6 +45,14 @@ export function Faq({ items }: Props) {
               <div className="overflow-hidden">
                 <div className="px-5 pb-[18px] text-[14.5px] leading-[1.7] text-bodyMuted">
                   {item.a}
+                  {item.href && (
+                    <Link
+                      href={item.href}
+                      className="mt-3 inline-flex items-center gap-1.5 text-maroon text-[13px] font-semibold hover:underline"
+                    >
+                      Read more <ArrowRightIcon className="w-3 h-3" />
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>

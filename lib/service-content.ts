@@ -255,6 +255,7 @@ export const serviceContent: Record<string, ServiceContent> = {
         {
           q: "Sliding Sash Windows",
           a: "Traditional vertically-sliding sash windows, made to match period proportions and glazing bars — with the option of modern draught seals and slim double glazing for comfort.",
+          href: "/expertise/windows/sash-windows",
         },
         {
           q: "Flush Casement Windows",
@@ -277,6 +278,14 @@ export const serviceContent: Record<string, ServiceContent> = {
           a: "A discreet internal glazed panel fitted behind existing windows to improve thermal and acoustic performance while retaining original joinery.",
         },
       ],
+    },
+    tanBand: {
+      heading: "Sash or casement for a period home?",
+      body: "Not sure which style suits your property? Our guide compares looks, cost, draughts, maintenance and conservation rules to help you decide before you specify replacements.",
+      cta: {
+        label: "Read: Sash vs Casement Windows",
+        href: "/blog/sash-vs-casement-windows-period-devon-homes",
+      },
     },
     extraPanels: [
       {

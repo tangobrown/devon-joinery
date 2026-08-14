@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { services } from "@/lib/services";
 import { posts } from "@/lib/blog";
+import { listSubServiceParams } from "@/lib/subservice-content";
 import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -24,6 +25,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
+  const subServiceRoutes: MetadataRoute.Sitemap = listSubServiceParams().map(
+    ({ service, subservice }) => ({
+      url: `${SITE_URL}/expertise/${service}/${subservice}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    }),
+  );
+
   const blogRoutes: MetadataRoute.Sitemap = posts.map((p) => ({
     url: `${SITE_URL}/blog/${p.slug}`,
     lastModified: now,
@@ -31,5 +41,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...serviceRoutes, ...blogRoutes];
+  return [
+    ...staticRoutes,
+    ...serviceRoutes,
+    ...subServiceRoutes,
+    ...blogRoutes,
+  ];
 }
