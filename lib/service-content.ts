@@ -256,6 +256,7 @@ export const serviceContent: Record<string, ServiceContent> = {
           q: "Sliding Sash Windows",
           a: "Traditional vertically-sliding sash windows, made to match period proportions and glazing bars, with the option of modern draught seals and slim double glazing for comfort.",
           href: "/expertise/windows/sash-windows",
+          linkText: "Traditional vertically-sliding sash windows",
         },
         {
           q: "Flush Casement Windows",
