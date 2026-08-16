@@ -108,7 +108,7 @@ export async function POST(req: Request) {
         Subject: subject,
         HtmlBody: html,
         TextBody: text,
-        MessageStream: "outbound",
+        MessageStream: site.postmarkMessageStream,
       }),
     });
 

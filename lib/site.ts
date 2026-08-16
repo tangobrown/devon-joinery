@@ -10,6 +10,8 @@ export const site = {
   // an address on a domain verified in Postmark (DKIM/SPF). Enquiry
   // notifications are sent From here.
   mailFrom: "Devon Joinery <enquiries@devonjoinery.co.uk>",
+  // Postmark message stream ID for this server (Servers → stream → Stream ID).
+  postmarkMessageStream: "devon-joinery",
   address: {
     lines: [
       "Clyst Court",
