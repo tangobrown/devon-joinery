@@ -1,4 +1,4 @@
-export const SITE_URL = "https://devonjoinery.co.uk";
+export const SITE_URL = "https://www.devonjoinery.co.uk";
 
 export const site = {
   name: "Devon Joinery",

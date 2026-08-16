@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { PageShell } from "@/components/PageShell";
 import { PageHeader } from "@/components/PageHeader";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata = {
   title: "Privacy Policy",
@@ -23,11 +24,8 @@ export default function PrivacyPolicyPage() {
         <p className="mb-6">
           Devon Joinery (&quot;us&quot;, &quot;we&quot;, or &quot;our&quot;)
           operates{" "}
-          <a
-            href="https://devonjoinery.co.uk"
-            className="text-maroon underline"
-          >
-            https://devonjoinery.co.uk
+          <a href={SITE_URL} className="text-maroon underline">
+            {SITE_URL}
           </a>{" "}
           (the &quot;Site&quot;). This page informs you of our policies
           regarding the collection, use and disclosure of Personal Information
