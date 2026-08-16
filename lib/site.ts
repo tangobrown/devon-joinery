@@ -6,8 +6,9 @@ export const site = {
   phoneHref: "tel:01395239049",
   email: "info@devonjoinery.co.uk",
   emailHref: "mailto:info@devonjoinery.co.uk",
-  // Verified Resend sending identity. Must be an address on a domain verified
-  // in Resend (DKIM/SPF). Enquiry notifications are sent From here.
+  // Verified Postmark sending identity. Must be a verified Sender Signature or
+  // an address on a domain verified in Postmark (DKIM/SPF). Enquiry
+  // notifications are sent From here.
   mailFrom: "Devon Joinery <enquiries@devonjoinery.co.uk>",
   address: {
     lines: [

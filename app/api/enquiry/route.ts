@@ -16,6 +16,9 @@ const FIELD_LABELS: Record<string, string> = {
   message: "Message",
 };
 
+/** Site maroon, matched to the on-site brand colour. */
+const BRAND = "#7c1616";
+
 function escapeHtml(value: string): string {
   return value
     .replace(/&/g, "&amp;")
@@ -50,9 +53,9 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: true });
   }
 
-  const apiKey = process.env.RESEND_API_KEY;
-  if (!apiKey) {
-    console.error("RESEND_API_KEY is not set — cannot send enquiry email.");
+  const token = process.env.POSTMARK_SERVER_TOKEN;
+  if (!token) {
+    console.error("POSTMARK_SERVER_TOKEN is not set — cannot send enquiry email.");
     return NextResponse.json(
       { error: "Enquiries are temporarily unavailable. Please email us directly." },
       { status: 500 },
@@ -73,39 +76,45 @@ export async function POST(req: Request) {
   const rows = entries
     .map(
       ([key, value]) =>
-        `<tr><td style="padding:4px 14px 4px 0;font-weight:600;vertical-align:top;white-space:nowrap">${escapeHtml(
+        `<tr><td style="padding:6px 16px 6px 0;font-weight:600;vertical-align:top;white-space:nowrap;color:#555">${escapeHtml(
           FIELD_LABELS[key] ?? key,
-        )}</td><td style="padding:4px 0">${escapeHtml(value).replace(/\n/g, "<br>")}</td></tr>`,
+        )}</td><td style="padding:6px 0;color:#222">${escapeHtml(value).replace(/\n/g, "<br>")}</td></tr>`,
     )
     .join("");
-  const html = `<div style="font-family:system-ui,-apple-system,sans-serif;font-size:15px;color:#222">
-    <p>New <strong>${escapeHtml(formName)}</strong> enquiry from the ${escapeHtml(site.name)} website.</p>
-    <table style="border-collapse:collapse">${rows}</table>
+  const html = `<div style="font-family:Arial,Helvetica,sans-serif;max-width:600px;margin:0 auto;border:1px solid #eee;border-radius:6px;overflow:hidden">
+    <div style="background:${BRAND};color:#fff;padding:16px 20px;font-size:16px;font-weight:bold">
+      ${escapeHtml(site.name)} — New ${escapeHtml(formName)} enquiry
+    </div>
+    <div style="padding:20px 24px">
+      <table style="border-collapse:collapse;width:100%;font-size:15px">${rows}</table>
+    </div>
   </div>`;
   const text = entries
     .map(([key, value]) => `${FIELD_LABELS[key] ?? key}: ${value}`)
     .join("\n");
 
   try {
-    const res = await fetch("https://api.resend.com/emails", {
+    const res = await fetch("https://api.postmarkapp.com/email", {
       method: "POST",
       headers: {
-        Authorization: `Bearer ${apiKey}`,
+        Accept: "application/json",
         "Content-Type": "application/json",
+        "X-Postmark-Server-Token": token,
       },
       body: JSON.stringify({
-        from: site.mailFrom,
-        to: [site.email],
-        ...(replyTo ? { reply_to: replyTo } : {}),
-        subject,
-        html,
-        text,
+        From: site.mailFrom,
+        To: site.email,
+        ...(replyTo ? { ReplyTo: replyTo } : {}),
+        Subject: subject,
+        HtmlBody: html,
+        TextBody: text,
+        MessageStream: "outbound",
       }),
     });
 
     if (!res.ok) {
       const detail = await res.text().catch(() => "");
-      console.error("Resend send failed:", res.status, detail);
+      console.error("Postmark send failed:", res.status, detail);
       return NextResponse.json(
         { error: "Could not send your enquiry. Please email us directly." },
         { status: 502 },
@@ -114,7 +123,7 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ ok: true });
   } catch (err) {
-    console.error("Resend request error:", err);
+    console.error("Postmark request error:", err);
     return NextResponse.json(
       { error: "Could not send your enquiry. Please email us directly." },
       { status: 502 },
