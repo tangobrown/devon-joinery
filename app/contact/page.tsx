@@ -27,7 +27,7 @@ export default function ContactPage() {
     setStatus("sending");
     setErrorMsg(null);
     try {
-      const res = await fetch(site.formspreeEndpoint, {
+      const res = await fetch("/api/enquiry", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
