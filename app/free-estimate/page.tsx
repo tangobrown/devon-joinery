@@ -6,7 +6,6 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { EstimateCTA } from "@/components/EstimateCTA";
 import { ContactStrip } from "@/components/ContactStrip";
 import { PageHeader } from "@/components/PageHeader";
-import { site } from "@/lib/site";
 
 const SERVICE_OPTIONS = [
   "Ballustrades",
@@ -47,7 +46,7 @@ export default function FreeEstimatePage() {
     setStatus("sending");
     setErrorMsg(null);
     try {
-      const res = await fetch(site.formspreeEndpoint, {
+      const res = await fetch("/api/enquiry", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
