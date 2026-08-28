@@ -8,6 +8,7 @@ import { ContactStrip } from "@/components/ContactStrip";
 import { PageHeader } from "@/components/PageHeader";
 import { EmailIcon, MapPinIcon, PhoneIcon } from "@/components/Icons";
 import { site } from "@/lib/site";
+import { trackLead } from "@/lib/analytics";
 
 export default function ContactPage() {
   const [form, setForm] = useState({
@@ -51,6 +52,7 @@ export default function ContactPage() {
         );
       }
       setStatus("sent");
+      trackLead("Contact");
     } catch (err) {
       setStatus("error");
       setErrorMsg(err instanceof Error ? err.message : "Something went wrong.");

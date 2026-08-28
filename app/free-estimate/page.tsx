@@ -6,6 +6,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { EstimateCTA } from "@/components/EstimateCTA";
 import { ContactStrip } from "@/components/ContactStrip";
 import { PageHeader } from "@/components/PageHeader";
+import { trackLead } from "@/lib/analytics";
 
 const SERVICE_OPTIONS = [
   "Ballustrades",
@@ -72,6 +73,7 @@ export default function FreeEstimatePage() {
         );
       }
       setStatus("sent");
+      trackLead("Free Estimate");
     } catch (err) {
       setStatus("error");
       setErrorMsg(err instanceof Error ? err.message : "Something went wrong.");
