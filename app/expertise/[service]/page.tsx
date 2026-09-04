@@ -8,8 +8,10 @@ import { ServicePanelSection } from "@/components/ServicePanelContent";
 import { TanBand } from "@/components/TanBand";
 import { Faq } from "@/components/Faq";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { SubServiceLinks } from "@/components/SubServiceLinks";
 import { ReviewBadge } from "@/components/ReviewBadge";
 import { listServiceSlugs, serviceContent } from "@/lib/service-content";
+import { SITE_URL } from "@/lib/site";
 
 type Params = { service: string };
 
@@ -52,17 +54,38 @@ export default function ServicePage({ params }: { params: Params }) {
   const content = serviceContent[params.service];
   if (!content) notFound();
 
+  const shortName = content.h1.replace(/^Bespoke\s+/i, "");
+
   const breadcrumbs = [
     { name: "Home", href: "/" },
     { name: "Expertise", href: "/expertise" },
-    {
-      name: content.h1.replace(/^Bespoke\s+/i, ""),
-      href: `/expertise/${content.slug}`,
-    },
+    { name: shortName, href: `/expertise/${content.slug}` },
   ];
+
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: content.h1,
+    ...(content.metaDescription
+      ? { description: content.metaDescription }
+      : {}),
+    serviceType: shortName,
+    url: `${SITE_URL}/expertise/${content.slug}`,
+    provider: { "@id": `${SITE_URL}#business` },
+    areaServed: [
+      { "@type": "AdministrativeArea", name: "Devon" },
+      { "@type": "City", name: "Exeter" },
+      { "@type": "City", name: "Exmouth" },
+      { "@type": "City", name: "Sidmouth" },
+    ],
+  };
 
   return (
     <PageShell>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       <Breadcrumbs items={breadcrumbs} />
       <PageHeader
         title={content.h1}
@@ -106,6 +129,13 @@ export default function ServicePage({ params }: { params: Params }) {
           </div>
         </section>
       )}
+
+      {content.subServices?.length ? (
+        <SubServiceLinks
+          heading={`${shortName.replace(/\s+in\s+.+$/i, "")} we make`}
+          items={content.subServices}
+        />
+      ) : null}
 
       {content.tanBand && (
         <TanBand heading={content.tanBand.heading} cta={content.tanBand.cta}>

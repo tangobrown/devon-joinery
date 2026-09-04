@@ -2,6 +2,8 @@ import Link from "next/link";
 import { PageShell } from "@/components/PageShell";
 import { ImagePlaceholder } from "@/components/ImagePlaceholder";
 import { getPost } from "@/lib/blog";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { ArticleJsonLd } from "@/components/ArticleJsonLd";
 import { ArrowRightIcon } from "@/components/Icons";
 
 export const metadata = {
@@ -14,8 +16,16 @@ export const metadata = {
 export default function ArticlePage() {
   const post = getPost("sash-vs-casement-windows-period-devon-homes")!;
 
+  const breadcrumbs = [
+    { name: "Home", href: "/" },
+    { name: "Blog", href: "/blog" },
+    { name: post.title, href: `/blog/${post.slug}` },
+  ];
+
   return (
     <PageShell>
+      <ArticleJsonLd post={post} />
+      <Breadcrumbs items={breadcrumbs} />
       <article className="max-w-article mx-auto px-6 pt-12 pb-16 text-body">
         <Link
           href="/blog"
