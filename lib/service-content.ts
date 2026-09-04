@@ -164,38 +164,6 @@ export const serviceContent: Record<string, ServiceContent> = {
         ],
       },
     ],
-    faq: {
-      heading: "The types of bespoke doors that we create:",
-      showReviewBadge: true,
-      items: [
-        {
-          q: "Front Entrance Doors",
-          a: "Make a lasting first impression with a handcrafted front door built to your design, glazing, and hardware, combining kerb appeal with security and weather performance.",
-          href: "/expertise/doors/front-doors",
-          linkText: "a handcrafted front door",
-        },
-        {
-          q: "French Doors",
-          a: "Classic double doors that open wide to bring the outside in, ideal for linking living spaces to gardens and patios with plenty of natural light.",
-        },
-        {
-          q: "Bifolding Doors",
-          a: "Space-saving folding panels that concertina neatly to one side, opening up an entire wall for a seamless connection between indoors and out.",
-        },
-        {
-          q: "Sliding Doors",
-          a: "Sleek, large-panel sliding doors that glide effortlessly, maximising glazed area and views while taking up no swing space.",
-        },
-        {
-          q: "Interior Doors",
-          a: "Bespoke internal doors made to match your home's character, from panelled period styles to clean contemporary designs, in the timber and finish of your choice.",
-        },
-        {
-          q: "Doors for Heritage & Listed Buildings",
-          a: "Sympathetic, made-to-measure doors that respect original proportions and detailing, crafted to meet conservation requirements for period and listed properties.",
-        },
-      ],
-    },
     extraPanels: [
       {
         heading: "Why choose bespoke doors?",
@@ -229,7 +197,32 @@ export const serviceContent: Record<string, ServiceContent> = {
         label: "Front Entrance Doors",
         href: "/expertise/doors/front-doors",
         blurb:
-          "Handmade front entrance doors in oak, Accoya and painted hardwood, built to your opening.",
+          "Make a lasting first impression with a handcrafted front door built to your design, glazing, and hardware, combining kerb appeal with security and weather performance.",
+      },
+      {
+        label: "French Doors",
+        blurb:
+          "Classic double doors that open wide to bring the outside in, ideal for linking living spaces to gardens and patios with plenty of natural light.",
+      },
+      {
+        label: "Bifolding Doors",
+        blurb:
+          "Space-saving folding panels that concertina neatly to one side, opening up an entire wall for a seamless connection between indoors and out.",
+      },
+      {
+        label: "Sliding Doors",
+        blurb:
+          "Sleek, large-panel sliding doors that glide effortlessly, maximising glazed area and views while taking up no swing space.",
+      },
+      {
+        label: "Interior Doors",
+        blurb:
+          "Bespoke internal doors made to match your home's character, from panelled period styles to clean contemporary designs, in the timber and finish of your choice.",
+      },
+      {
+        label: "Doors for Heritage & Listed Buildings",
+        blurb:
+          "Sympathetic, made-to-measure doors that respect original proportions and detailing, crafted to meet conservation requirements for period and listed properties.",
       },
     ],
   },
