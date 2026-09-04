@@ -153,6 +153,90 @@ export const subServiceContent: Record<
       ],
     },
   },
+  doors: {
+    "front-doors": {
+      parentSlug: "doors",
+      parentLabel: "Doors",
+      slug: "front-doors",
+      h1: "Front Entrance Doors",
+      title: "Bespoke Front Entrance Doors in Exeter & Devon",
+      metaDescription:
+        "Handmade front entrance doors for Devon homes. Oak, Accoya and painted hardwood, built to your opening with secure locking and a weather-tight seal.",
+      intro:
+        "Handmade front entrance doors, designed and built in our Exeter workshop to suit your home, from the timber and glazing through to the locking and finish.",
+      heroImage: {
+        src: "/images/doors/grand-timber-front-door.jpg",
+        alt: "Bespoke timber front entrance door on a Devon home",
+      },
+      sections: [
+        {
+          h2: "Why a front door is worth making rather than buying",
+          paragraphs: [
+            [
+              "A front door is the first thing anyone sees of your house, and the one piece of joinery you touch every single day, so it is worth getting right. An off-the-shelf door is built to a standard size and then trimmed to fit the opening. We work the other way round: we make the door to suit the opening, the style of the house and the way you want it to look and feel. That is the real advantage of ",
+              { text: "bespoke doors", href: "/expertise/doors" },
+              ": the proportions, the panel layout, the mouldings and the ironmongery are all chosen for your home rather than pulled from a catalogue.",
+            ],
+          ],
+        },
+        {
+          h2: "Timber, and what survives a Devon winter",
+          paragraphs: [
+            [
+              "An external door in Devon has a hard life: driving rain off the moor or the coast, salt air near the estuaries, and long damp winters. The timber matters more here than it does inland.",
+            ],
+            [
+              "Accoya, a modified softwood, is our usual recommendation for exposed doors because it is dimensionally very stable and highly resistant to rot. Oak and durable hardwoods such as sapele suit doors where the grain is meant to be seen, and for a painted finish a good engineered section gives a stable base that holds paint well. You can ",
+              { text: "see examples of our door work", href: "/gallery" },
+              " across homes around Exeter and the wider county.",
+            ],
+          ],
+          image: {
+            src: "/images/doors/black-front-door-in-stone-building.jpg",
+            alt: "Painted black front door in a Devon stone cottage",
+          },
+        },
+        {
+          h2: "Security, locking and building regulations",
+          paragraphs: [
+            [
+              "A front door has to do more than look good. We build doors to take robust, well-fitted locking and quality ironmongery, specified with you to suit how the door is used. New external doors also need to meet current building regulations for thermal performance, and we take that into account in the door and glazing specification. If your project calls for a particular security or certification standard, tell us at the quotation stage so we can specify the door to meet it.",
+            ],
+          ],
+        },
+        {
+          h2: "Glazing, ironmongery and finish",
+          paragraphs: [
+            [
+              "Glazing, from a single vision panel to a fully glazed and side-lit entrance, is chosen for light, privacy and style, with obscure or toughened glass where it makes sense. Ironmongery is where a door's character often lives: handles, letter plates, knockers, hinges and locks, chosen to suit the period and the look. Doors can be supplied primed and ready for your decorator, or finished in the colour you choose; just let us know which you would prefer.",
+            ],
+          ],
+        },
+        {
+          h2: "Period and heritage front doors",
+          paragraphs: [
+            [
+              "Much of the front-door work we do in Devon is for period and character homes, where a replacement needs to match what was there, or what should have been. We can reproduce a traditional panelled door with the correct proportions, mouldings and glazing pattern, working from the existing door, a neighbour's, or old photographs. For listed buildings and homes in conservation areas the detailing matters, and we are used to making doors that suit the building.",
+            ],
+          ],
+          image: {
+            src: "/images/doors/timber-front-door.jpg",
+            alt: "Traditional panelled timber front door in Exeter",
+          },
+        },
+        {
+          h2: "How we work",
+          paragraphs: [
+            [
+              "We start with a survey and measure of the opening, then a quotation setting out the timber, glazing, ironmongery and finish. The door is made in our workshop at Clyst St. Mary, and fitted by our own team or coordinated with your builder. When you are ready, ",
+              { text: "request a free estimate", href: "/free-estimate" },
+              " and we will come and take a look.",
+            ],
+          ],
+        },
+      ],
+    },
+  },
 };
 
 /** All {service, subservice} pairs, for generateStaticParams and the sitemap. */

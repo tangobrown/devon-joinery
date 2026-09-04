@@ -2,8 +2,7 @@
 const nextConfig = {
   images: {
     remotePatterns: [
-      { protocol: "https", hostname: "images.unsplash.com" },
-      { protocol: "https", hostname: "devonjoinery.co.uk" },
+      { protocol: "https", hostname: "www.devonjoinery.co.uk" },
     ],
   },
 };

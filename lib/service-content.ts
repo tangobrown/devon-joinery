@@ -32,6 +32,8 @@ export type ServiceContent = {
     cta: { label: string; href: string };
   };
   extraPanels?: MaroonPanelContent[];
+  /** Child sub-service pages, rendered as a link block. Order is display order. */
+  subServices?: { label: string; href: string; blurb: string }[];
 };
 
 export const serviceContent: Record<string, ServiceContent> = {
@@ -168,6 +170,8 @@ export const serviceContent: Record<string, ServiceContent> = {
         {
           q: "Front Entrance Doors",
           a: "Make a lasting first impression with a handcrafted front door built to your design, glazing, and hardware, combining kerb appeal with security and weather performance.",
+          href: "/expertise/doors/front-doors",
+          linkText: "a handcrafted front door",
         },
         {
           q: "French Doors",
@@ -217,6 +221,14 @@ export const serviceContent: Record<string, ServiceContent> = {
           "**Hardwoods** such as European oak, sapele, and iroko are prized for their natural beauty, strength, and longevity. Oak is particularly popular for entrance doors and heritage properties, offering a rich grain that can be left natural or stained to suit your style.",
           "**Accoya** is a modified timber engineered for exceptional stability and rot resistance. It's an ideal choice for sliding and bifolding doors where large panels need to remain warp-free over time, and it performs brilliantly in exposed coastal locations. We also work in quality **softwoods** and **engineered timber sections**, always ensuring the right material is matched to the right application.",
         ],
+      },
+    ],
+    subServices: [
+      {
+        label: "Front Entrance Doors",
+        href: "/expertise/doors/front-doors",
+        blurb:
+          "Handmade front entrance doors in oak, Accoya and painted hardwood, built to your opening.",
       },
     ],
   },
@@ -303,6 +315,14 @@ export const serviceContent: Record<string, ServiceContent> = {
           "Improved comfort through modern glazing and seals.",
           "A long-term investment that complements the property rather than fighting against it.",
         ],
+      },
+    ],
+    subServices: [
+      {
+        label: "Sliding Sash Windows",
+        href: "/expertise/windows/sash-windows",
+        blurb:
+          "Traditional vertically-sliding sash windows, period-matched and made in our Exeter workshop.",
       },
     ],
   },

@@ -12,6 +12,20 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    slug: "planning-permission-windows-conservation-area-devon",
+    title:
+      "Do You Need Planning Permission for New Windows in a Conservation Area?",
+    date: "01/09/2026",
+    author: "Devon Joinery",
+    readTime: "8 min read",
+    categories: ["Windows", "Guides"],
+    excerpt:
+      "It is the question we are asked more than any other, and the honest answer is that it depends on three things: whether the house is listed, whether it is in a conservation area, and what you are replacing…",
+    coverImage: "/images/windows/listed-property-windows.jpg",
+    coverAlt:
+      "Timber sash windows in a listed Devon property, made by Devon Joinery",
+  },
+  {
     slug: "sash-vs-casement-windows-period-devon-homes",
     title: "Sash vs Casement Windows: Which Suits a Period Devon Home?",
     date: "14/08/2026",
@@ -39,4 +53,10 @@ export const posts: BlogPost[] = [
 
 export function getPost(slug: string): BlogPost | undefined {
   return posts.find((p) => p.slug === slug);
+}
+
+/** Convert a dd/mm/yyyy display date to ISO 8601 (yyyy-mm-dd) for schema. */
+export function toISODate(display: string): string {
+  const [dd, mm, yyyy] = display.split("/");
+  return `${yyyy}-${mm}-${dd}`;
 }
