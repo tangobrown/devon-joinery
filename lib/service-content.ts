@@ -32,8 +32,9 @@ export type ServiceContent = {
     cta: { label: string; href: string };
   };
   extraPanels?: MaroonPanelContent[];
-  /** Child sub-service pages, rendered as a link block. Order is display order. */
-  subServices?: { label: string; href: string; blurb: string }[];
+  /** Sub-service / product-type link block. Items without `href` render as
+   *  plain (non-linked) cards. Order is display order. */
+  subServices?: { label: string; href?: string; blurb: string }[];
 };
 
 export const serviceContent: Record<string, ServiceContent> = {
@@ -261,37 +262,6 @@ export const serviceContent: Record<string, ServiceContent> = {
         ],
       },
     ],
-    faq: {
-      heading: "The different types of bespoke windows that we can do:",
-      items: [
-        {
-          q: "Sliding Sash Windows",
-          a: "Traditional vertically-sliding sash windows, made to match period proportions and glazing bars, with the option of modern draught seals and slim double glazing for comfort.",
-          href: "/expertise/windows/sash-windows",
-          linkText: "Traditional vertically-sliding sash windows",
-        },
-        {
-          q: "Flush Casement Windows",
-          a: "Side-hung casements that sit flush within the frame for a clean, timeless look suited to both period cottages and contemporary homes.",
-        },
-        {
-          q: "Stormproof Windows",
-          a: "Casement windows with an overlapping, weather-rebated design that offers extra protection against wind and rain in exposed locations.",
-        },
-        {
-          q: "Pivot Windows",
-          a: "Windows that rotate on a central pivot, allowing easy cleaning from inside and a striking, contemporary opening action.",
-        },
-        {
-          q: "Sliding Windows",
-          a: "Horizontally-sliding frames that open without projecting outward, practical where space outside the window is limited.",
-        },
-        {
-          q: "Secondary Glazing",
-          a: "A discreet internal glazed panel fitted behind existing windows to improve thermal and acoustic performance while retaining original joinery.",
-        },
-      ],
-    },
     tanBand: {
       heading: "Sash or casement for a period home?",
       body: "Not sure which style suits your property? Our guide compares looks, cost, draughts, maintenance and conservation rules to help you decide before you specify replacements.",
@@ -322,7 +292,32 @@ export const serviceContent: Record<string, ServiceContent> = {
         label: "Sliding Sash Windows",
         href: "/expertise/windows/sash-windows",
         blurb:
-          "Traditional vertically-sliding sash windows, period-matched and made in our Exeter workshop.",
+          "Traditional vertically-sliding sash windows, made to match period proportions and glazing bars, with the option of modern draught seals and slim double glazing for comfort.",
+      },
+      {
+        label: "Flush Casement Windows",
+        blurb:
+          "Side-hung casements that sit flush within the frame for a clean, timeless look suited to both period cottages and contemporary homes.",
+      },
+      {
+        label: "Stormproof Windows",
+        blurb:
+          "Casement windows with an overlapping, weather-rebated design that offers extra protection against wind and rain in exposed locations.",
+      },
+      {
+        label: "Pivot Windows",
+        blurb:
+          "Windows that rotate on a central pivot, allowing easy cleaning from inside and a striking, contemporary opening action.",
+      },
+      {
+        label: "Sliding Windows",
+        blurb:
+          "Horizontally-sliding frames that open without projecting outward, practical where space outside the window is limited.",
+      },
+      {
+        label: "Secondary Glazing",
+        blurb:
+          "A discreet internal glazed panel fitted behind existing windows to improve thermal and acoustic performance while retaining original joinery.",
       },
     ],
   },

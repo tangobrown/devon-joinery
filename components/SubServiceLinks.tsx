@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRightIcon } from "@/components/Icons";
 
-export type SubServiceLink = { label: string; href: string; blurb: string };
+export type SubServiceLink = { label: string; href?: string; blurb: string };
 
 /**
  * Server-rendered link block from a service (parent) page down to its
@@ -22,26 +22,40 @@ export function SubServiceLinks({
           {heading}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {items.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="group block bg-white border border-borderCream p-6 transition-shadow hover:shadow-card"
-            >
-              <div className="flex items-center justify-between gap-3 mb-2">
-                <h3 className="text-[18px] font-bold text-ink leading-[1.3]">
+          {items.map((item) =>
+            item.href ? (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="group block bg-white border border-borderCream p-6 transition-shadow hover:shadow-card"
+              >
+                <div className="flex items-center justify-between gap-3 mb-2">
+                  <h3 className="text-[18px] font-bold text-ink leading-[1.3]">
+                    {item.label}
+                  </h3>
+                  <ArrowRightIcon className="w-4 h-4 text-maroon flex-shrink-0" />
+                </div>
+                <p className="text-[14.5px] leading-[1.6] text-bodyMuted">
+                  {item.blurb}
+                </p>
+                <span className="mt-3 inline-block text-maroon text-[13px] font-semibold group-hover:underline">
+                  Learn more
+                </span>
+              </Link>
+            ) : (
+              <div
+                key={item.label}
+                className="bg-white border border-borderCream p-6"
+              >
+                <h3 className="text-[18px] font-bold text-ink leading-[1.3] mb-2">
                   {item.label}
                 </h3>
-                <ArrowRightIcon className="w-4 h-4 text-maroon flex-shrink-0" />
+                <p className="text-[14.5px] leading-[1.6] text-bodyMuted">
+                  {item.blurb}
+                </p>
               </div>
-              <p className="text-[14.5px] leading-[1.6] text-bodyMuted">
-                {item.blurb}
-              </p>
-              <span className="mt-3 inline-block text-maroon text-[13px] font-semibold group-hover:underline">
-                Learn more
-              </span>
-            </Link>
-          ))}
+            ),
+          )}
         </div>
       </div>
     </section>
