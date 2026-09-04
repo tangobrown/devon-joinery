@@ -15,9 +15,12 @@ export default function ExpertiseIndexPage() {
       <PageHeader
         title="Our Expertise"
         size="md"
-        intro="Devon Joinery crafts bespoke joinery across eight core specialisms. Explore each below."
+        intro="Devon Joinery crafts bespoke kitchens, fitted wardrobes, windows, doors, and architectural joinery. Discover how we can transform your entire space with the same dedication to quality and craftsmanship. Devon Joinery crafts bespoke joinery across eight core specialisms. Explore each below."
       />
-      <section className="max-w-article mx-auto px-6 pb-4">
+
+      <ExpertiseGrid />
+
+      <section className="max-w-article mx-auto px-6 pt-4 pb-16">
         <h2 className="text-[26px] md:text-[32px] font-bold text-ink mb-4">
           Bespoke joinery, made in Exeter
         </h2>
@@ -46,7 +49,6 @@ export default function ExpertiseIndexPage() {
           timber choice matters more here than it does inland.
         </p>
       </section>
-      <ExpertiseGrid withIntro />
     </PageShell>
   );
 }
