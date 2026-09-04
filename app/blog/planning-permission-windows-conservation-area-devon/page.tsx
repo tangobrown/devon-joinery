@@ -59,8 +59,8 @@ export default function ArticlePage() {
           label="Conservation area windows — hero image"
           ratio="1.9 / 1"
           className="mb-8"
-          src="/images/windows/listed-property-windows.jpg"
-          alt="Timber sash windows in a listed Devon property, made by Devon Joinery"
+          src="/images/windows/single-hung-window.jpg"
+          alt="Timber single-hung sash window in a period Devon property, made by Devon Joinery"
         />
 
         <div className="prose-body space-y-5 text-[17px] leading-[1.75] text-body">

@@ -21,9 +21,9 @@ export const posts: BlogPost[] = [
     categories: ["Windows", "Guides"],
     excerpt:
       "It is the question we are asked more than any other, and the honest answer is that it depends on three things: whether the house is listed, whether it is in a conservation area, and what you are replacing…",
-    coverImage: "/images/windows/listed-property-windows.jpg",
+    coverImage: "/images/windows/single-hung-window.jpg",
     coverAlt:
-      "Timber sash windows in a listed Devon property, made by Devon Joinery",
+      "Timber single-hung sash window in a period Devon property, made by Devon Joinery",
   },
   {
     slug: "sash-vs-casement-windows-period-devon-homes",
