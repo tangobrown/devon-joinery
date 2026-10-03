@@ -125,12 +125,15 @@ export const subServiceContent: Record<
           ],
         },
         {
-          // TODO(TAN-25 follow-up): once /expertise/windows/sash-window-restoration
-          // ships (programme row 4), link "renewed" / "Replacement" here to that page.
           h2: "Repair, or replace?",
           paragraphs: [
             [
-              "Not every tired sash window needs replacing. Sash cords, weights, pulleys, individual sills and the bottom rails of the sashes can all be renewed, and a box frame that is sound in the main is usually worth keeping. Replacement makes sense when the boxes themselves have gone, when previous repairs have destroyed the profiles, or when a whole elevation needs to match.",
+              "Not every tired sash window needs replacing. Sash cords, weights, pulleys, individual sills and the bottom rails of the sashes can all be ",
+              {
+                text: "repaired and restored",
+                href: "/expertise/windows/sash-window-restoration",
+              },
+              ", and a box frame that is sound in the main is usually worth keeping. Replacement makes sense when the boxes themselves have gone, when previous repairs have destroyed the profiles, or when a whole elevation needs to match.",
             ],
             [
               "If you are not sure which side of that line you are on, we will tell you honestly, including when the answer is that the windows are fine and need painting.",
@@ -147,6 +150,126 @@ export const subServiceContent: Record<
               "When you are ready, ",
               { text: "request a free estimate", href: "/free-estimate" },
               " and we will come and take a look.",
+            ],
+          ],
+        },
+      ],
+    },
+    "sash-window-restoration": {
+      parentSlug: "windows",
+      parentLabel: "Windows",
+      slug: "sash-window-restoration",
+      h1: "Sash Window Repair & Restoration",
+      title: "Sash Window Restoration in Exeter & Devon",
+      metaDescription:
+        "Draught-proofing, splice repairs and full restoration of original sash windows in Exeter and across Devon. Keep the frames, fix the performance.",
+      intro:
+        "Repairing and restoring original sash windows rather than replacing them, so the glass, the proportions and the joinery stay as they were built.",
+      heroImage: {
+        src: "/images/windows/listed-property-windows.jpg",
+        alt: "Original sash windows in a listed Devon property",
+      },
+      sections: [
+        {
+          h2: "Most sash windows are in better condition than they look",
+          paragraphs: [
+            [
+              "A window that sticks, rattles, draws a draught or has paint flaking off it looks like a window at the end of its life. Usually it is not. What has normally failed is the paint, a sash cord, and perhaps the bottom rail of the lower sash, where water sits. The box frame and the bulk of the sash timber are often perfectly sound underneath.",
+            ],
+            [
+              "That matters, because the timber in an original window is generally better than what you can buy today. Slow-grown Baltic redwood and heart pine from the nineteenth century is denser, tighter-grained and more stable than most modern softwood. Where the frames are sound, keeping them is both the cheaper option and the better one.",
+            ],
+            [
+              "So the first thing we do is tell you which it is. If the windows need redecorating rather than restoring, we will say that. If the boxes have genuinely gone, ",
+              {
+                text: "new sliding sash windows",
+                href: "/expertise/windows/sash-windows",
+              },
+              " are the honest answer and we will say that instead.",
+            ],
+          ],
+        },
+        {
+          h2: "What a restoration involves",
+          paragraphs: [
+            [
+              "We start with a survey of each window rather than the elevation as a whole, because they rarely fail at the same rate. We look at the box frame, the stiles and rails of both sashes, the cords, pulleys and weights, the sill, and how much original glass survives.",
+            ],
+            [
+              "From there the work typically covers stripping failed paint back to sound timber, cutting out decayed sections and splicing in new timber to match, re-puttying and re-securing the glass, renewing cords and rebalancing the weights so the sashes run properly, and then priming, undercoating and finishing.",
+            ],
+            [
+              "Splice repairs are the part people underestimate. A rotten section of bottom rail can be cut out and a new piece of matching timber scarfed in, glued and pinned, so that once it is painted the repair is invisible and the rail is as strong as it was. It is slower than fitting a new sash, which is why restoration is skilled work rather than maintenance.",
+            ],
+          ],
+          image: {
+            src: "/images/windows/bespoke-windows.jpg",
+            alt: "Sash window rail and glazing bar detail during restoration",
+          },
+        },
+        {
+          h2: "Draughts, rattle and slim double glazing",
+          paragraphs: [
+            [
+              "The two complaints about original sashes are that they are cold and that they rattle, and both are fixable without changing how the window looks.",
+            ],
+            [
+              "Discreet brush or compression seals set into the staff bead, parting bead and meeting rail stop the rattle and cut the draught substantially, and are invisible from outside. Where more is needed, slim-profile double-glazed units can often go into the existing sashes, keeping the correct putty line and glazing bar width. Whether that is possible on your windows depends on the rebate depth and on whether the sashes can carry the extra weight, which is a survey question rather than a catalogue one.",
+            ],
+            [
+              "As we say on the ",
+              {
+                text: "sash windows page",
+                href: "/expertise/windows/sash-windows",
+              },
+              ", you will not reach the U-value of a modern casement this way, and we would rather tell you that up front. What you get is a marked improvement in comfort and noise with the building's character untouched.",
+            ],
+          ],
+          image: {
+            src: "/images/windows/secondary-glazing.jpg",
+            alt: "Restored sash window seen from inside a Devon home",
+          },
+        },
+        {
+          h2: "Conservation areas and listed buildings",
+          paragraphs: [
+            [
+              "Restoration is very often the route a conservation officer prefers, and because nothing changes externally it frequently needs no consent at all. That is close to the opposite of the position you are in with replacement, where the application can turn on the glazing specification.",
+            ],
+            [
+              "The rules vary between Exeter, East Devon and Teignbridge, particularly on slim double glazing, so the honest answer to what will be approved is usually that it depends on your officer. Our guide to ",
+              {
+                text: "planning permission for windows in a conservation area",
+                href: "/blog/planning-permission-windows-conservation-area-devon",
+              },
+              " sets out what generally needs consent and what does not.",
+            ],
+          ],
+        },
+        {
+          h2: "Restoration, or replacement?",
+          paragraphs: [
+            [
+              "Restoration is the better answer where the frames are fundamentally sound, where the house is listed or in a conservation area, or where the original glass and proportions are part of why you bought it.",
+            ],
+            [
+              "Replacement is the better answer where rot is extensive through the boxes, where the existing windows are poor later replacements with nothing worth keeping, or where a whole elevation needs to match and half of it has already been lost.",
+            ],
+            [
+              "Most houses are a mixture, and there is no reason to treat every opening the same way. We regularly restore the windows on one elevation and replace them on another.",
+            ],
+          ],
+        },
+        {
+          h2: "Sash window restoration across Devon",
+          paragraphs: [
+            [
+              "We work from our workshop at Clyst St Mary, just outside Exeter, across the city and out through Exmouth, Topsham, Sidmouth and the surrounding villages. Sashes come back to the workshop where the work needs a bench, and the box frames and reinstallation are done on site.",
+            ],
+            [
+              "If you are not sure which side of the repair-or-replace line your windows fall on, ",
+              { text: "request a free estimate", href: "/free-estimate" },
+              " and we will come and look at them properly.",
             ],
           ],
         },
@@ -231,6 +354,252 @@ export const subServiceContent: Record<
               "We start with a survey and measure of the opening, then a quotation setting out the timber, glazing, ironmongery and finish. The door is made in our workshop at Clyst St. Mary, and fitted by our own team or coordinated with your builder. When you are ready, ",
               { text: "request a free estimate", href: "/free-estimate" },
               " and we will come and take a look.",
+            ],
+          ],
+        },
+        {
+          h2: "Oak, specifically",
+          paragraphs: [
+            [
+              "Oak is the timber most people have in mind when they picture a solid front door, and it behaves differently enough from the alternatives to be worth its own page. If you have settled on the material and want the detail, see ",
+              {
+                text: "oak front doors",
+                href: "/expertise/doors/oak-front-doors",
+              },
+              ".",
+            ],
+          ],
+        },
+      ],
+    },
+    "oak-front-doors": {
+      parentSlug: "doors",
+      parentLabel: "Doors",
+      slug: "oak-front-doors",
+      h1: "Oak Front Doors",
+      title: "Bespoke Oak Front Doors in Exeter & Devon",
+      metaDescription:
+        "Solid oak front doors handmade in Exeter. How oak grades, grain and movement affect an external door, and how it compares with Accoya and painted hardwood.",
+      intro:
+        "Oak front doors made in our Exeter workshop, and an honest account of how the timber behaves once it is hanging in a Devon doorway.",
+      heroImage: {
+        src: "/images/doors/timber-front-door.jpg",
+        alt: "Bespoke oak front door on a Devon home",
+      },
+      sections: [
+        {
+          h2: "Why oak for a front door",
+          paragraphs: [
+            [
+              "Oak is dense, hard, and it ages well rather than merely lasting. A south-west-facing front door in Devon takes driven rain, salt air off the estuaries and strong summer sun, and oak handles all three better than almost anything at a comparable price.",
+            ],
+            [
+              "It is also heavy, which is part of the appeal and part of the engineering. An oak door closes with a weight that a lightweight door cannot imitate. It also means the frame, the hinges and the locking all have to be specified to carry it, which is one of the reasons an oak door is not simply a standard door in a different material.",
+            ],
+            [
+              "This page is about the timber. For door styles, glazing, ironmongery, security and the buying process, see ",
+              {
+                text: "front entrance doors",
+                href: "/expertise/doors/front-doors",
+              },
+              ".",
+            ],
+          ],
+        },
+        {
+          h2: "Grain, grade and how the board is cut",
+          paragraphs: [
+            [
+              "Grade matters as much as species. Prime stock is cleaner and more consistent; character grade carries more knots and figure, and is very often what people actually want to look at on a front door.",
+            ],
+            [
+              "How the board is cut out of the log matters more than most people expect. Quarter-sawn oak is noticeably more stable through the seasons than plain-sawn, because the growth rings run roughly perpendicular to the face, so seasonal movement is spread across the thickness rather than the width. It yields less from the log and costs more, which is exactly why it is worth specifying on an external door and not on a wardrobe.",
+            ],
+            [
+              "We will tell you at quotation stage what we are proposing and why, and you can ",
+              { text: "see examples of our door work", href: "/gallery" },
+              " to get a sense of how different grades read once they are finished.",
+            ],
+          ],
+          image: {
+            src: "/images/doors/grand-timber-front-door.jpg",
+            alt: "Oak front door showing grain and panel detail",
+          },
+        },
+        {
+          h2: "How oak moves, and what we do about it",
+          paragraphs: [
+            [
+              "All timber moves with humidity and oak is no exception: it shrinks and swells across the grain through the year. A door built as a single slab will cup. A door built as a frame and panel lets the panels float in their grooves so they can move without splitting the rails, and an engineered construction, with a stable laminated core and solid oak faces, stays flatter still on a wide door.",
+            ],
+            [
+              "Oak also contains tannins, which react with iron. Mild steel fixings and fittings in contact with oak will cause black staining, and tannin washing off a new oak door can mark pale masonry beneath it in the first year or so. Stainless or bronze fixings avoid the first problem; the second generally weathers out, and is worth knowing about before it happens rather than afterwards.",
+            ],
+          ],
+        },
+        {
+          h2: "Oiled, stained or painted",
+          paragraphs: [
+            [
+              "Oiled oak keeps the grain visible and warms to a deeper gold over the first year. Left unmaintained it silvers, which some people want and some people very much do not. Stained oak holds a colour and offers more UV protection. Oak can be painted, and on some period properties that is the correct answer, though it does cover the thing you paid for.",
+            ],
+            [
+              "Realistic maintenance on an oiled door: re-oiling in the first year or two, then less often as the finish establishes. A west-facing coastal door will want it more frequently than a sheltered north-facing one. This is the main ongoing difference between oak and a painted factory finish, and it is the honest trade-off for the grain being on show.",
+            ],
+          ],
+          image: {
+            src: "/images/doors/timber-external-door.jpg",
+            alt: "Oiled oak external door with visible grain",
+          },
+        },
+        {
+          h2: "Oak, Accoya or painted hardwood?",
+          paragraphs: [
+            [
+              "Oak is not automatically the right answer, and it would be a poor page that pretended otherwise.",
+            ],
+            [
+              "Accoya is more dimensionally stable than oak and more resistant to rot, and it takes paint extremely well. For a door that is going to be painted, and particularly for a wide or very exposed door, Accoya is often the better engineering choice: you are not paying for grain you intend to cover. That is why it is our usual recommendation for exposed positions elsewhere on the site.",
+            ],
+            [
+              "Oak wins where the grain is the point, where the weight and the feel matter, and where the house asks for it. If you are weighing the three up, our guide to ",
+              {
+                text: "Accoya, oak and softwood on the Devon coast",
+                href: "/blog/accoya-vs-oak-vs-softwood-devon-coast",
+              },
+              " goes through the comparison properly.",
+            ],
+          ],
+        },
+        {
+          h2: "Oak front doors across Devon",
+          paragraphs: [
+            [
+              "Every door is drawn, cut and finished in our workshop at Clyst St Mary, then fitted by our own team or coordinated with your builder. We work across Exeter, Exmouth, Sidmouth, Topsham and the surrounding villages.",
+            ],
+            [
+              "If you want to talk through whether oak is the right call for your opening, ",
+              { text: "request a free estimate", href: "/free-estimate" },
+              " and we will come and take a look.",
+            ],
+          ],
+        },
+      ],
+    },
+  },
+  staircases: {
+    "oak-staircases": {
+      parentSlug: "staircases",
+      parentLabel: "Staircases",
+      slug: "oak-staircases",
+      h1: "Oak Staircases",
+      title: "Bespoke Oak Staircases in Exeter & Devon",
+      metaDescription:
+        "Bespoke oak staircases hand-built in Exeter. Solid and engineered oak, traditional cut-string to open-tread designs, engineered to fit your opening exactly.",
+      intro:
+        "Oak staircases designed, engineered and hand-built in our Exeter workshop, from traditional cut-string flights to contemporary open-tread designs.",
+      heroImage: {
+        src: "/images/staircases/wooden-staircase.jpg",
+        alt: "Bespoke oak staircase in a Devon home",
+      },
+      sections: [
+        {
+          h2: "Why oak is the default for a staircase",
+          paragraphs: [
+            [
+              "A staircase is the one piece of joinery in a house that every occupant touches every day, usually with their hands and their feet at the same time. That makes hardness and wear matter more than they do almost anywhere else, and it is the main practical reason oak has been the default staircase timber in this country for centuries.",
+            ],
+            [
+              "Oak also looks better as it wears. Treads develop a sheen where feet fall and a handrail darkens where hands run, and on a well-made oak flight that reads as age rather than damage. A painted softwood tread in the same position chips and shows it.",
+            ],
+            [
+              "It is not the only sensible answer. See the ",
+              { text: "staircases overview", href: "/expertise/staircases" },
+              " for painted, contemporary and mixed-timber options.",
+            ],
+          ],
+        },
+        {
+          h2: "Solid oak, or engineered oak?",
+          paragraphs: [
+            [
+              "Both have a place, and the distinction is worth understanding before you compare quotes, because it accounts for a good part of the price difference between two apparently similar staircases.",
+            ],
+            [
+              "Solid oak is exactly that: components machined from solid stock. It is the traditional construction and the right choice for treads, handrails and newels, where the section is thick and the wear is heavy.",
+            ],
+            [
+              "Engineered oak is a stable laminated core with a solid oak face. On wide components (a long string, a broad riser, a landing nosing) it is genuinely the better engineering choice, because it stays flat where solid stock of the same width would be inclined to cup. Using it where it belongs is not a cost-saving compromise; using it everywhere would be.",
+            ],
+            [
+              "Most of the oak staircases we build are a considered mixture of the two, and the quotation says which is which.",
+            ],
+          ],
+          image: {
+            src: "/images/staircases/staircase-in-the-process-of-manufacturing.jpg",
+            alt: "Oak staircase under construction in the Devon Joinery workshop",
+          },
+        },
+        {
+          h2: "Traditional and contemporary oak",
+          paragraphs: [
+            [
+              "At the traditional end: cut-string or closed-string flights, turned or square spindles, a shaped handrail, moulded nosings and turned newel posts. This is what most period Devon houses want, and the detailing is what makes it sit right.",
+            ],
+            [
+              "At the contemporary end: open treads, square-section posts, glass or steel infill in place of spindles, and oak left oiled rather than stained. The timber is the same; the detailing is deliberately stripped back.",
+            ],
+            [
+              "Oak takes both because the grain carries a plain design and does not fight an ornate one. Whichever direction you go, the balustrade is a large part of what you see and a large part of the cost. The ",
+              { text: "balustrades page", href: "/expertise/balustrades" },
+              " covers the options in their own right.",
+            ],
+          ],
+          image: {
+            src: "/images/staircases/winding-staircase.jpg",
+            alt: "Winding oak staircase with timber balustrade",
+          },
+        },
+        {
+          h2: "Fitting an oak staircase into an old house",
+          paragraphs: [
+            [
+              "A new build gives you a square opening, a level floor and a known floor-to-floor height. A two-hundred-year-old Devon cottage gives you none of those, and that is where a made-to-measure staircase earns its cost.",
+            ],
+            [
+              "Building regulations set limits on rise, going, headroom and the gaps a balustrade can leave. Meeting them in an opening that has moved over two centuries, often with a ceiling height that varies along the flight, is a setting-out problem rather than a manufacturing one. It is also why every tread on a bespoke flight is the same height, which is something stock staircases in old houses routinely fail at and something you feel underfoot every single time.",
+            ],
+          ],
+        },
+        {
+          h2: "Finish and movement",
+          paragraphs: [
+            [
+              "Oak is usually oiled or lacquered on a staircase rather than painted. Oil is more repairable, which matters on a surface that takes this much wear: a worn patch can be cleaned and re-oiled in place, where lacquer generally has to be sanded back and redone as a whole.",
+            ],
+            [
+              "Expect some seasonal movement and the occasional creak. Oak shrinks and swells with humidity, and a staircase is a large assembly of components doing that together through a heating season. Good joinery accommodates it rather than preventing it, and a flight that is entirely silent in February is usually one that has not been through a winter yet.",
+            ],
+            [
+              "If you are weighing oak against the alternatives on cost and durability, our guide to ",
+              {
+                text: "Accoya, oak and softwood",
+                href: "/blog/accoya-vs-oak-vs-softwood-devon-coast",
+              },
+              " is a useful starting point, though it is written mainly with external joinery in mind.",
+            ],
+          ],
+        },
+        {
+          h2: "Oak staircases across Devon",
+          paragraphs: [
+            [
+              "Every staircase is drawn, engineered and built in our workshop at Clyst St Mary, then fitted by our own team or coordinated with your builder. We work across Exeter, Exmouth, Sidmouth, Topsham and the surrounding villages.",
+            ],
+            [
+              "We cannot quote a staircase from a description. What we need is the opening: the floor-to-floor height, the available run and width, and what sits above and below. Send photographs and rough measurements and we will tell you what is realistic in the space, then ",
+              { text: "request a free estimate", href: "/free-estimate" },
+              " for a surveyed, fixed price.",
             ],
           ],
         },

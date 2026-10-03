@@ -35,6 +35,10 @@ export type ServiceContent = {
   /** Sub-service / product-type link block. Items without `href` render as
    *  plain (non-linked) cards. Order is display order. */
   subServices?: { label: string; href?: string; blurb: string }[];
+  /** Blog articles that support this service. Renders as a "Related reading"
+   *  block, so articles are reachable from the service pages rather than only
+   *  from the blog index. */
+  relatedReading?: { label: string; href: string; blurb: string }[];
 };
 
 export const serviceContent: Record<string, ServiceContent> = {
@@ -83,6 +87,14 @@ export const serviceContent: Record<string, ServiceContent> = {
           "Choosing a bespoke balustrade means it's made for your home and nobody else's. Unlike off-the-shelf kits, ours are measured, designed and finished for your need. The right baluster spacing, the handrail profile you want, and a seamless fit you simply can't get from standard parts.",
           "Bespoke also means freedom of design. Want hand-turned timber spindles to suit a period property in Exmouth or Sidmouth, or sleek glass to modernise a new build near Exeter? We'll bring your vision to life, balancing how it looks with how it has to perform underfoot for years to come.",
         ],
+      },
+    ],
+    relatedReading: [
+      {
+        label: "Wood vs Glass Balustrades: Which Is Right for Your Home?",
+        href: "/blog/wood-vs-glass-balustrades",
+        blurb:
+          "An honest side-by-side on look, cost, maintenance and how the two feel to live with, so you can decide before you commit.",
       },
     ],
   },
@@ -220,9 +232,23 @@ export const serviceContent: Record<string, ServiceContent> = {
           "Bespoke internal doors made to match your home's character, from panelled period styles to clean contemporary designs, in the timber and finish of your choice.",
       },
       {
+        label: "Oak Front Doors",
+        href: "/expertise/doors/oak-front-doors",
+        blurb:
+          "Solid and engineered oak front doors, chosen for grain and weight as much as durability, finished oiled, stained or painted to suit the house.",
+      },
+      {
         label: "Doors for Heritage & Listed Buildings",
         blurb:
           "Sympathetic, made-to-measure doors that respect original proportions and detailing, crafted to meet conservation requirements for period and listed properties.",
+      },
+    ],
+    relatedReading: [
+      {
+        label: "Accoya vs Oak vs Softwood on the Devon Coast",
+        href: "/blog/accoya-vs-oak-vs-softwood-devon-coast",
+        blurb:
+          "Which timber actually survives salt air and driving rain, what each one costs to own over twenty years, and where we would spend the money.",
       },
     ],
   },
@@ -308,9 +334,29 @@ export const serviceContent: Record<string, ServiceContent> = {
           "Horizontally-sliding frames that open without projecting outward, practical where space outside the window is limited.",
       },
       {
+        label: "Sash Window Repair & Restoration",
+        href: "/expertise/windows/sash-window-restoration",
+        blurb:
+          "Keeping original sashes rather than replacing them: splice repairs, new cords and weights, draught-proofing and redecoration.",
+      },
+      {
         label: "Secondary Glazing",
         blurb:
           "A discreet internal glazed panel fitted behind existing windows to improve thermal and acoustic performance while retaining original joinery.",
+      },
+    ],
+    relatedReading: [
+      {
+        label: "Planning Permission for Windows in a Conservation Area",
+        href: "/blog/planning-permission-windows-conservation-area-devon",
+        blurb:
+          "What needs consent, what does not, and what conservation officers in Exeter and East Devon actually look for before you specify replacements.",
+      },
+      {
+        label: "Accoya vs Oak vs Softwood on the Devon Coast",
+        href: "/blog/accoya-vs-oak-vs-softwood-devon-coast",
+        blurb:
+          "The timber decision that matters most on exposed elevations, compared honestly on stability, rot resistance, finish and cost.",
       },
     ],
   },
@@ -448,6 +494,53 @@ export const serviceContent: Record<string, ServiceContent> = {
         paragraphs: [
           "A made-to-measure staircase means everything (treads, risers, handrails, balustrade) is designed for your home. That gives you complete control over the look, the feel underfoot and how it works alongside the rest of the property.",
         ],
+      },
+    ],
+    subServices: [
+      {
+        label: "Oak Staircases",
+        href: "/expertise/staircases/oak-staircases",
+        blurb:
+          "Solid and engineered oak staircases, from traditional cut-string flights to open-tread designs, with the grain left to do the work.",
+      },
+      {
+        label: "Painted Staircases",
+        blurb:
+          "Painted strings and risers with hardwood treads and handrail, a combination that suits most houses and costs a good deal less than oak throughout.",
+      },
+      {
+        label: "Staircase Renovation & Refurbishment",
+        blurb:
+          "New treads, handrails, spindles or a full rebuild, bringing a tired staircase up to current regulations without replacing the structure.",
+      },
+      {
+        label: "Loft Conversion Staircases",
+        blurb:
+          "Flights designed for the awkward headroom and tight footprints a loft conversion leaves, including winders and space-saver layouts.",
+      },
+      {
+        label: "Floating & Cantilevered Staircases",
+        blurb:
+          "Open-tread and cantilevered designs where the treads appear to float, engineered with the structural support concealed in the wall.",
+      },
+      {
+        label: "Commercial Staircases",
+        blurb:
+          "Staircases for offices, retail and hospitality, built to the same standard as our domestic work and specified to meet commercial regulations.",
+      },
+    ],
+    relatedReading: [
+      {
+        label: "Accoya vs Oak vs Softwood on the Devon Coast",
+        href: "/blog/accoya-vs-oak-vs-softwood-devon-coast",
+        blurb:
+          "Oak is the default choice for a staircase, but not always the right one. How the three timbers compare on stability, finish and cost.",
+      },
+      {
+        label: "Wood vs Glass Balustrades: Which Is Right for Your Home?",
+        href: "/blog/wood-vs-glass-balustrades",
+        blurb:
+          "The balustrade is a large part of what you see on a staircase, and a large part of the cost. How timber and glass compare.",
       },
     ],
   },
