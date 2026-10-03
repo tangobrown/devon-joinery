@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { PageShell } from "@/components/PageShell";
 import { PageHeader } from "@/components/PageHeader";
 import { ExpertiseGrid } from "@/components/ExpertiseGrid";
@@ -15,7 +16,7 @@ export default function ExpertiseIndexPage() {
       <PageHeader
         title="Our Expertise"
         size="md"
-        intro="Devon Joinery crafts bespoke kitchens, fitted wardrobes, windows, doors, and architectural joinery. Discover how we can transform your entire space with the same dedication to quality and craftsmanship. Devon Joinery crafts bespoke joinery across eight core specialisms. Explore each below."
+        intro="Devon Joinery crafts bespoke joinery across eight core specialisms, from a single replacement sash window to a full staircase or run of fitted wardrobes. Explore each below."
       />
 
       <ExpertiseGrid />
@@ -32,11 +33,48 @@ export default function ExpertiseIndexPage() {
           its own quirks. Bespoke does not have to mean experimental.
         </p>
         <p className="text-[16px] leading-[1.7] text-body mb-4">
-          We work across Devon and the wider South West, on everything from a
-          single replacement sash window in a Grade II cottage to a full
-          staircase, reception fit-out or run of fitted wardrobes. Most projects
-          start the same way: a conversation, a survey, a drawing, then a fixed
-          price before anything is cut.
+          We work across Devon and the wider South West, on everything from a{" "}
+          <Link
+            href="/expertise/windows/sash-windows"
+            className="text-maroon font-semibold underline"
+          >
+            single replacement sash window
+          </Link>{" "}
+          in a Grade II cottage, or a new{" "}
+          <Link
+            href="/expertise/doors/front-doors"
+            className="text-maroon font-semibold underline"
+          >
+            front entrance door
+          </Link>
+          , to a full staircase, reception fit-out or run of fitted wardrobes.
+          Most projects start the same way: a conversation, a survey, a drawing,
+          then a fixed price before anything is cut.
+        </p>
+        <p className="text-[16px] leading-[1.7] text-body mb-4">
+          Some of that work has a page of its own. If you know what you are
+          after, you can go straight to{" "}
+          <Link
+            href="/expertise/windows/sash-window-restoration"
+            className="text-maroon font-semibold underline"
+          >
+            sash window restoration
+          </Link>
+          ,{" "}
+          <Link
+            href="/expertise/doors/oak-front-doors"
+            className="text-maroon font-semibold underline"
+          >
+            oak front doors
+          </Link>{" "}
+          or{" "}
+          <Link
+            href="/expertise/staircases/oak-staircases"
+            className="text-maroon font-semibold underline"
+          >
+            oak staircases
+          </Link>
+          .
         </p>
         <h2 className="text-[26px] md:text-[32px] font-bold text-ink mb-4 mt-8">
           Timber, finishes and accreditations
