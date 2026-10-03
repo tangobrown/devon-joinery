@@ -12,6 +12,19 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    slug: "accoya-vs-oak-vs-softwood-devon-coast",
+    title: "Accoya vs Oak vs Softwood for Devon's Coastal Climate",
+    date: "03/10/2026",
+    author: "Devon Joinery",
+    readTime: "9 min read",
+    categories: ["Timber", "Comparisons"],
+    excerpt:
+      "Salt air, driving rain and long damp winters are hard on external joinery, and the timber you choose matters more here than it does inland. An honest comparison of the three we use most…",
+    coverImage: "/images/windows/listed-property-windows.jpg",
+    coverAlt:
+      "Timber windows in an exposed coastal Devon property, made by Devon Joinery",
+  },
+  {
     slug: "planning-permission-windows-conservation-area-devon",
     title:
       "Do You Need Planning Permission for New Windows in a Conservation Area?",
