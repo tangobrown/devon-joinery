@@ -11,6 +11,7 @@ import {
   listSubServiceParams,
   type RichParagraph,
 } from "@/lib/subservice-content";
+import { SITE_URL } from "@/lib/site";
 
 type Params = { service: string; subservice: string };
 
@@ -31,7 +32,7 @@ export function generateMetadata({ params }: { params: Params }) {
       title: content.title,
       description: content.metaDescription,
       url,
-      type: "article",
+      type: "website",
       siteName: "Devon Joinery",
       locale: "en_GB",
       ...(ogImage
@@ -80,8 +81,38 @@ export default function SubServicePage({ params }: { params: Params }) {
     },
   ];
 
+  const url = `${SITE_URL}/expertise/${content.parentSlug}/${content.slug}`;
+
+  // Page-level Service node. The site-wide LocalBusiness OfferCatalog in
+  // layout.tsx describes the business's catalogue, not this page, so without
+  // this a sub-service page has no Service schema of its own. `isPartOf`
+  // points at the parent service page's own Service @id, declaring the
+  // parent/child relationship rather than leaving Google to infer it from
+  // breadcrumbs.
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": url,
+    name: content.h1,
+    description: content.metaDescription,
+    serviceType: content.h1,
+    url,
+    provider: { "@id": `${SITE_URL}#business` },
+    isPartOf: { "@id": `${SITE_URL}/expertise/${content.parentSlug}` },
+    areaServed: [
+      { "@type": "AdministrativeArea", name: "Devon" },
+      { "@type": "City", name: "Exeter" },
+      { "@type": "City", name: "Exmouth" },
+      { "@type": "City", name: "Sidmouth" },
+    ],
+  };
+
   return (
     <PageShell>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
       <Breadcrumbs items={breadcrumbs} />
       <PageHeader
         title={content.h1}

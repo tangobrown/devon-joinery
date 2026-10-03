@@ -9,6 +9,7 @@ import { TanBand } from "@/components/TanBand";
 import { Faq } from "@/components/Faq";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SubServiceLinks } from "@/components/SubServiceLinks";
+import { RelatedReading } from "@/components/RelatedReading";
 import { ReviewBadge } from "@/components/ReviewBadge";
 import { listServiceSlugs, serviceContent } from "@/lib/service-content";
 import { SITE_URL } from "@/lib/site";
@@ -65,6 +66,9 @@ export default function ServicePage({ params }: { params: Params }) {
   const serviceJsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
+    // Sub-service pages reference this @id via `isPartOf`, so it must stay
+    // in step with the URL shape used there.
+    "@id": `${SITE_URL}/expertise/${content.slug}`,
     name: content.h1,
     ...(content.metaDescription
       ? { description: content.metaDescription }
@@ -135,6 +139,10 @@ export default function ServicePage({ params }: { params: Params }) {
           heading={`${shortName.replace(/\s+in\s+.+$/i, "")} we make`}
           items={content.subServices}
         />
+      ) : null}
+
+      {content.relatedReading?.length ? (
+        <RelatedReading heading="Related reading" items={content.relatedReading} />
       ) : null}
 
       {content.tanBand && (
