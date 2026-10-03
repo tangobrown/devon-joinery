@@ -130,7 +130,7 @@ export const subServiceContent: Record<
             [
               "Not every tired sash window needs replacing. Sash cords, weights, pulleys, individual sills and the bottom rails of the sashes can all be ",
               {
-                text: "repaired and restored",
+                text: "renewed",
                 href: "/expertise/windows/sash-window-restoration",
               },
               ", and a box frame that is sound in the main is usually worth keeping. Replacement makes sense when the boxes themselves have gone, when previous repairs have destroyed the profiles, or when a whole elevation needs to match.",
@@ -159,12 +159,12 @@ export const subServiceContent: Record<
       parentSlug: "windows",
       parentLabel: "Windows",
       slug: "sash-window-restoration",
-      h1: "Sash Window Repair & Restoration",
+      h1: "Sash Window Restoration",
       title: "Sash Window Restoration in Exeter & Devon",
       metaDescription:
-        "Draught-proofing, splice repairs and full restoration of original sash windows in Exeter and across Devon. Keep the frames, fix the performance.",
+        "Overhaul, draught-proofing and slim double glazing for original sash windows in Exeter and across Devon. Keep the frames, improve the performance.",
       intro:
-        "Repairing and restoring original sash windows rather than replacing them, so the glass, the proportions and the joinery stay as they were built.",
+        "Bringing original sash windows back into good working order, so the frames, the proportions and the glass stay as they were built.",
       heroImage: {
         src: "/images/windows/listed-property-windows.jpg",
         alt: "Original sash windows in a listed Devon property",
@@ -174,47 +174,50 @@ export const subServiceContent: Record<
           h2: "Most sash windows are in better condition than they look",
           paragraphs: [
             [
-              "A window that sticks, rattles, draws a draught or has paint flaking off it looks like a window at the end of its life. Usually it is not. What has normally failed is the paint, a sash cord, and perhaps the bottom rail of the lower sash, where water sits. The box frame and the bulk of the sash timber are often perfectly sound underneath.",
+              "A window that sticks, rattles, draws a draught or has paint flaking off it looks like a window at the end of its life. Often it is not. What has usually failed is the paint, a sash cord, and the seal around the glass. The box frame and the sashes themselves are frequently sound underneath.",
             ],
             [
-              "That matters, because the timber in an original window is generally better than what you can buy today. Slow-grown Baltic redwood and heart pine from the nineteenth century is denser, tighter-grained and more stable than most modern softwood. Where the frames are sound, keeping them is both the cheaper option and the better one.",
-            ],
-            [
-              "So the first thing we do is tell you which it is. If the windows need redecorating rather than restoring, we will say that. If the boxes have genuinely gone, ",
-              {
-                text: "new sliding sash windows",
-                href: "/expertise/windows/sash-windows",
-              },
-              " are the honest answer and we will say that instead.",
+              "That matters, because the timber in an original window is generally better than what you can buy today. Slow-grown Baltic redwood and heart pine from the nineteenth century is denser and more stable than most modern softwood, so where the sashes are sound, keeping them is both the cheaper option and the better one. If the windows need redecorating rather than any work from us, we will say that.",
             ],
           ],
         },
         {
-          h2: "What a restoration involves",
+          h2: "What the work covers",
           paragraphs: [
             [
-              "We start with a survey of each window rather than the elevation as a whole, because they rarely fail at the same rate. We look at the box frame, the stiles and rails of both sashes, the cords, pulleys and weights, the sill, and how much original glass survives.",
+              "We survey each window rather than the elevation as a whole, because they rarely fail at the same rate. We look at the box frame, the condition of both sashes, the cords, pulleys and weights, the sill, and how much original glass survives.",
             ],
             [
-              "From there the work typically covers stripping failed paint back to sound timber, cutting out decayed sections and splicing in new timber to match, re-puttying and re-securing the glass, renewing cords and rebalancing the weights so the sashes run properly, and then priming, undercoating and finishing.",
+              "Where the sashes are sound, the work covers overhauling the mechanism so the window runs and holds properly, renewing cords and rebalancing the weights, re-puttying and re-securing or re-glazing the glass, fitting draught seals, and redecoration.",
             ],
             [
-              "Splice repairs are the part people underestimate. A rotten section of bottom rail can be cut out and a new piece of matching timber scarfed in, glued and pinned, so that once it is painted the repair is invisible and the rail is as strong as it was. It is slower than fitting a new sash, which is why restoration is skilled work rather than maintenance.",
+              "Scope is worth being plain about. We do not patch decayed timber into an original sash. Where the timber itself has gone, we make a new sash or a new window to match the original rather than piecing the old one back together: same profiles, same glazing bar widths, same proportions, taken off the window that is coming out. It is a cleaner job and it lasts longer than a repair in the same position would.",
+            ],
+            [
+              "In practice most elevations are a mixture. We regularly overhaul the sound windows on a house and make ",
+              {
+                text: "new sliding sash windows",
+                href: "/expertise/windows/sash-windows",
+              },
+              " for the ones that are past saving, matched so you cannot tell which is which.",
             ],
           ],
           image: {
             src: "/images/windows/bespoke-windows.jpg",
-            alt: "Sash window rail and glazing bar detail during restoration",
+            alt: "Sash window rail and glazing bar detail",
           },
         },
         {
           h2: "Draughts, rattle and slim double glazing",
           paragraphs: [
             [
-              "The two complaints about original sashes are that they are cold and that they rattle, and both are fixable without changing how the window looks.",
+              "This is the part that makes the biggest difference to living with the window, and it is why most people get in touch.",
             ],
             [
-              "Discreet brush or compression seals set into the staff bead, parting bead and meeting rail stop the rattle and cut the draught substantially, and are invisible from outside. Where more is needed, slim-profile double-glazed units can often go into the existing sashes, keeping the correct putty line and glazing bar width. Whether that is possible on your windows depends on the rebate depth and on whether the sashes can carry the extra weight, which is a survey question rather than a catalogue one.",
+              "Slim-profile double-glazed units can go into your existing sashes, keeping the correct putty line and glazing bar width, so from outside the window looks as it did. Whether it is possible on a particular window depends on the rebate depth and on whether the sashes can carry the extra weight, which is a survey question rather than a catalogue one. Discreet brush or compression seals set into the staff bead, parting bead and meeting rail then stop the rattle and cut the draught substantially, and are invisible from outside.",
+            ],
+            [
+              "Draught-proofing is done as part of this work rather than as a job on its own, because the seals need the sashes overhauled and running correctly to seat properly. Sealing a window that does not close squarely does not achieve much.",
             ],
             [
               "As we say on the ",
@@ -227,7 +230,7 @@ export const subServiceContent: Record<
           ],
           image: {
             src: "/images/windows/secondary-glazing.jpg",
-            alt: "Restored sash window seen from inside a Devon home",
+            alt: "Sash window with slim double glazing seen from inside a Devon home",
           },
         },
         {
@@ -247,27 +250,24 @@ export const subServiceContent: Record<
           ],
         },
         {
-          h2: "Restoration, or replacement?",
+          h2: "Overhaul, or new windows?",
           paragraphs: [
             [
-              "Restoration is the better answer where the frames are fundamentally sound, where the house is listed or in a conservation area, or where the original glass and proportions are part of why you bought it.",
+              "Overhaul is the better answer where the sashes and boxes are sound, where the house is listed or in a conservation area, or where the original glass and proportions are part of why you bought it. New windows are the better answer where decay has gone into the timber, where the existing windows are poor later replacements with nothing worth keeping, or where a whole elevation needs to match.",
             ],
             [
-              "Replacement is the better answer where rot is extensive through the boxes, where the existing windows are poor later replacements with nothing worth keeping, or where a whole elevation needs to match and half of it has already been lost.",
-            ],
-            [
-              "Most houses are a mixture, and there is no reason to treat every opening the same way. We regularly restore the windows on one elevation and replace them on another.",
+              "There is no reason to treat every opening the same way, and we would rather give you a window-by-window answer than a single number for the house.",
             ],
           ],
         },
         {
-          h2: "Sash window restoration across Devon",
+          h2: "Sash window work across Devon",
           paragraphs: [
             [
-              "We work from our workshop at Clyst St Mary, just outside Exeter, across the city and out through Exmouth, Topsham, Sidmouth and the surrounding villages. Sashes come back to the workshop where the work needs a bench, and the box frames and reinstallation are done on site.",
+              "We work from our workshop at Clyst St Mary, just outside Exeter, across the city and out through Exmouth, Topsham, Sidmouth and the surrounding villages. Sashes come back to the workshop where the work needs a bench, and the glazing, seals and reinstallation are done on site by our own team.",
             ],
             [
-              "If you are not sure which side of the repair-or-replace line your windows fall on, ",
+              "If you are not sure whether your windows want overhauling or replacing, ",
               { text: "request a free estimate", href: "/free-estimate" },
               " and we will come and look at them properly.",
             ],
@@ -379,7 +379,7 @@ export const subServiceContent: Record<
       h1: "Oak Front Doors",
       title: "Bespoke Oak Front Doors in Exeter & Devon",
       metaDescription:
-        "Solid oak front doors handmade in Exeter. How oak grades, grain and movement affect an external door, and how it compares with Accoya and painted hardwood.",
+        "Bespoke oak front doors handmade in Exeter. How oak grain, movement and finish behave on an external door, and how it compares with Accoya and painted hardwood.",
       intro:
         "Oak front doors made in our Exeter workshop, and an honest account of how the timber behaves once it is hanging in a Devon doorway.",
       heroImage: {
@@ -407,18 +407,18 @@ export const subServiceContent: Record<
           ],
         },
         {
-          h2: "Grain, grade and how the board is cut",
+          h2: "Grain and character",
           paragraphs: [
             [
-              "Grade matters as much as species. Prime stock is cleaner and more consistent; character grade carries more knots and figure, and is very often what people actually want to look at on a front door.",
+              "No two oak doors look the same, which is most of the point of choosing it. Cleaner, more consistent stock gives a calmer, more formal door; timber carrying more knots and figure gives a door with obvious character, and on a period property that is very often what people actually want.",
             ],
             [
-              "How the board is cut out of the log matters more than most people expect. Quarter-sawn oak is noticeably more stable through the seasons than plain-sawn, because the growth rings run roughly perpendicular to the face, so seasonal movement is spread across the thickness rather than the width. It yields less from the log and costs more, which is exactly why it is worth specifying on an external door and not on a wardrobe.",
+              "Colour varies too, from pale honey through to a warmer brown, and it shifts over the first year or two as the timber settles and the finish matures. An oak door is darker at five years than at five weeks, and that is worth picturing before you choose a finish.",
             ],
             [
-              "We will tell you at quotation stage what we are proposing and why, and you can ",
+              "We will talk through what we are proposing at quotation stage and why, and you can ",
               { text: "see examples of our door work", href: "/gallery" },
-              " to get a sense of how different grades read once they are finished.",
+              " to get a sense of how different oak reads once it is finished.",
             ],
           ],
           image: {
@@ -526,13 +526,13 @@ export const subServiceContent: Record<
               "Both have a place, and the distinction is worth understanding before you compare quotes, because it accounts for a good part of the price difference between two apparently similar staircases.",
             ],
             [
-              "Solid oak is exactly that: components machined from solid stock. It is the traditional construction and the right choice for treads, handrails and newels, where the section is thick and the wear is heavy.",
+              "Solid oak is exactly that: components machined from solid stock. It is the traditional construction and it suits treads, handrails and newels, where the section is thick and the wear is heavy.",
             ],
             [
-              "Engineered oak is a stable laminated core with a solid oak face. On wide components (a long string, a broad riser, a landing nosing) it is genuinely the better engineering choice, because it stays flat where solid stock of the same width would be inclined to cup. Using it where it belongs is not a cost-saving compromise; using it everywhere would be.",
+              "Engineered oak is a stable laminated core with a solid oak face. On wide components (a long string, a broad riser, a landing nosing) it has a real advantage, because it stays flat where solid stock of the same width would be more inclined to cup. Used where it belongs it is not a cost-saving compromise; used everywhere it would be.",
             ],
             [
-              "Most of the oak staircases we build are a considered mixture of the two, and the quotation says which is which.",
+              "Which makes sense for your staircase depends on the design and the spans involved, and the quotation will set out what we are proposing and why rather than leaving you to guess.",
             ],
           ],
           image: {
@@ -567,7 +567,7 @@ export const subServiceContent: Record<
               "A new build gives you a square opening, a level floor and a known floor-to-floor height. A two-hundred-year-old Devon cottage gives you none of those, and that is where a made-to-measure staircase earns its cost.",
             ],
             [
-              "Building regulations set limits on rise, going, headroom and the gaps a balustrade can leave. Meeting them in an opening that has moved over two centuries, often with a ceiling height that varies along the flight, is a setting-out problem rather than a manufacturing one. It is also why every tread on a bespoke flight is the same height, which is something stock staircases in old houses routinely fail at and something you feel underfoot every single time.",
+              "Building regulations set limits on rise, going, headroom and the gaps a balustrade can leave, and those limits shape what is possible in a given opening. Working out what will fit, and what it will mean for the layout at the top and bottom of the flight, is a setting-out exercise we go through with you and your builder before anything is cut. Where a project needs formal sign-off or structural input, we will say so at quotation stage and agree who is arranging it.",
             ],
           ],
         },

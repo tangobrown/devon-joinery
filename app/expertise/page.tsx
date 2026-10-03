@@ -58,7 +58,7 @@ export default function ExpertiseIndexPage() {
             href="/expertise/windows/sash-window-restoration"
             className="text-maroon font-semibold underline"
           >
-            sash window repair and restoration
+            sash window restoration
           </Link>
           ,{" "}
           <Link

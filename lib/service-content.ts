@@ -334,10 +334,10 @@ export const serviceContent: Record<string, ServiceContent> = {
           "Horizontally-sliding frames that open without projecting outward, practical where space outside the window is limited.",
       },
       {
-        label: "Sash Window Repair & Restoration",
+        label: "Sash Window Restoration",
         href: "/expertise/windows/sash-window-restoration",
         blurb:
-          "Keeping original sashes rather than replacing them: splice repairs, new cords and weights, draught-proofing and redecoration.",
+          "Keeping original sashes rather than replacing them: overhauled mechanism, new cords and weights, slim double glazing, draught seals and redecoration.",
       },
       {
         label: "Secondary Glazing",
@@ -521,7 +521,7 @@ export const serviceContent: Record<string, ServiceContent> = {
       {
         label: "Floating & Cantilevered Staircases",
         blurb:
-          "Open-tread and cantilevered designs where the treads appear to float, engineered with the structural support concealed in the wall.",
+          "Open-tread and cantilevered designs where the treads appear to float, with the supporting structure kept out of sight.",
       },
       {
         label: "Commercial Staircases",
