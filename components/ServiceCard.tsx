@@ -16,7 +16,7 @@ export function ServiceCard({ service }: { service: Service }) {
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(0,0,0,.72) 100%)",
+            "linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(0,0,0,.62) 100%)",
         }}
       />
       <div className="absolute inset-x-0 bottom-0 p-3.5 flex flex-col items-center gap-2.5">
