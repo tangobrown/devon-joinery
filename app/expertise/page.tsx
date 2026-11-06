@@ -66,20 +66,27 @@ export default function ExpertiseIndexPage() {
             className="text-maroon font-semibold underline"
           >
             oak front doors
-          </Link>{" "}
-          or{" "}
+          </Link>
+          ,{" "}
           <Link
             href="/expertise/staircases/oak-staircases"
             className="text-maroon font-semibold underline"
           >
             oak staircases
-          </Link>{" "}
-          or{" "}
+          </Link>
+          ,{" "}
           <Link
             href="/expertise/gates/driveway-gates"
             className="text-maroon font-semibold underline"
           >
             wooden driveway gates
+          </Link>{" "}
+          or{" "}
+          <Link
+            href="/expertise/wardrobes-and-storage/fitted-wardrobes"
+            className="text-maroon font-semibold underline"
+          >
+            fitted wardrobes
           </Link>
           .
         </p>

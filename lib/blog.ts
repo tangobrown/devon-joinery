@@ -12,6 +12,19 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    slug: "fitted-wardrobes-vs-freestanding",
+    title: "Fitted Wardrobes vs Freestanding: What Adds Value",
+    date: "01/11/2026",
+    author: "Devon Joinery",
+    readTime: "8 min read",
+    categories: ["Storage", "Comparisons"],
+    excerpt:
+      "Fitted or freestanding is usually framed as a question about budget, but the more useful question is how long you are staying and what the room is shaped like…",
+    coverImage: "/images/wardrobes-and-storage/bespoke-wardrobes.jpg",
+    coverAlt:
+      "Bespoke fitted wardrobes in a Devon bedroom, made by Devon Joinery",
+  },
+  {
     slug: "accoya-vs-oak-vs-softwood-devon-coast",
     title: "Accoya vs Oak vs Softwood for Devon's Coastal Climate",
     date: "03/10/2026",
@@ -23,6 +36,20 @@ export const posts: BlogPost[] = [
     coverImage: "/images/windows/listed-property-windows.jpg",
     coverAlt:
       "Timber windows in an exposed coastal Devon property, made by Devon Joinery",
+  },
+  {
+    slug: "bespoke-staircase-cost-devon",
+    title: "How Much Does a Bespoke Staircase Cost?",
+    date: "01/10/2026",
+    author: "Devon Joinery",
+    readTime: "8 min read",
+    categories: ["Staircases", "Guides"],
+    excerpt:
+      "A bespoke staircase has no price list, because it is made once, for one opening. An honest look at what actually drives the number, and where the money goes…",
+    coverImage:
+      "/images/staircases/staircase-in-the-process-of-manufacturing.jpg",
+    coverAlt:
+      "Bespoke timber staircase under construction in the Devon Joinery workshop in Exeter",
   },
   {
     slug: "planning-permission-windows-conservation-area-devon",

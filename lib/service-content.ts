@@ -566,12 +566,18 @@ export const serviceContent: Record<string, ServiceContent> = {
         blurb:
           "The balustrade is a large part of what you see on a staircase, and a large part of the cost. How timber and glass compare.",
       },
+      {
+        label: "How Much Does a Bespoke Staircase Cost?",
+        href: "/blog/bespoke-staircase-cost-devon",
+        blurb:
+          "What actually moves the number on a bespoke staircase, from timber and shape to the balustrade, and where the money is worth spending.",
+      },
     ],
   },
   "wardrobes-and-storage": {
     slug: "wardrobes-and-storage",
     h1: "Bespoke Wardrobes & Storage",
-    metaTitle: "Fitted Wardrobes & Bespoke Storage in Exeter, Devon",
+    metaTitle: "Bespoke Storage & Dressing Rooms in Exeter, Devon",
     metaDescription:
       "Fitted wardrobes, dressing rooms and made-to-measure storage for awkward eaves, chimneys and sloping ceilings. Handmade in our Exeter workshop.",
     intro:
@@ -610,6 +616,42 @@ export const serviceContent: Record<string, ServiceContent> = {
         paragraphs: [
           "Off-the-shelf furniture rarely uses a room's full height or depth. Bespoke storage does, giving you more space, a cleaner look, and interiors laid out to suit the way you live.",
         ],
+      },
+    ],
+    subServices: [
+      {
+        label: "Fitted Wardrobes",
+        href: "/expertise/wardrobes-and-storage/fitted-wardrobes",
+        blurb:
+          "Floor-to-ceiling wardrobes built into the room, including eaves bedrooms and chimney alcoves, with interiors laid out around what you own.",
+      },
+      {
+        label: "Walk-in Wardrobes & Dressing Rooms",
+        blurb:
+          "A whole room or a partitioned section given over to hanging, drawers and shelving, with the layout worked out around how you get dressed.",
+      },
+      {
+        label: "Alcove Units & Bookcases",
+        blurb:
+          "Shelving and cupboards built into chimney alcoves and recesses, scribed to the wall so there is no gap behind or above.",
+      },
+      {
+        label: "Understairs Storage",
+        blurb:
+          "Drawers, cupboards and pull-outs fitted into the awkward triangular space under a staircase, usually the most wasted space in the house.",
+      },
+      {
+        label: "Home Office & Study Furniture",
+        blurb:
+          "Desks, shelving and cable management built into an alcove, a spare room or a landing, designed to be worked at rather than just looked at.",
+      },
+    ],
+    relatedReading: [
+      {
+        label: "Fitted Wardrobes vs Freestanding: What Adds Value",
+        href: "/blog/fitted-wardrobes-vs-freestanding",
+        blurb:
+          "When fitted storage is worth the money and when a freestanding wardrobe is the better buy, on cost, storage gained and resale.",
       },
     ],
   },

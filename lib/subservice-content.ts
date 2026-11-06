@@ -696,6 +696,97 @@ export const subServiceContent: Record<
       ],
     },
   },
+  "wardrobes-and-storage": {
+    "fitted-wardrobes": {
+      parentSlug: "wardrobes-and-storage",
+      parentLabel: "Wardrobes & Storage",
+      slug: "fitted-wardrobes",
+      h1: "Fitted Wardrobes",
+      title: "Fitted Wardrobes in Exeter & East Devon",
+      metaDescription:
+        "Made-to-measure fitted wardrobes built in our Exeter workshop for awkward eaves, chimney breasts and sloping ceilings. Designed around what you own.",
+      intro:
+        "Fitted wardrobes designed around the room you have and the clothes you actually own, built in our Exeter workshop and installed by our own team.",
+      heroImage: {
+        src: "/images/wardrobes-and-storage/wardrobe-for-homes-2.jpg",
+        alt: "Bespoke fitted wardrobes in a Devon bedroom",
+      },
+      sections: [
+        {
+          h2: "What fitted actually buys you",
+          paragraphs: [
+            [
+              "A freestanding wardrobe is a box that has to fit through a door, so it is built to a standard height and depth and it leaves dead space above it and dust behind it. A fitted wardrobe is built in the room, floor to ceiling and wall to wall, which typically gives you somewhere between a quarter and a third more usable storage in the same footprint.",
+            ],
+            [
+              "The second thing it buys you is that the room looks finished rather than furnished. A run of fitted wardrobes reads as part of the house, in the same way a staircase or a window does, and it is one of the few pieces of joinery that estate agents reliably mention.",
+            ],
+          ],
+        },
+        {
+          h2: "Awkward rooms are the point",
+          paragraphs: [
+            [
+              "Most of our wardrobe work is in rooms where nothing off the shelf would go. Eaves bedrooms with a sloping ceiling, a chimney breast with an alcove either side of it, a bay, a room with a door that opens into the only sensible wall. These are the jobs where made-to-measure stops being a preference and becomes the only option.",
+            ],
+            [
+              "A sloping ceiling is the common one, and it is worth knowing how it is solved: full-height hanging where the headroom allows it, shallower shelving or drawers where it does not, and the very low section given over to something you do not need to stand up in front of. The result uses the whole wall rather than stopping at the point where a square box would hit the slope.",
+            ],
+            [
+              "Chimney breasts are the other. The two alcoves are rarely the same size as each other, which is why a matched pair of shop-bought units almost never works, and why we measure both.",
+            ],
+          ],
+          image: {
+            src: "/images/wardrobes-and-storage/wood-and-glass-storage.jpg",
+            alt: "Fitted wardrobe interior with hanging rails and shelving",
+          },
+        },
+        {
+          h2: "Designing the inside, not just the doors",
+          paragraphs: [
+            [
+              "The doors are what you see and the inside is what you use, and the inside is where a fitted wardrobe is either worth the money or is not. We start from what is going in it: how much long hanging you need against short, how many drawers, whether shoes go at the bottom or on a rack, whether anything needs to be out of a child's reach.",
+            ],
+            [
+              "That conversation changes the design more than any aesthetic decision does. Two people with identical rooms and identical budgets routinely end up with completely different interiors, and the one who talked through their clothes gets the better wardrobe.",
+            ],
+            [
+              "Door styles then follow the room: shaker and panelled for period houses, flat slab for contemporary ones, painted or in a timber finish. The ",
+              {
+                text: "wardrobes and storage overview",
+                href: "/expertise/wardrobes-and-storage",
+              },
+              " covers the wider range, including dressing rooms and freestanding pieces.",
+            ],
+          ],
+        },
+        {
+          h2: "Finish, and how it sits in the room",
+          paragraphs: [
+            [
+              "Most fitted wardrobes are painted, because paint lets the run disappear into the wall if you want it to or stand out deliberately if you do not. Matching the existing wall colour makes a small bedroom feel larger; a contrasting colour makes the wardrobes the feature.",
+            ],
+            [
+              "Scribing is the detail that separates a fitted wardrobe from a fitted-looking one. Walls are not flat, floors are not level and ceilings are not square, so every panel that meets the fabric of the house is cut to follow it. Done properly there is no gap and no filler line, and that is most of what you are paying for over a flat-pack run.",
+            ],
+          ],
+        },
+        {
+          h2: "Fitted wardrobes across Devon",
+          paragraphs: [
+            [
+              "Everything is designed, made and finished in our workshop at Clyst St Mary and installed by our own team, so the person fitting it has the drawings and can deal with whatever the room turns out to be. We work across Exeter, Exmouth, Sidmouth, Topsham and the surrounding villages.",
+            ],
+            [
+              "We survey before quoting rather than working from your measurements, because the room's irregularities are exactly what the price depends on. Send photographs and the rough dimensions to start with and we will tell you what is realistic, then ",
+              { text: "request a free estimate", href: "/free-estimate" },
+              " for a surveyed, fixed price.",
+            ],
+          ],
+        },
+      ],
+    },
+  },
 };
 
 /** All {service, subservice} pairs, for generateStaticParams and the sitemap. */
