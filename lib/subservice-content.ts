@@ -606,6 +606,96 @@ export const subServiceContent: Record<
       ],
     },
   },
+  gates: {
+    "driveway-gates": {
+      parentSlug: "gates",
+      parentLabel: "Gates",
+      slug: "driveway-gates",
+      h1: "Wooden Driveway Gates",
+      title: "Wooden Driveway Gates in Exeter & Devon",
+      metaDescription:
+        "Bespoke wooden driveway gates made to measure in our Exeter workshop. Hardwood and softwood, hung and balanced to suit your opening and your slope.",
+      intro:
+        "Wooden driveway gates designed, made and hung by our own team, sized to your opening and built to stay square through a Devon winter.",
+      heroImage: {
+        src: "/images/gates/driveway-gates-full.jpg",
+        alt: "Bespoke wooden driveway gates on a Devon property",
+      },
+      sections: [
+        {
+          h2: "Why a driveway gate is the hardest thing we make",
+          paragraphs: [
+            [
+              "A driveway gate is the most exposed piece of joinery most properties have. It hangs in free air with nothing sheltering it, it carries its own weight on two hinges, and it is the only joinery in the house that gets pushed, leaned on and driven at. Everything that makes timber move, rain, sun, frost and wind, gets at a gate from all four sides at once.",
+            ],
+            [
+              "That is why a driveway gate is worth having made rather than bought. An off-the-peg pair is built to a price and a standard size, and the first thing that happens on a sloping Devon driveway is that it does not fit the opening and will not swing clear of the ground. Ours are measured to the opening, the fall and the surface, which is most of the job.",
+            ],
+          ],
+        },
+        {
+          h2: "Timber choice matters more here than anywhere",
+          paragraphs: [
+            [
+              "On an internal staircase or a run of wardrobes, timber choice is largely about how it looks. On a gate it decides how often you will be repainting it and how long it will last. Oak, Iroko and Sapele all hold up well outside; softwood is cheaper and perfectly serviceable if it is properly treated and you are prepared to maintain it; Accoya is the most stable of the lot and the best choice if the gate is close to the sea.",
+            ],
+            [
+              "We will tell you honestly what the difference is worth on your particular gate rather than steering you to the dearest option. Our guide to ",
+              {
+                text: "Accoya, oak and softwood",
+                href: "/blog/accoya-vs-oak-vs-softwood-devon-coast",
+              },
+              " sets out how the three compare on movement and rot resistance, and it is written with exactly this kind of exposed external joinery in mind.",
+            ],
+          ],
+        },
+        {
+          h2: "Designing a pair that suits the house",
+          paragraphs: [
+            [
+              "A driveway gate is the first thing anyone sees of a property, and it sets an expectation before they reach the front door. A Victorian terrace, a thatched cottage and a new-build all want something different, and getting it wrong is conspicuous in a way that an internal door never is.",
+            ],
+            [
+              "In practice the decisions are: solid or open-boarded, flat-topped or curved, vertical or horizontal boards, and how much of the drive you want to be able to see through. We will draw what we are proposing before anything is cut, so you are approving a design rather than a description. The wider range of styles is on the ",
+              { text: "gates overview", href: "/expertise/gates" },
+              ".",
+            ],
+            [
+              "Height is worth thinking about early. A tall solid gate gives you privacy and takes a great deal of wind; an open-boarded gate of the same height takes far less and needs lighter ironmongery. On an exposed site that single choice can decide what is practical.",
+            ],
+          ],
+          image: {
+            src: "/images/gates/driveway-gates.jpg",
+            alt: "Open-boarded wooden driveway gates in a Devon driveway",
+          },
+        },
+        {
+          h2: "Hanging, hinges and the ground",
+          paragraphs: [
+            [
+              "A made-to-measure gate that is badly hung will drop within a year, and a well-hung gate will still be closing properly in twenty. The weight of a pair of hardwood driveway gates is considerable and it all goes through the hinges and whatever they are fixed to, so the posts or piers matter as much as the gates.",
+            ],
+            [
+              "We look at what the gates will hang from before quoting. Existing stone piers, brick piers, timber posts and a wall of unknown construction are four different problems, and occasionally the honest answer is that what the gates hang from needs attention first. We specify the hinges and ironmongery to suit the structure they are going onto, so the fixings match the piers or posts rather than the other way round.",
+            ],
+          ],
+        },
+        {
+          h2: "Driveway gates across Devon",
+          paragraphs: [
+            [
+              "Every gate is drawn, made and finished in our workshop at Clyst St Mary, then fitted by our own team. We work across Exeter, Exmouth, Sidmouth, Topsham and the surrounding villages.",
+            ],
+            [
+              "We cannot quote a gate from a description. What we need is the opening: the width between the piers or posts, the fall across it, what the gates will hang from, and whether there is a slope either side. Send photographs and rough measurements and we will tell you what will work in the space, then ",
+              { text: "request a free estimate", href: "/free-estimate" },
+              " for a surveyed, fixed price.",
+            ],
+          ],
+        },
+      ],
+    },
+  },
 };
 
 /** All {service, subservice} pairs, for generateStaticParams and the sitemap. */

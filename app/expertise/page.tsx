@@ -73,6 +73,13 @@ export default function ExpertiseIndexPage() {
             className="text-maroon font-semibold underline"
           >
             oak staircases
+          </Link>{" "}
+          or{" "}
+          <Link
+            href="/expertise/gates/driveway-gates"
+            className="text-maroon font-semibold underline"
+          >
+            wooden driveway gates
           </Link>
           .
         </p>

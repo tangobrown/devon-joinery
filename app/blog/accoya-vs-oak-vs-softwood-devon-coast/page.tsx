@@ -132,7 +132,16 @@ export default function ArticlePage() {
             on coastal and west-facing elevations. Its real advantage shows on
             big components: a wide bifold stile or a tall door panel in Accoya
             stays flat where the same section in softwood would be inclined to
-            move.
+            move. A pair of{" "}
+            <Link
+              href="/expertise/gates/driveway-gates"
+              className="text-maroon font-semibold underline"
+            >
+              driveway gates
+            </Link>{" "}
+            is the extreme case: the most exposed, hardest-worked external
+            joinery most properties have, and exactly where that stability earns
+            its keep.
           </p>
           <p>
             It also holds paint unusually well, precisely because it is not

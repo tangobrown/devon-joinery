@@ -137,6 +137,29 @@ export const serviceContent: Record<string, ServiceContent> = {
         ],
       },
     ],
+    subServices: [
+      {
+        label: "Wooden Driveway Gates",
+        href: "/expertise/gates/driveway-gates",
+        blurb:
+          "Hardwood and softwood driveway gates made to your opening, hung on posts or existing piers and balanced to swing clear of a sloping drive.",
+      },
+      {
+        label: "Garden & Side Gates",
+        blurb:
+          "Single gates for side passages, garden entrances and bin stores, made to match an existing gate or a run of fencing.",
+      },
+      {
+        label: "Estate & Entrance Gates",
+        blurb:
+          "Larger pairs for estate and farm entrances, including curved-top and five-bar designs, in hardwood or softwood.",
+      },
+      {
+        label: "Metal & Wrought Iron Gates",
+        blurb:
+          "Wrought iron, steel and aluminium gates for contemporary and traditional properties, where metal suits the setting better than timber.",
+      },
+    ],
     relatedReading: [
       {
         label: "Accoya vs Oak vs Softwood on the Devon Coast",
