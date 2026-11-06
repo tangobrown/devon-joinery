@@ -128,12 +128,12 @@ export const subServiceContent: Record<
           h2: "Repair, or replace?",
           paragraphs: [
             [
-              "Not every tired sash window needs replacing. Sash cords, weights, pulleys, individual sills and the bottom rails of the sashes can all be ",
+              "Not every tired sash window needs replacing. Cords, weights and pulleys can be ",
               {
-                text: "renewed",
+                text: "overhauled",
                 href: "/expertise/windows/sash-window-restoration",
               },
-              ", and a box frame that is sound in the main is usually worth keeping. Replacement makes sense when the boxes themselves have gone, when previous repairs have destroyed the profiles, or when a whole elevation needs to match.",
+              ", slim double glazing fitted into the existing sashes and draught seals added, and a box frame that is sound in the main is usually worth keeping. What we do not do is patch new timber into a sash that has decayed: where the timber has gone we make a new sash to match the original profiles rather than piecing the old one back together. Replacement makes sense when the boxes themselves have gone, when previous repairs have destroyed the profiles, or when a whole elevation needs to match.",
             ],
             [
               "If you are not sure which side of that line you are on, we will tell you honestly, including when the answer is that the windows are fine and need painting.",

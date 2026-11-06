@@ -1,16 +1,13 @@
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import { PageShell } from "@/components/PageShell";
 import { PageHeader } from "@/components/PageHeader";
 import { ExpertiseGrid } from "@/components/ExpertiseGrid";
 import { ServiceGallery } from "@/components/ServiceGallery";
 import { ServicePanelSection } from "@/components/ServicePanelContent";
 import { TanBand } from "@/components/TanBand";
-import { Faq } from "@/components/Faq";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SubServiceLinks } from "@/components/SubServiceLinks";
 import { RelatedReading } from "@/components/RelatedReading";
-import { ReviewBadge } from "@/components/ReviewBadge";
 import { listServiceSlugs, serviceContent } from "@/lib/service-content";
 import { SITE_URL } from "@/lib/site";
 
@@ -109,30 +106,6 @@ export default function ServicePage({ params }: { params: Params }) {
       {content.panels.map((p, i) => (
         <ServicePanelSection key={i} panel={p} />
       ))}
-
-      {content.faq && (
-        <section className="bg-tan px-6 py-14">
-          <div className="max-w-band mx-auto text-center mb-8">
-            {content.faq.showReviewBadge && (
-              <div className="mb-6 flex justify-center">
-                <ReviewBadge />
-              </div>
-            )}
-            <h2 className="text-[28px] md:text-[36px] font-bold text-ink">
-              {content.faq.heading}
-            </h2>
-          </div>
-          <Faq items={content.faq.items} />
-          <div className="text-center mt-8">
-            <Link
-              href="/free-estimate"
-              className="inline-block bg-maroon-button text-white text-[15px] font-semibold btn-lift px-6 py-3"
-            >
-              Free Estimate
-            </Link>
-          </div>
-        </section>
-      )}
 
       {content.subServices?.length ? (
         <SubServiceLinks

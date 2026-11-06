@@ -1,5 +1,3 @@
-import type { FaqItem } from "@/components/Faq";
-
 export type Paragraph = string;
 
 export type MaroonPanelContent = {
@@ -21,11 +19,6 @@ export type ServiceContent = {
   showHeaderCta?: boolean;
   topGalleryImages?: string[];
   panels: MaroonPanelContent[];
-  faq?: {
-    heading: string;
-    items: FaqItem[];
-    showReviewBadge?: boolean;
-  };
   tanBand?: {
     heading: string;
     body: string;
@@ -144,11 +137,19 @@ export const serviceContent: Record<string, ServiceContent> = {
         ],
       },
     ],
+    relatedReading: [
+      {
+        label: "Accoya vs Oak vs Softwood on the Devon Coast",
+        href: "/blog/accoya-vs-oak-vs-softwood-devon-coast",
+        blurb:
+          "A driveway gate is the most exposed joinery on most properties. How the three timbers compare on movement, rot resistance and how often they need repainting.",
+      },
+    ],
   },
   doors: {
     slug: "doors",
     h1: "Bespoke Doors in Devon",
-    metaTitle: "Bespoke Doors in Exeter, Devon — Front, French, Bifold",
+    metaTitle: "Bespoke Doors in Exeter, Devon — French & Bifold",
     metaDescription:
       "Front doors, French doors, bifolds, sliders and internal doors — all handcrafted in our Exeter workshop from oak, sapele, Accoya and other premium timbers.",
     intro:
@@ -255,7 +256,7 @@ export const serviceContent: Record<string, ServiceContent> = {
   windows: {
     slug: "windows",
     h1: "Bespoke Windows",
-    metaTitle: "Bespoke Sash & Casement Windows in Exeter",
+    metaTitle: "Bespoke Timber & Casement Windows in Exeter",
     metaDescription:
       "Sash, casement, stormproof, pivot and sliding timber windows made to order in Exeter. Ideal for period, listed and conservation properties across Devon.",
     intro:
